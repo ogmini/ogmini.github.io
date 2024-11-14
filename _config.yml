@@ -1,3 +1,5 @@
+title: ogmini - Exploration of DFIR
+description: Having fun while learning about and pivoting into the world of DFIR. 
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
