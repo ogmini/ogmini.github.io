@@ -8,12 +8,14 @@ layout: default
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
+      <div>{{ post.date  | date: "%B %-d, %Y" }}</div>
+
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <div><a href="{{ site.baseurl }}{{ post.url }}" class="read-more" style="float:left">Read More</a>
-      <div style="float:right">{{ post.date  | date: "%B %-d, %Y" }}</div></div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more" style="float:left">Read More</a>
+ 
     </article>
   {% endfor %}
 </div>
