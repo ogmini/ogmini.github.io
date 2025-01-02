@@ -24,6 +24,6 @@ I have to give a shoutout to the [SANS Holiday Hack Challenge 2024](https://www.
 ## Future
 For the near future, I intend on attempting some challenges/CTFs that are not live. I'll be able to figure out what software and tools are useful and setup my environment. Additionally, researching the problems without a deadline will give me less time stress and allow me to take notes for the future. 
 
-A challenge posted by 13Cubed on memory forensics recently struck my interest. https://www.youtube.com/watch?v=JuEv8UleO0U
+A challenge posted by 13Cubed on memory forensics recently struck my interest. [Challenge](https://www.youtube.com/watch?v=JuEv8UleO0U)
 
 I would love to hear any of your tips/tricks for participating in CTFs. Feel free to leave a comment below!
