@@ -8,6 +8,7 @@
     {% include head-custom.html %}
 
 {% seo %}
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
   </head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LF3TE0NGV"></script>
@@ -36,11 +37,12 @@
         </section>
       </div>
 	  <div class="container">
-		<nav>
-			<a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/">Blog</a>
-			<a href="https://github.com/ogmini">GitHub</a>
-        </nav>
+    <nav>
+      <a href="{{ site.baseurl }}/about">About</a>
+      <a href="{{ site.baseurl }}/">Blog</a>
+      <a href="https://github.com/ogmini">GitHub</a>
+      <a href="/feed.xml" target="_blank">RSS</a> 
+    </nav>
 	  </div>
     </header>
 
