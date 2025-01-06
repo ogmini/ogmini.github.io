@@ -9,6 +9,10 @@ layout: default
 
 {{content}}
 
+{% if page.tags %}
+  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
+
 <script src="https://giscus.app/client.js"
         data-repo="ogmini/ogmini.github.io"
         data-repo-id="R_kgDONPaN7Q"
@@ -24,7 +28,3 @@ layout: default
         crossorigin="anonymous"
         async>
 </script>
-
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
