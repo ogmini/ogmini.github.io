@@ -53,4 +53,10 @@ I admit fully that this scenario may be far fetched. Schools may mark students a
 ## Conclusion
 So to answer the question, yes. People would want to steal K-12 data for social engineering attacks or to just get paid a ransom. That data that you don't think is important can be used for nefarious purposes by threat actors. These are only a few examples and I'm sure there could be some other far more creative attacks out there. I'd love to hear about any others that you can think of. So feel free to post them in the comments. 
 
+## More Links
+Just wanted to throw up some more links related to the incident from K12TechPro
+
+[https://k12techpro.com/what-we-know-about-the-powerschool-breach-so-far/](https://k12techpro.com/what-we-know-about-the-powerschool-breach-so-far/)
+
+[https://k12techtalkpodcast.com/e/powerschool-cybersecurity-breach-what-you-need-to-know/](https://k12techtalkpodcast.com/e/powerschool-cybersecurity-breach-what-you-need-to-know/)
 
