@@ -7,6 +7,8 @@ tags:
  - challenge
 ---
 
+# POST IN PROGRESS
+
 David Cowen has started up his Sunday Funday challenges again and his latest one is related to SRUM. You can find his challenge on his [blog](https://www.hecfblog.com/2025/01/daily-blog-716-sunday-funday-11225.html).
 
 ## What is SRUM?
@@ -74,6 +76,79 @@ Looking at the Application Resource Usage table, the same information that was e
 
 ![ese resource table](/images/scrum/ese-resource.png)
 
+The GUID for the table name references registry keys that give the human readable representation.
+
+![registry](/images/scrum/registry-application.png)
+
+### Open Questions
+
+The three files on disk are only 6,809,343,096 bytes. 55,514,232 less bytes were written and 10,362,760 more bytes were read. The record in the SRUM database is specifically for the application explorer.exe and not recorded at a lower level that would show us specific actions. It is aggregating multiple actions involving explorer.exe into one record. This must always be kept in mind when looking at this data as it is only really recording disk utilization in terms of all reads/writes over the past hour or prior to shutdown. 
+
+The time discrepancy makes sense. I do wonder if there is a way to force a flush without shutting down the computer or can you simply change the system time.
+
 ## Scenario 2 - Uploading data to an online service of your choice
 
+For this scenarion, I uploaded the 944 MB iso file to https://www.file.io/ at 2:14 PM. I am not endorsing this website or its usage. It was just convenient for testing purposes. 
+
+INSERT VIDEO OF ACTION
+
+Examining the output of SRUM Dump, we can see a record showing 1,003,993,221 Bytes Sent for msedge.exe with a record creation time of 19:23:00 or 14:23:00. (Note: We must subtract 5 hours due to timezones as this testing is being done in the EST timezone). 
+
+![SRUM record](/images/scrum/srum_dump-2.png)
+
+Once again, we have similar discrepancies to scenario 1 for exactly the same reasons. If we examine the creation times in the SRUM database we can see that approximately hourly pattern appearing with times of:
+- 17:20
+- 18:21
+- 19:23
+
+![SRUM flushes](/images/scrum/srum_flushes.png)
+
+Again, I verify the results using ESEDatabaseView. In this case msedge.exe has an AppId of 177. 
+
+![ese id map table](/images/scrum/ese-idmap2.png)
+
+Looking at the Network Data Usage table, the same information that was extracted by SRUM Dump is visible in the SRUM database using ESEDatabaseView. We can also see me downloading some other files in a prior 1 hour window.  
+
+![ese resource table](/images/scrum/ese-resource2.png)
+
+The GUID for the table name references registry keys that give the human readable representation.
+
+![registry](/images/scrum/registry-network.png)
+
+### Open Questions
+
+The file that was uploaded had a file size of 989,855,744 bytes. 14,137,477 more bytes were sent by Microsoft Edge. Again, the record in the SRUM database is specifically for the application msedge.exe and not recorded at a lower level that would show us specific actions. It is aggregating all the network traffic involving msedge.exe into one record. This must alawys be kept in mind when looking at this data as it is only really recording network usage in terms of data sent and recieved over the part hour or prior to shutdown.  
+
+The time discrepancy makes sense. I do wonder if there is a way to force a flush without shutting down the computer or can you simply change the system time.
+
 ## Scenario 3 - Wiping files
+
+For this scenario, I "permanently" deleted the 944 MB iso file at 2:57 PM. 
+
+INSERT VIDEO OF ACTION
+
+Examining the output of SRUM Dump, we can see a record showing 1 ForegroundNumberOfFlushes for explorer.exe with a record creation time of 20:23:00 or 15:23:00. (Note: We must subtract 5 hours due to timezones as this testing is being done in the EST timezone). 
+
+![SRUM record](/images/scrum/srum_dump-3.png)
+
+Again, I verify the results using ESEDatabaseView. The AppId is still 192. Looking at the Application Resource Usage table, the same information that was extracted by SRUM Dump is visible in the SRUM database using ESEDatabaseView. 
+
+![ese resource table](/images/scrum/ese-resource3.png)
+
+The GUID for the table name references registry keys that give the human readable representation.
+
+![registry](/images/scrum/registry-application.png)
+
+### Open Questions
+
+The SRUM database doesn't store the amount of bytes deleted and this makes sense. The action of deleting a file would only involve marking the file as deleted. The Operating System will not be writing or reading the full file to accomplish this aciton. 
+
+## Conclusion
+
+For the records examined in the SRUM database, the data is skewed due to the actual usage by the Operating System. Timestamps will be tied to an hourly schedule or shutdown times. Bytes read and written by applications are aggregated over the hour window while deletions are recorded in a counter. 
+
+I would like to validate the following applications given time:
+- [SrumECmd](https://github.com/EricZimmerman/Srum)
+- [Velociraptor](https://docs.velociraptor.app/)
+
+I'm also interested to know where the data exists before it is flushed to the SRUM database and if it is possible to read it prior to the flush. 
