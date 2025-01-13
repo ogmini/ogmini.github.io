@@ -42,19 +42,19 @@ INSERT VIDEO/GIF OF ACTION
 
 ![file timestamps](/images/srum/file-timestamps.png)
 
+As the screenshot shows, two of the files were created at 12:13:53 and the other files was created at 12:14:26 on the E: drive. This was a result of our copy and paste action. The Powershell script below is how I queried that information.
+
 ~~~ Powershell
 Get-ChildItem | Select-Object Name, @{Name="LastWriteTime";Expression={$_.LastWriteTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}, @{Name="CreationTime";Expression={$_.CreationTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}, @{Name="LastAccessTime";Expression={$_.LastAccessTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}
 ~~~
 
-As the screenshot shows, two of the files were created at 12:13:53 and the other files was created at 12:14:26 on the E: drive. This was a result of our copy and paste action.  
-
 ![file sizes](/images/srum/file-sizes.png)
+
+The screenshot above shows the size in bytes of each of the three files and adding them up gives us 6,809,343,096 bytes. The two Powershell scripts below are how I queried this information. 
 
 ~~~ Powershell
 Get-ChildItem | Select-Object Name, Length, @{Name="LastWriteTime";Expression={$_.LastWriteTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}, @{Name="CreationTime";Expression={$_.CreationTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}, @{Name="LastAccessTime";Expression={$_.LastAccessTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}
 ~~~
-
-The screenshot above shows the size in bytes of each of the three files and adding them up gives us 6,809,343,096 bytes. 
 
 ~~~ Powershell
 $files = Get-ChildItem
