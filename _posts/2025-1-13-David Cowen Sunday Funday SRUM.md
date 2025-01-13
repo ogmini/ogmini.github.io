@@ -7,9 +7,7 @@ tags:
  - challenge
 ---
 
-# POST IN PROGRESS
-
-David Cowen has started up his Sunday Funday challenges again and his latest one is related to SRUM. You can find his challenge on his [blog](https://www.hecfblog.com/2025/01/daily-blog-716-sunday-funday-11225.html).
+David Cowen has started up his Sunday Funday challenges again and his latest one is related to SRUM. You can find his challenge on his [blog](https://www.hecfblog.com/2025/01/daily-blog-716-sunday-funday-11225.html). This post is in progress and will be updated.
 
 ## What is SRUM?
 
@@ -17,7 +15,7 @@ TO BE COMPLETED
 
 ## Test Setup
 
-I'll be performing testing/validation using a Hyper-V VM running Windows 11 Pro 23H2 OS Build 22631.4602. The following tools will be used:
+I am performing testing/validation using a Hyper-V VM running Windows 11 Pro 23H2 OS Build 22631.4602. The following tools are being used:
 
 - [RawCopy](https://github.com/jschicht/RawCopy)
 - [ESEDatabaseView](https://www.nirsoft.net/utils/ese_database_view.html)
@@ -42,13 +40,13 @@ In this scenario, I copy and paste the three files from the C: Drive to the E: D
 
 INSERT VIDEO/GIF OF ACTION
 
-![file timestamps](/images/scrum/file-timestamps.png)
+![file timestamps](/images/srum/file-timestamps.png)
 
 Get-ChildItem | Select-Object Name, @{Name="LastWriteTime";Expression={$_.LastWriteTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}, @{Name="CreationTime";Expression={$_.CreationTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}, @{Name="LastAccessTime";Expression={$_.LastAccessTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}
 
 As the screenshot shows, two of the files were created at 12:13:53 and the other files was created at 12:14:26 on the E: drive. This was a result of our copy and paste action.  
 
-![file sizes](/images/scrum/file-sizes.png)
+![file sizes](/images/srum/file-sizes.png)
 
 Get-ChildItem | Select-Object Name, Length, @{Name="LastWriteTime";Expression={$_.LastWriteTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}, @{Name="CreationTime";Expression={$_.CreationTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}, @{Name="LastAccessTime";Expression={$_.LastAccessTime.ToString("yyyy-MM-dd HH:mm:ss.fff")}}
 
@@ -62,23 +60,23 @@ This information will be important to correlate back to the records found in the
 
 Examining the output of SRUM Dump, we can see a record showing 6,819,705,856 ForegroundBytesRead and 6,753,828,864 ForegroundBytesWritten for explorer.exe with a record creation time of 17:21:00 or 12:21:00. (Note: We must subtract 5 hours due to timezones as this testing is being done in the EST timezone).
 
-![SRUM record](/images/scrum/srum_dump-1.png)
+![SRUM record](/images/srum/srum_dump-1.png)
 
 There are seemingly discrepancies in the ForegroundBytesRead, ForegroundBytesWritten, and actual size of the files. The times also do not appear to lineup at first glance. This is due to the 1 hour delay of records being flushed out of the registry and written to the SRUM database. I forced the flush to occur by shutting the system down around 12:21. In the screenshot below, the Event Log Service was stopped at 12:21:05.     
 
-![shutdown time](/images/scrum/shutdown-time.png)
+![shutdown time](/images/srum/shutdown-time.png)
 
 Just to verify the results from SRUM Dump, I examine the SRUM database using ESEDatabaseView as SRUM Dump does some processing to make the information more human readable. The SruDbIdMapTable shows the relation between AppId and the application location path. (Note: The IdBlob is stored as Hexadecimal. ESEDatabaseView is able to convert to text). In this case explorer.exe has an AppId of 192. 
 
-![ese id map table](/images/scrum/ese-idmap.png)
+![ese id map table](/images/srum/ese-idmap.png)
 
 Looking at the Application Resource Usage table, the same information that was extracted by SRUM Dump is visible in the SRUM database using ESEDatabaseView. 
 
-![ese resource table](/images/scrum/ese-resource.png)
+![ese resource table](/images/srum/ese-resource.png)
 
 The GUID for the table name references registry keys that give the human readable representation.
 
-![registry](/images/scrum/registry-application.png)
+![registry](/images/srum/registry-application.png)
 
 ### Open Questions
 
@@ -94,26 +92,26 @@ INSERT VIDEO OF ACTION
 
 Examining the output of SRUM Dump, we can see a record showing 1,003,993,221 Bytes Sent for msedge.exe with a record creation time of 19:23:00 or 14:23:00. (Note: We must subtract 5 hours due to timezones as this testing is being done in the EST timezone). 
 
-![SRUM record](/images/scrum/srum_dump-2.png)
+![SRUM record](/images/srum/srum_dump-2.png)
 
 Once again, we have similar discrepancies to scenario 1 for exactly the same reasons. If we examine the creation times in the SRUM database we can see that approximately hourly pattern appearing with times of:
 - 17:20
 - 18:21
 - 19:23
 
-![SRUM flushes](/images/scrum/srum_flushes.png)
+![SRUM flushes](/images/srum/srum_flushes.png)
 
 Again, I verify the results using ESEDatabaseView. In this case msedge.exe has an AppId of 177. 
 
-![ese id map table](/images/scrum/ese-idmap2.png)
+![ese id map table](/images/srum/ese-idmap2.png)
 
 Looking at the Network Data Usage table, the same information that was extracted by SRUM Dump is visible in the SRUM database using ESEDatabaseView. We can also see me downloading some other files in a prior 1 hour window.  
 
-![ese resource table](/images/scrum/ese-resource2.png)
+![ese resource table](/images/srum/ese-resource2.png)
 
 The GUID for the table name references registry keys that give the human readable representation.
 
-![registry](/images/scrum/registry-network.png)
+![registry](/images/srum/registry-network.png)
 
 ### Open Questions
 
@@ -129,15 +127,15 @@ INSERT VIDEO OF ACTION
 
 Examining the output of SRUM Dump, we can see a record showing 1 ForegroundNumberOfFlushes for explorer.exe with a record creation time of 20:23:00 or 15:23:00. (Note: We must subtract 5 hours due to timezones as this testing is being done in the EST timezone). 
 
-![SRUM record](/images/scrum/srum_dump-3.png)
+![SRUM record](/images/srum/srum_dump-3.png)
 
 Again, I verify the results using ESEDatabaseView. The AppId is still 192. Looking at the Application Resource Usage table, the same information that was extracted by SRUM Dump is visible in the SRUM database using ESEDatabaseView. 
 
-![ese resource table](/images/scrum/ese-resource3.png)
+![ese resource table](/images/srum/ese-resource3.png)
 
 The GUID for the table name references registry keys that give the human readable representation.
 
-![registry](/images/scrum/registry-application.png)
+![registry](/images/srum/registry-application.png)
 
 ### Open Questions
 
