@@ -38,7 +38,7 @@ After running the scenario, the VM is shutdown properly in order to flush the da
 ## Scenario 1 - Copying data between two drives using copy and paste
 In this scenario, I copy and paste the three files from the C: Drive to the E: Drive. 
 
-INSERT VIDEO/GIF OF ACTION
+[Video of Running Scenario 1](https://youtu.be/8KzStrx3Z3w)
 
 ![file timestamps](/images/srum/file-timestamps.png)
 
@@ -84,7 +84,7 @@ The GUID for the table name references registry keys that give the human readabl
 
 ![registry](/images/srum/registry-application.png)
 
-### Open Questions
+### Remarks
 
 The three files on disk are only 6,809,343,096 bytes. 55,514,232 less bytes were written and 10,362,760 more bytes were read. The record in the SRUM database is specifically for the application explorer.exe and not recorded at a lower level that would show us specific actions. It is aggregating multiple actions involving explorer.exe into one record. This must always be kept in mind when looking at this data as it is only really recording disk utilization in terms of all reads/writes over the past hour or prior to shutdown. 
 
@@ -94,7 +94,7 @@ The time discrepancy makes sense. I do wonder if there is a way to force a flush
 
 For this scenarion, I uploaded the 944 MB iso file to https://www.file.io/ at 2:14 PM. I am not endorsing this website or its usage. It was just convenient for testing purposes. 
 
-INSERT VIDEO OF ACTION
+[Video of Running Scenario 2](https://youtu.be/AYRnPn2csrQ)
 
 Examining the output of SRUM Dump, we can see a record showing 1,003,993,221 Bytes Sent for msedge.exe with a record creation time of 19:23:00 or 14:23:00. (Note: We must subtract 5 hours due to timezones as this testing is being done in the EST timezone). 
 
@@ -119,7 +119,7 @@ The GUID for the table name references registry keys that give the human readabl
 
 ![registry](/images/srum/registry-network.png)
 
-### Open Questions
+### Remarks
 
 The file that was uploaded had a file size of 989,855,744 bytes. 14,137,477 more bytes were sent by Microsoft Edge. Again, the record in the SRUM database is specifically for the application msedge.exe and not recorded at a lower level that would show us specific actions. It is aggregating all the network traffic involving msedge.exe into one record. This must alawys be kept in mind when looking at this data as it is only really recording network usage in terms of data sent and recieved over the part hour or prior to shutdown.  
 
@@ -129,7 +129,7 @@ The time discrepancy makes sense. I do wonder if there is a way to force a flush
 
 For this scenario, I "permanently" deleted the 944 MB iso file at 2:57 PM. 
 
-INSERT VIDEO OF ACTION
+[Video of Running Scenario 3](https://youtu.be/46gduYQLIc4)
 
 Examining the output of SRUM Dump, we can see a record showing 1 ForegroundNumberOfFlushes for explorer.exe with a record creation time of 20:23:00 or 15:23:00. (Note: We must subtract 5 hours due to timezones as this testing is being done in the EST timezone). 
 
@@ -143,7 +143,7 @@ The GUID for the table name references registry keys that give the human readabl
 
 ![registry](/images/srum/registry-application.png)
 
-### Open Questions
+### Remarks
 
 The SRUM database doesn't store the amount of bytes deleted and this makes sense. The action of deleting a file would only involve marking the file as deleted. The Operating System will not be writing or reading the full file to accomplish this aciton. 
 
