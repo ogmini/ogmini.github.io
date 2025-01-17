@@ -7,7 +7,7 @@ tags:
  - challenge
 ---
 
-David Cowen has started up his Sunday Funday challenges again and his latest one is related to SRUM. You can find his challenge on his [blog](https://www.hecfblog.com/2025/01/daily-blog-716-sunday-funday-11225.html). This post is in progress and will be updated.
+David Cowen has started up his Sunday Funday challenges again and his latest one is related to SRUM. You can find his challenge on his [blog](https://www.hecfblog.com/2025/01/daily-blog-716-sunday-funday-11225.html). 
 
 ## What is SRUM?
 
@@ -121,7 +121,7 @@ The GUID for the table name references registry keys that give the human readabl
 
 ### Remarks
 
-The file that was uploaded had a file size of 989,855,744 bytes. 14,137,477 more bytes were sent by Microsoft Edge. Again, the record in the SRUM database is specifically for the application msedge.exe and not recorded at a lower level that would show us specific actions. It is aggregating all the network traffic involving msedge.exe into one record. This must alawys be kept in mind when looking at this data as it is only really recording network usage in terms of data sent and recieved over the part hour or prior to shutdown.  
+The file that was uploaded had a file size of 989,855,744 bytes. 14,137,477 more bytes were sent by Microsoft Edge. Again, the record in the SRUM database is specifically for the application msedge.exe and not recorded at a lower level that would show us specific actions. It is aggregating all the network traffic involving msedge.exe into one record. This must always be kept in mind when looking at this data as it is only really recording network usage in terms of data sent and recieved over the part hour or prior to shutdown.  
 
 The time discrepancy makes sense. I do wonder if there is a way to force a flush without shutting down the computer or can you simply change the system time.
 
@@ -145,7 +145,7 @@ The GUID for the table name references registry keys that give the human readabl
 
 ### Remarks
 
-The SRUM database doesn't store the amount of bytes deleted and this makes sense. The action of deleting a file would only involve marking the file as deleted. The Operating System will not be writing or reading the full file to accomplish this aciton. 
+The SRUM database doesn't store the amount of bytes deleted and this makes sense. The action of deleting a file would only involve marking the file as deleted. The Operating System will not be writing or reading the full file to accomplish this action. Something about the ForegroundNumerOfFlushes irks me and I'd like to explore this counter some more. 
 
 ## Conclusion
 
@@ -155,4 +155,19 @@ I would like to validate the following applications given time:
 - [SrumECmd](https://github.com/EricZimmerman/Srum)
 - [Velociraptor](https://docs.velociraptor.app/)
 
-I'm also interested to know where the data exists before it is flushed to the SRUM database and if it is possible to read it prior to the flush. 
+I'm also interested to know where the data exists before it is flushed to the SRUM database and if it is possible to read it prior to the flush. From research, it is supposed to be resident in the SOFTWARE registry hive and I examined it using RegistryExplorer. Unfortunately, it threw an error when trying to merge the transaction files.
+
+~~~~
+Processing hive C:\Users\User\Desktop\SRUM\RegistryCopy\SOFTWARE
+There was an error: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+   at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+   at Registry.TransactionLog.ParseLog() in /_/Registry/TransactionLog.cs:line 191
+   at Registry.RegistryHive.ProcessTransactionLogs(List`1 logFileInfos, Boolean updateExistingData) in /_/Registry/RegistryHive.cs:line 157
+   at Registry.RegistryHive.ProcessTransactionLogs(List`1 logFiles, Boolean updateExistingData) in /_/Registry/RegistryHive.cs:line 319
+   at rla.Program.DoWork(String f, String d, String out, Boolean ca, Boolean cn, Boolean nop, Boolean debug, Boolean trace)
+
+Total processing time: 0.143 seconds
+~~~
+
+Whenever I do these dives, I feel like I always end up with more questions...
