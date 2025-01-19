@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Homelab Part 2 - The Next Setup        
+title: Homelab Part 2 - The Next Iteration        
 author: 'ogmini'
 tags:
  - tools
