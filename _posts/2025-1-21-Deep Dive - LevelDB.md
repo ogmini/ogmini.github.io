@@ -24,8 +24,6 @@ I found that a lot of research has been focused on Discord, WhatApp, and older v
     - [https://dfir.blog/hindsight-better-leveldb-and-new-web-ui/](https://dfir.blog/hindsight-better-leveldb-and-new-web-ui/)
 - Arsenal Recon has a tool called LevelDB Recon. This is commercial software, I have no way to play with this one.
     - [https://arsenalrecon.com/additional-products](https://arsenalrecon.com/additional-products)
-- LDB Reader
-    - [https://github.com/pbrudny/ldb-reader](https://github.com/pbrudny/ldb-reader)
 
 There is a lot to dig into here. I haven't found anytime to explore any of the tools or libraries to see how they work. I was saddened to not find any 010 Editor Binary Templates. Maybe something to play around with... The documentation from CCL Solutions Group should make it pretty straightforward.
 
