@@ -30,6 +30,7 @@ The following tools are being used:
 - 010 Editor
 - DB Browser for SQLite
 - ChromeCacheView
+- ChromeHistoryView
 - Hindsight
 
 
@@ -57,6 +58,10 @@ Strings does find files containing words that were part of a chat I had with Cha
 
 - `%localappdata%\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\IndexedDB\https_chatgpt.com_0.indexeddb.leveldb`
 - `%localappdata\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\Local Storage\leveldb`
+
+~~~
+strings -s "%localappdata%\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0" | findstr /i "snow"
+~~~
 
 Both of these are LevelDB databases. They also appear to log both sides of the conversation. Have to find a tool that can view/parse these into something more structured and readable. Viewing some of the files with 010 Editor makes it very obvious that conversations are contained within. 
 
