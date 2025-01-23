@@ -20,7 +20,9 @@ leveldb-cli is able to handle the IndexedDB idb_cmp1 comparator and LevelDBDumpe
 
 Running the following command:
 
-`leveldb -d "XXXXX\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\IndexedDB\https_chatgpt.com_0.indexeddb.leveldb" -i dump`
+~~~
+leveldb -d "XXXXX\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\IndexedDB\https_chatgpt.com_0.indexeddb.leveldb" -i dump
+~~~
 
 Dumps out all the messages from the chat with ChatGPT along with a load of other information. I haven't had a chance to explore what the other information is. I'll have to cross reference the research done by CCL Solutions Group. What is interesting, it is very obvious that ChatGPT uses Markdown to handle the formatting for the messages. 
 
@@ -30,7 +32,9 @@ Dumps out all the messages from the chat with ChatGPT along with a load of other
 
 Running the following command:
 
-`LevelDBDumper.exe -d "XXXXX\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\IndexedDB\https_chatgpt.com_0.indexeddb.leveldb"`
+~~~
+LevelDBDumper.exe -d "XXXXX\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\IndexedDB\https_chatgpt.com_0.indexeddb.leveldb"
+~~~
 
 Unfortunately results in no information besides the following message, "IndexedDB idb_cmp1 comparator not yet implemented, results will not be output".
 
