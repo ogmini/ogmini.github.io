@@ -60,6 +60,6 @@ This led me to once again, use strings to search for "QovPq6QZ7EK4CrJzMjxN7S" an
 
 Zipping over to ChromeCacheView, I see a handy record that links "file-QovPq6QZ7EK4CrJzMjxN7S" to "chromecacheview-startuppage.png". Right-clicking and choosing "Open Selected Cache File" even retrieves the image for us. In this case, the file is stored in the f_00001d data stream file and renaming the file to *.png allows us to open the file manually.  
 
-![chuploadview](/images/chatgpt/chromehistoryview-fileupload.png)
+![chuploadview](/images/chatgpt/chromecacheview-fileupload.png)
 
 
