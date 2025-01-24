@@ -7,7 +7,7 @@ tags:
  - challenge
 ---
 
-IN PROGRESS
+My submission to another one of David Cowen's Sunday Funday challenges. This time related to the ChatGPT Desktop Application. [https://www.hecfblog.com/2025/01/daily-blog-723-sunday-funday-11925.html](https://www.hecfblog.com/2025/01/daily-blog-723-sunday-funday-11925.html)
 
 ## Test Setup
 
