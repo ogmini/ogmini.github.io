@@ -15,4 +15,4 @@ The course has served as a great refresher from what I've learned previously. Al
 
 I was very happy to see that Belkasoft explained the artifacts and their locations so that one could manually find and parse the data. It is important to understand the artifacts and how they work in order to correctly interpret what any tools presents. Afterwards, they would show you how to get that information with Belkasoft X. 
 
-Hopefully I'll be able to tackle the final exam on later this week. 
+Hopefully I'll be able to tackle the final exam on later this week. I'll also have to tackle some of the older Belkasoft CTFs. 
