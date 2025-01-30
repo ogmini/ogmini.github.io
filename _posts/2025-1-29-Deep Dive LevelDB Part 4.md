@@ -11,10 +11,10 @@ Continuing work on the binary template file for the LevelDB .ldb files. Learning
 
 I'm leaning heavily at looking at the golang and C++ implementations of LevelDB on Google's various GitHub repositories. The following links have been useful:
 
-- https://github.com/golang/leveldb/blob/master/table/table.go
-- https://github.com/google/leveldb/blob/main/doc/table_format.md
-- https://github.com/google/leveldb/blob/main/table/block_builder.cc
-- https://www.cclsolutionsgroup.com/post/hang-on-thats-not-sqlite-chrome-electron-and-leveldb
+- [https://github.com/golang/leveldb/blob/master/table/table.go](https://github.com/golang/leveldb/blob/master/table/table.go)
+- [https://github.com/google/leveldb/blob/main/doc/table_format.md](https://github.com/google/leveldb/blob/main/doc/table_format.md)
+- [https://github.com/google/leveldb/blob/main/table/block_builder.cc](https://github.com/google/leveldb/blob/main/table/block_builder.cc)
+- [https://www.cclsolutionsgroup.com/post/hang-on-thats-not-sqlite-chrome-electron-and-leveldb](https://www.cclsolutionsgroup.com/post/hang-on-thats-not-sqlite-chrome-electron-and-leveldb)
 
 I still haven't made much progress due to time constraints. At the moment, I have implemented the structure for:
 
