@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zeltser Challnege - First Month Accomplishments
+title: Zeltser Challenge - First Month Accomplishments
 author: 'ogmini'
 tags:
  - musing
