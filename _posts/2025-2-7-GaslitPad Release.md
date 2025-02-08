@@ -7,6 +7,8 @@ tags:
  - GaslitPad
 ---
 
+![GaslitPad](/images/malware/Gaslitpad-logo.jpg)
+
 First release of the Proof of Concept Malware called GaslitPad for Windows Notepad. 
 
 [https://github.com/ogmini/Notepad-State-Library/releases/tag/GaslitPad](https://github.com/ogmini/Notepad-State-Library/releases/tag/GaslitPad)
