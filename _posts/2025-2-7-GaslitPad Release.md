@@ -9,8 +9,10 @@ tags:
 
 First release of the Proof of Concept Malware called GaslitPad for Windows Notepad. 
 
-[https://ogmini.github.io/2025/01/03/POC-Malware-Part-1.html](https://ogmini.github.io/2025/01/03/POC-Malware-Part-1.html)
-[https://ogmini.github.io/2025/01/31/POC-Malware-Part-2.html](https://ogmini.github.io/2025/01/31/POC-Malware-Part-2.html)
+[https://github.com/ogmini/Notepad-State-Library/releases/tag/GaslitPad](https://github.com/ogmini/Notepad-State-Library/releases/tag/GaslitPad)
+
+[https://ogmini.github.io/2025/01/03/POC-Malware-Part-1.html](https://ogmini.github.io/2025/01/03/POC-Malware-Part-1.html)   
+[https://ogmini.github.io/2025/01/31/POC-Malware-Part-2.html](https://ogmini.github.io/2025/01/31/POC-Malware-Part-2.html)  
 [https://ogmini.github.io/2025/02/01/POC-Malware-Part-3.html](https://ogmini.github.io/2025/02/01/POC-Malware-Part-3.html)
 
 ## Options
