@@ -41,7 +41,7 @@ FILETIME consists of two 32-bit values:
 - dwLowDateTime: The lower 32 bits of the timestamp.
 - dwHighDateTime: The upper 32 bits of the timestamp.
 
- Together these form a 64-bit timestamp representing the number of 100-nanosecond intervals since January 1, 1601 (UTC). Handy converter can be found at [https://www.epochconverter.com/ldap](https://www.epochconverter.com/ldap). I haven't found a converter that you can give the LowDateTime and HighDateTime yet, maybe something to write up for the future.
+ Together these form a 64-bit timestamp representing the number of 100-nanosecond intervals since January 1, 1601 (UTC). Handy converter can be found at [https://www.epochconverter.com/ldap](https://www.epochconverter.com/ldap). I wasn't able to find a converter that you can give the LowDateTime and HighDateTime so I ended up coding one up. I'm hosting it as a HTML page on GitHub at [https://ogmini.github.io/FILETIME_Converter_Page/](https://ogmini.github.io/FILETIME_Converter_Page/).
 
 ## Backup
 
