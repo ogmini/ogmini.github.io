@@ -23,6 +23,8 @@ We've been given four images:
 
 I'm hoping to get acquainted with the images and what they contain later tonight and tomorrow before the challenge questions are posted. 
 
+Jessica Hyde and Kevin Pagano gave a great CTF Workshop for participants. Some great information especially for someone who has never done a Magnet CTF. 
+
 ## Belkasoft CTF 01
 
 I have tackled the Belkasoft CTF 01: Insider Threat and noticed that some of the challenge questions are no longer solvable as they relied on websites that no longer exist. Some of the information was retrievable using the Internet Archive Wayback Machine and other files are no longer retrievable. I am currently in the process of writing up a report detailing the timeline of actions on the laptop. 
