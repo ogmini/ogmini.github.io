@@ -7,6 +7,8 @@ tags:
  - Challenges
 ---
 
+It is CTF time!
+
 ## Magnet 2025 CTF
 
 Magnet Forensics is holding their [CTF](https://magnetvirtualsummit.com/capture-the-flag/) on February 13, 2025 from 11AM-2PM EST. As this is during work hours for me, I will only be able to try it after the timed event is over. Luckily, they do keep the CTF and scoreboard up for most of the month. I've prepped my virtual machine, downloaded the image files, verified their hashes, and I'm currently processing the files in Magnet Axiom. Magnet has provided a temporary license to use during the competition. 
