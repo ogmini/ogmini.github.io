@@ -28,3 +28,5 @@ Jessica Hyde and Kevin Pagano gave a great CTF Workshop for participants. Some g
 ## Belkasoft CTF 01
 
 I have tackled the Belkasoft CTF 01: Insider Threat and noticed that some of the challenge questions are no longer solvable as they relied on websites that no longer exist. Some of the information was retrievable using the Internet Archive Wayback Machine and other files are no longer retrievable. I am currently in the process of writing up a report detailing the timeline of actions on the laptop. 
+
+One fun aspect of this CTF for me as a developer was examining a git repository from a forensic standpoint. 
