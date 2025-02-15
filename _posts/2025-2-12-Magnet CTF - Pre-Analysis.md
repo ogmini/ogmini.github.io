@@ -18,8 +18,8 @@ Utilizes the email address/account of ruthonthego98@gmail.com. Going to assume t
 Owns the following devices:
 | Device | Details |
 | --- | --- |
-| Chromebook | ChromeOS Version 129.0.6668.112 / HP Chromebook of some flavor
-| iPhone | iOS 18.0 / iPhone 14 Plus / IMSI 310280155382955
+| Chromebook | ChromeOS Version 129.0.6668.112 / HP Chromebook of some flavor |
+| iPhone | iOS 18.0 / iPhone 14 Plus / IMSI 310280155382955 |
 
 Google Takeout Zips:
 - 20241129T224833 - was provided as part of evidence
@@ -30,8 +30,8 @@ Utilizes the email address/account of chickadeemary2000@gmail.com. Also going to
 Owns the following devices:
 | Device | Details |
 | --- | --- |
-| Android | Android 13 / Pixel 7a / IMEI 354977434383601
-| Windows | Windows 11 24H2 / Dell System of some type 
+| Android | Android 13 / Pixel 7a / IMEI 354977434383601 |
+| Windows | Windows 11 24H2 / Dell System of some type |
 
 Google Takeout Zips:
 - 20241024T223619 - was found on the Windows System
