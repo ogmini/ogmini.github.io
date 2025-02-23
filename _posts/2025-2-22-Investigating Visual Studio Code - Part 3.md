@@ -66,4 +66,4 @@ Opening those files reveals the change history of this file overtime as seen bel
 
 ![SwdK.txt](/images/visualstudiocode/SwdK.png)
 
-I feel like it is pretty clear how this would be useful to investigators and how it could be leveraged by an attacker.
+I feel like it is pretty clear how this would be useful to investigators and how it could be leveraged by an attacker. I still have more to research on Visual Studio Code. Namely those SQLite databases and looking for more interesting related artifacts. 
