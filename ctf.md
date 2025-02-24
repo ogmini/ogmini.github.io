@@ -7,7 +7,8 @@ Links to writeups on CTFs/Challenges I've done. After Action Reports are writeup
 [https://www.magnetforensics.com/blog/magnet-virtual-summit-2025-capture-the-flag/](https://www.magnetforensics.com/blog/magnet-virtual-summit-2025-capture-the-flag/)
 
 - [Pre-Analysis](https://ogmini.github.io/2025/02/12/Magnet-CTF-Pre-Analysis.html)   
-- [Post-Analysis / General Lessons Learned](https://ogmini.github.io/2025/02/13/Magnet-CTF-Post-Analysis.html)    
+- [Post-Analysis / General Lessons Learned](https://ogmini.github.io/2025/02/13/Magnet-CTF-Post-Analysis.html)
+
 #### After Action Reports
 - [The SPIRITs are among us](https://ogmini.github.io/2025/02/23/AAR-The-SPIRITs-are-among-us.html)   
 - [A Shadow of the Real Thing](https://ogmini.github.io/2025/02/24/AAR-A-Shadow-of-the-Real-Thing.html)
