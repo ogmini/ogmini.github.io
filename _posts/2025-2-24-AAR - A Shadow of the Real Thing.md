@@ -28,7 +28,9 @@ This challenge was under the Windows 11 section and worth 25 points making it ar
 
 The Kali Linux WSL and vhdx file! This one really stung as I had specifically noticed and called out the existence of this in my [pre-analysis](https://ogmini.github.io/2025/02/12/Magnet-CTF-Pre-Analysis.html) and hadn't yet used that knowledge in solving any of the challenges. This will actually be a recurring theme for later "fails" and AARs. Noticing and making note of "interesting" artifacts but not actually connecting the dots or using them.
 
-Linux often utilizes a shadow file for authentication. This file contains usernames, an encrypted/hashed password among other pieces of information. It was as simple as grabbing the shadow file and opening it up as they only asked for the hash.   
+Linux often utilizes a shadow file for authentication. This file contains usernames, an encrypted/hashed password among other pieces of information. It was as simple as grabbing the shadow file and opening it up as they only asked for the hash. 
+
+[https://www.man7.org/linux/man-pages/man5/shadow.5.html](https://www.man7.org/linux/man-pages/man5/shadow.5.html)
 
 ### Lessons Learned
 
