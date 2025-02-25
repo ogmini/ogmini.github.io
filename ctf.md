@@ -12,6 +12,7 @@ Links to writeups on CTFs/Challenges I've done. After Action Reports are writeup
 #### After Action Reports
 - [The SPIRITs are among us](https://ogmini.github.io/2025/02/23/AAR-The-SPIRITs-are-among-us.html)   
 - [A Shadow of the Real Thing](https://ogmini.github.io/2025/02/24/AAR-A-Shadow-of-the-Real-Thing.html)
+- [Out of the Ordinary](https://ogmini.github.io/2025/02/25/AAR-Out-of-the-Ordinary.html)
 
 ### Belkasoft Capture the Flags
 
