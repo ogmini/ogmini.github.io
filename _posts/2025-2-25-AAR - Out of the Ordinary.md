@@ -43,3 +43,4 @@ Linux, more specifically Bash keeps a history of commands that have been execute
 
 1. Look at your pre-analysis notes and make note of what you haven't used. Remember the [Duck Test](https://en.wikipedia.org/wiki/Duck_test). 
 2. Don't get fixated! I got fixated on Windows 11 and continuted to ignore the Kali Linux artifact.
+3. Mistakes can compound and later challenges will often rely on previous knowledge.
