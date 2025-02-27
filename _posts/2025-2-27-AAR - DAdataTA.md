@@ -56,7 +56,7 @@ The StateTabs.csv file confirms the Selection Start/End Index.
 
 ![WindowStateTabs.csv](/images/DAdataTA/WindowStateTabs.png) 
 
-Looking at the WindowStateTabs.csv file, the highest Sequence Number is 3 which indicates which state is the latest. Initially they had three files open with the sucess.txt.txt tab being active. We can tell this by looking at the Tabs List and the Active Tab. The list uses 0 based indexing. Later, they opened the GC365HN.gpx file and it became the active tab. 
+Looking at the WindowStateTabs.csv file, the highest Sequence Number indicates which state is the latest. Initially they had three files open with the sucess.txt.txt tab being active. We can tell this by looking at the Tabs List and the Active Tab. The list uses 0 based indexing. Later, they opened the GC365HN.gpx file and it became the active tab. 
 
 ### Actual Solution
 
