@@ -15,6 +15,7 @@ Links to writeups on CTFs/Challenges I've done. After Action Reports are writeup
 - [Out of the Ordinary](https://ogmini.github.io/2025/02/25/AAR-Out-of-the-Ordinary.html)
 - [Dead Portrait Society](https://ogmini.github.io/2025/02/26/AAR-Dead-Portrait-Society.html)
 - [DAdataTA](https://ogmini.github.io/2025/02/27/AAR-DAdataTA.html)
+- [YOU Watch a Lot of space Videos](https://ogmini.github.io/2025/02/28/AAR-YOU-Watch-a-Lot-of-space-Videos.html)
 
 ### Belkasoft Capture the Flags
 
