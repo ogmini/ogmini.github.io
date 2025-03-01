@@ -13,7 +13,7 @@ NASA has a SQLite DB on your Android Phone?
 
 Continuing with my writeups on my "fails" or the ones I just couldn't figure out in the timeframe alloted. I want to talk about how I went about trying to solve the challenge and where I went wrong. This should help me in the future by highlighting weaknesses and areas for improvement. Each post will focus on just one "fail" challenge. You can find all my writeups [here](https://ogmini.github.io/ctf).
 
-## DAdataTA
+## YOU Watch a Lot of space Videos 
 
 Title: YOU Watch a Lot of space Videos      
 Description: What's the numerical rating for the app with the most installs?
