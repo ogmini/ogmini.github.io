@@ -38,4 +38,5 @@ It took me forever to cut the pieces out with normal scissors. I should have use
 1. I need a laser cutter to quickly cut puzzle pieces.
 2. The new generation doesn't know about rickrolling.
 3. Figure out how to involve the kids more in some age appropriate fashion.
+4. Seriously though, next time I'll at least take a quick look at cipher challenges.
 
