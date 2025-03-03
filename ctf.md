@@ -17,6 +17,7 @@ Links to writeups on CTFs/Challenges I've done. After Action Reports are writeup
 - [DAdataTA](https://ogmini.github.io/2025/02/27/AAR-DAdataTA.html)
 - [YOU Watch a Lot of space Videos](https://ogmini.github.io/2025/02/28/AAR-YOU-Watch-a-Lot-of-space-Videos.html)
 - [ICONic green bubbles](https://ogmini.github.io/2025/03/01/AAR-ICONic-green-bubbles.html)
+- [The masked singer](https://ogmini.github.io/2025/03/02/AAR-The-masked-singer.html)
 
 ### Belkasoft Capture the Flags
 
