@@ -19,6 +19,7 @@ Links to writeups on CTFs/Challenges I've done. After Action Reports are writeup
 - [ICONic green bubbles](https://ogmini.github.io/2025/03/01/AAR-ICONic-green-bubbles.html)
 - [The masked singer](https://ogmini.github.io/2025/03/02/AAR-The-masked-singer.html)
 - [All of my work is gone!](https://ogmini.github.io/2025/03/04/AAR-All-of-my-work-is-gone.html)
+- [Pigs in a Blanket](https://ogmini.github.io/2025/03/10/AAR-Pigs-in-a-Blanket.html)
 
 ### Belkasoft Capture the Flags
 
