@@ -22,6 +22,7 @@ Links to writeups on CTFs/Challenges I've done. After Action Reports are writeup
 - [Pigs in a Blanket](https://ogmini.github.io/2025/03/10/AAR-Pigs-in-a-Blanket.html)
 - [Dressing, with a dash, of 17 spices](https://ogmini.github.io/2025/03/11/AAR-Dressing-with-a-dash-of-17-spices.html)
 - [Capital Offense](https://ogmini.github.io/2025/03/12/AAR-Capital-Offense.html)
+- [100x Scale](https://ogmini.github.io/2025/03/13/AAR-100X-Scale.html)
 
 ### Belkasoft Capture the Flags
 
