@@ -19,3 +19,5 @@ I'll probably also spin up some test code projects to interface with the Graph A
 - [https://learn.microsoft.com/en-us/windows/uwp/security/web-account-manager](https://learn.microsoft.com/en-us/windows/uwp/security/web-account-manager)
 - [https://github.com/MicrosoftDocs/windows-dev-docs/blob/docs/uwp/security/web-account-manager.md](https://github.com/MicrosoftDocs/windows-dev-docs/blob/docs/uwp/security/web-account-manager.md)
 
+Maybe I should try my hand at this "vibe coding" to do this part.
+
