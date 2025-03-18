@@ -67,3 +67,5 @@ Nothing too wild or out of the ordinary when it comes to API calls. It is what I
 This Microsoft Correlation Vector sounds very interesting from my quick reading of the GitHub page. It sounds like it is primarily intended to assist in troubleshooting and debugging. Though same requirements usually translate very well into incident investigations. 
 
 I still need to dig deeper into the PCAP file from Wireshark to see if there are any other interesting artifacts. Realistically, no one is really going to be running a MITM type proxy logging all their traffic to even catch this. 
+
+Lastly, the conclusion to the story of Whiskers the cat will never be made public.
