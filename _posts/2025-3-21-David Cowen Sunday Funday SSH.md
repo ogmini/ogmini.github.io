@@ -17,13 +17,13 @@ What are all of the artifacts left behind on a Linux system (both server and cli
 
 I am performing testing using two Hyper-V VMs
 
-**Debian-Client**
-Debian GNU/Linux 12
-Default installation
+**Debian-Client**  
+Debian GNU/Linux 12   
+Default installation   
 
-**Debian-Server**
-Debian GNU/Linux 12
-Default installation w/SSH Server
+**Debian-Server**   
+Debian GNU/Linux 12   
+Default installation w/SSH Server  
 
 ### SSH Testing Steps
 1. Open SSH connection from Debian-Client to Debian-Server using "standard" username/password authentication
@@ -69,11 +69,15 @@ Funnily enough, this didn't pick up the modification on the .bash_history file. 
 
 Examining the .bash_history file with nano shows the specific ssh command used which is `ssh ogmini@debian-server`.
 
+[https://linuxconfig.org/how-to-manage-bash-history](https://linuxconfig.org/how-to-manage-bash-history)  
+
 ![bash_history](/images/ssh-challenge/1-bash_history.png)
 
 #### known_hosts
 
 The known_hosts file contains records for the Hostname, IP, Key Type, and Key. In our case, the Hostname and IP are obscured or rather hashed as the default setting for HashKnownHosts is yes. This can be changed on a system-wide basis by editing the /etc/ssh/ssh_config file or on a user basis by editing the ~/.ssh/config file. You should keep this hashed for obvious reasons. 
+
+[https://linux-audit.com/ssh/audit-ssh-configurations-hashknownhosts-option/](https://linux-audit.com/ssh/audit-ssh-configurations-hashknownhosts-option/)  
 
 ![known_hosts](/images/ssh-challenge/1-known_hosts.png)
 
@@ -195,3 +199,4 @@ In the moment, the following commands can be useful to investigate SSH connectio
 |ss|Both|Shows active SSH connections and also forwarded ports from an SSH Tunnel|
 |who|Server|Shows active user sessions|
 |w|Server|Shows active user sessions and a little more information than `who`|
+
