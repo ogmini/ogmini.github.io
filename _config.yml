@@ -2,7 +2,7 @@ title: ogmini - Exploration of DFIR
 description: Having fun while learning about and pivoting into the world of DFIR. 
 show_downloads: false
 future: false
-remote_theme: pages-themes/midnight@v0.2.0
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 - jekyll-feed
