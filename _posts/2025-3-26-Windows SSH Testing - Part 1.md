@@ -51,10 +51,12 @@ On the server Windows 11 machine, there are relevant logs to be found in the Eve
 
 Under Applications and Services Logs -> OpenSSH -> Operational we find log entries related to the password attempts by the user. Interestingly enough, Failure and Success are both logged with EventID 4.
 
-** Success **
+**Success**
+
 ![password success](/images/ssh-challenge-windows/ssh_logs_success.png)
 
-** Failure **
+**Failure**
+
 ![password failure](/images/ssh-challenge-windows/ssh_logs_fail.png)
 
 The next logs are found under Windows Logs -> Security and some will start to look familiar as being related to the normal user logon process.
