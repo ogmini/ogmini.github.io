@@ -56,7 +56,7 @@ OpenSSH_9.2p1 Debian-2+deb12u5, OpenSSL 3.0.15 3 Sep 2024
 
 I believe the artifacts will be similar to those found in Linux since both use OpenSSH. The paths will differ, but I expect to see a known_hosts file along with any public and private keys. Unlike Linux, Windows does not use systemd for logging; instead, it collects event logs which can be viewed in Event Viewer. It will be interesting to compare them and see if they both log similar information. 
 
-## Exploring for Artifacts
+### Exploring for Artifacts
 
 I'll be using the built in Windows Event Viewer to search for logs and Process Monitor to look for any registry keys or files that have been touched during testing. 
 
@@ -96,15 +96,29 @@ The artifacts on the client Windows 11 machine are the same as when connecting t
 
 On the server Windows 11 machine, there are relevant logs to be found in the Event Viewer. 
 
-Under Applications and Services Logs -> OpenSSH -> Operational we find log entries related to the password attempts by the user. Interestingly enough, Failure and Success are both logged with EventID 4.
+Under Applications and Services Logs -> OpenSSH -> Operational we find log entries related:
 
-**Success**
+- Password attempts
+- Disconnections
+- Connection Resets - These result from the user Ctrl-C'ing before a connection is made
+
+##### Success
 
 ![password success](/images/ssh-challenge-windows/ssh_logs_success.png)
 
-**Failure**
+##### Failure
 
 ![password failure](/images/ssh-challenge-windows/ssh_logs_fail.png)
+
+##### Disconnect
+
+![Disconnect 1](/images/ssh-challenge-windows/operational_disconnect_1.png)
+
+![Disconnect 2](/images/ssh-challenge-windows/operational_disconnect_2.png)
+
+#### Connection Reset
+
+![Connection Reset](/images/ssh-challenge-windows/ctrl_c.png)
 
 The next logs are found under Windows Logs -> Security and some will start to look familiar as being related to the normal user logon process.
 
