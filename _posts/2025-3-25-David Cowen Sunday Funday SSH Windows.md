@@ -21,13 +21,13 @@ I am performing testing using three Hyper-V VMs
 
 **Windows 11 Client**  
 Windows 11 Pro 24H2 26100.3476     
-Default installation
+Default installation   
 OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2   
 ![SSH Version](/images/ssh-challenge-windows/SSH-version-windows.png)       
 
 **Windows 11 Server**   
 Windows 11 Pro 24H2 26100.3476       
-Default installation w/SSH Server Feature       
+Default installation w/SSH Server Feature           
 OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2  
 ![SSHD Version](/images/ssh-challenge-windows/SSHD-version-windows.png)   
 
