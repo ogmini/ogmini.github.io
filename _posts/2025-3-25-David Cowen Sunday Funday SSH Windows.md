@@ -88,7 +88,7 @@ Using Process Monitor on the client Windows 11 Machine, we can see network traff
 
 ![network traffic](/images/ssh-challenge-windows/network.png)
 
-### Standrd Username/Password Authentication to Windows OpenSSH Server
+### Standard Username/Password Authentication to Windows OpenSSH Server
 
 The artifacts on the client Windows 11 machine are the same as when connecting to the Debian machine. 
 
