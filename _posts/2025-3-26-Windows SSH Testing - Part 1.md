@@ -49,15 +49,29 @@ The artifacts on the client Windows 11 machine are the same as when connecting t
 
 On the server Windows 11 machine, there are relevant logs to be found in the Event Viewer. 
 
-Under Applications and Services Logs -> OpenSSH -> Operational we find log entries related to the password attempts by the user. Interestingly enough, Failure and Success are both logged with EventID 4.
+Under Applications and Services Logs -> OpenSSH -> Operational we find log entries related:
 
-**Success**
+- Password attempts
+- Disconnections
+- Connection Resets - These result from the user Ctrl-C'ing before a connection is made
+
+##### Success
 
 ![password success](/images/ssh-challenge-windows/ssh_logs_success.png)
 
-**Failure**
+##### Failure
 
 ![password failure](/images/ssh-challenge-windows/ssh_logs_fail.png)
+
+##### Disconnect
+
+![Disconnect 1](/images/ssh-challenge-windows/operational_disconnect_1.png)
+
+![Disconnect 2](/images/ssh-challenge-windows/operational_disconnect_2.png)
+
+#### Connection Reset
+
+![Connection Reset](/images/ssh-challenge-windows/ctrl_c.png)
 
 The next logs are found under Windows Logs -> Security and some will start to look familiar as being related to the normal user logon process.
 
