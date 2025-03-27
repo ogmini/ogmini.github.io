@@ -145,7 +145,7 @@ In the log analysis below, we will see the following Logon IDs:
 
 ##### Successful Login
 
-Pay special attention to the Logon IDs which are listed right after the EventID. 
+Pay special attention to the Logon IDs which are listed right after the EventID. Also note that "WINDOWS-SSH-SER$" is the shortened name of the Windows Server machine. 
 
 1. EventID 4717 (0x3E7) - WINDOWS-SSH-SER$ is given the [SeServiceLogonRight](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/log-on-as-a-service). [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4717](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4717)       
 ![20090](/images/ssh-challenge-windows/20090.png)
@@ -219,3 +219,20 @@ Under Applications and Services Logs -> OpenSSH -> Operational, we see a record 
 ![SSH key login](/images/ssh-challenge-windows/ssh_key_server_1.png)
 
 The Windows Logs -> Security records are no different from the standard username/password authentication.
+
+## Conclusion
+
+For a default installation of Windows 11 the following files/locations could be of interest when trying to track SSH connections:
+
+| File/Location | Server/Client | Notes |
+|---|---|---|
+| `%appdata%/Microsoft\Windows\PowerShell\PSReadLine` | Client | Shows history of Powershell commands. Only useful if they used Powershell to initiate the SSH connection |
+| `%userprofile%\.ssh\known_hosts` | Client | Hostnames/IPs of trusted remote hosts. |
+| Windows Event Logs | Server | Logs on the server will show details about connections. These can be found at "Applications and Services Logs -> OpenSSH -> Operational" and "Windows Logs -> Security". Nothing on the client. |
+| Private Key | Client | Typically stored at `%userprofile%\.ssh`. |
+| Public Key | Both | Typically stored at `%userprofile%\.ssh` and possibly `C:\ProgramData\ssh\administrators_authorized_keys` on the server. |
+
+Assuming the Private key isn't passphrase protected, having the Private/Public keys are a big boon to any investigation. They would allow the investigator to connect to the remote host. 
+
+One interesting note, you can turn on local logging for sshd by editing the `C:\ProgramData\ssh\sshd_config` file. This will end up writing logs to the `C:\ProgramData\ssh\logs\sshd.log` file. Something to keep in mind if you are ever investigating SSH as this might be another source of artifacts. I did not test this.
+
