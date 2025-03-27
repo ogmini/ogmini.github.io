@@ -145,7 +145,7 @@ In the log analysis below, we will see the following Logon IDs:
 
 ##### Successful Login
 
-Pay special attention to the Logon IDs which are listed right after the EventID. Also note that "WINDOWS-SSH-SER$" is the shortened name of the Windows Server machine. 
+Pay special attention to the Logon IDs which are listed right after the EventID. Also note that "WINDOWS-SSH-SER$" is the shortened name of the server Windows 11 machine. 
 
 1. EventID 4717 (0x3E7) - WINDOWS-SSH-SER$ is given the [SeServiceLogonRight](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/log-on-as-a-service). [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4717](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4717)       
 ![20090](/images/ssh-challenge-windows/20090.png)
@@ -206,7 +206,7 @@ When a user connects but makes no attempt to enter a password, the logs are simi
 
 ### SSH Private/Public Key
 
-Unlike Debian, authenticating with keys must be explicitly enabled in Windows. I had to modify the sshd_config file located at `C:\ProgramData\ssh\sshd_config` to allow connections using a public key. [https://woshub.com/connect-to-windows-via-ssh/](https://woshub.com/connect-to-windows-via-ssh/). One point to note, you can enable local logging to the sshd.log file. Again, this is not enabled by default and instead logs are stored in the Windows Event Logs. 
+Unlike Debian, authenticating with keys must be explicitly enabled in Windows. I had to modify the sshd_config file located at `C:\ProgramData\ssh\sshd_config` to allow connections using a public key. Steps can be found at the following link along with some other details [https://woshub.com/connect-to-windows-via-ssh/](https://woshub.com/connect-to-windows-via-ssh/). One point to note, you can enable local logging to the sshd.log file. Again, this is not enabled by default and instead logs are stored in the Windows Event Logs. 
 
 By default the Private/Public keys are stored at `%userprofile%\.ssh`.
 
@@ -235,4 +235,11 @@ For a default installation of Windows 11 the following files/locations could be 
 Assuming the Private key isn't passphrase protected, having the Private/Public keys are a big boon to any investigation. They would allow the investigator to connect to the remote host. 
 
 One interesting note, you can turn on local logging for sshd by editing the `C:\ProgramData\ssh\sshd_config` file. This will end up writing logs to the `C:\ProgramData\ssh\logs\sshd.log` file. Something to keep in mind if you are ever investigating SSH as this might be another source of artifacts. I did not test this.
+
+## References
+
+- [https://woshub.com/connect-to-windows-via-ssh/](https://woshub.com/connect-to-windows-via-ssh/)
+- [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/)
+- [https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4672](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4672)
+- [https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/log-on-as-a-service](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/log-on-as-a-service)
 
