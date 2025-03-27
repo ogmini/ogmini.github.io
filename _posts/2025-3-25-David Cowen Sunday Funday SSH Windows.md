@@ -102,22 +102,18 @@ Under Applications and Services Logs -> OpenSSH -> Operational we find log entri
 - Disconnections
 - Connection Resets - These result from the user Ctrl-C'ing before a connection is made
 
-##### Success
-
+Success  
 ![password success](/images/ssh-challenge-windows/ssh_logs_success.png)
 
-##### Failure
-
+Failure  
 ![password failure](/images/ssh-challenge-windows/ssh_logs_fail.png)
 
-##### Disconnect
-
+Disconnect   
 ![Disconnect 1](/images/ssh-challenge-windows/operational_disconnect_1.png)
 
 ![Disconnect 2](/images/ssh-challenge-windows/operational_disconnect_2.png)
 
-#### Connection Reset
-
+Connection Reset   
 ![Connection Reset](/images/ssh-challenge-windows/ctrl_c.png)
 
 The next logs are found under Windows Logs -> Security and some will start to look familiar as being related to the normal user logon process.
