@@ -220,7 +220,35 @@ Under Applications and Services Logs -> OpenSSH -> Operational, we see a record 
 
 The Windows Logs -> Security records are no different from the standard username/password authentication.
 
+### Active Connections
+
+While an SSH connection is active lets see what is visible. Unlike Debian, the Windows alternative to the `who` and `w` command shows us no useful information. By looking at the "Users" tab in Task Manager, we can see all users accounts that are currently logged into the computer. In the screenshot below, we only see the "User" that we logged into the server Windows machine and no "User" account for the SSH connection.
+
+![users](/images/ssh-challenge-windows/users.png)
+
+Running `netstat` shows us the active SSH connection on port 22.
+
+![netstat](/images/ssh-challenge-windows/netstat.png)
+
+If we look at the "Processes" tab in Task Manager, there is an sshd process and when there is an active SSH connection it will have 4 child processes as in the first screenshot below. One of the sshd processes is the parent one and so for every active SSH connection there will be:
+
+- 1 Console Window Host process
+- 2 sshd processes
+- 1 Windows Command Processor process
+
+The second screenshot below shows what happens when there are two active SSH connections.
+
+![sshd-connected](/images/ssh-challenge-windows/sshd_connected.png)
+
+![sshd-connected-multi](/images/ssh-challenge-windows/sshd_connected_multi.png)
+
+A nicer hierarchical view is given by user Process Explorer.
+
+![process_explorer](/images/ssh-challenge-windows/process_explorer.png)
+
 ## Conclusion
+
+I ran out of time to do the testing for SSH Tunnels. I have a suspicion that the artifacts would be the similar just like they were for the Debian testing. 
 
 For a default installation of Windows 11 the following files/locations could be of interest when trying to track SSH connections:
 
@@ -235,6 +263,13 @@ For a default installation of Windows 11 the following files/locations could be 
 Assuming the Private key isn't passphrase protected, having the Private/Public keys are a big boon to any investigation. They would allow the investigator to connect to the remote host. 
 
 One interesting note, you can turn on local logging for sshd by editing the `C:\ProgramData\ssh\sshd_config` file. This will end up writing logs to the `C:\ProgramData\ssh\logs\sshd.log` file. Something to keep in mind if you are ever investigating SSH as this might be another source of artifacts. I did not test this.
+
+In the moment, the following tools/commands can be useful to investigate SSH connections:
+
+|Tool/Command|Server/Client|Notes|
+|---|---|---|
+|Task Manager/Process Explorer|Both|Shows either the `ssh` process on a client Windows machine or `sshd` processes and their children on a server Windows machine.|
+|netstat|Both|Shows active network connections and their ports| 
 
 ## References
 
