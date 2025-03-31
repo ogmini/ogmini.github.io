@@ -19,3 +19,4 @@ This list feels so short; but the AAR/Writeups for the MVS 2025 CTF took up a lo
 
 I still need to finish my writeup for the first Belkasoft CTF. 
 
+Oh, I've also changed the theme of the website. The "hacker" theme was getting old and seemed sort of juvenile. 
