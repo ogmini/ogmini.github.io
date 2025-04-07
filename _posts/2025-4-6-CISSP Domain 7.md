@@ -10,7 +10,7 @@ Domain 7 feels a bit like a rehash of my coursework. It focuses on managing inci
 
 ## Domain 7 - Security Operations
 
-- Typial DFIR stuff
+- Typical DFIR stuff
     - Chain of Custody
     - Evidence collection 
     - Types of investigations (Criminal, Civil, Regulatory, Administrative)
