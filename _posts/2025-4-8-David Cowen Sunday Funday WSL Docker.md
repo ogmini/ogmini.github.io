@@ -22,8 +22,8 @@ This is a pretty wide open challenge as there are no specifications on what dock
 ### OS Setup
 Windows 11 24H2 
 WSL 2 [https://learn.microsoft.com/en-us/windows/wsl/compare-versions](https://learn.microsoft.com/en-us/windows/wsl/compare-versions)
-Docker Desktop
-Kali Linux Container
+Docker Desktop v4.40.0
+Kali Linux Container 
 
 We'll spin up our standard W11 VM and make sure WSL2 is configured and enabled. Next, we'll install Docker Desktop and make sure that it is using WSL2. Last step is to get the Kali Linux Container up and running. 
 
