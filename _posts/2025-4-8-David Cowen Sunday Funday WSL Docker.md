@@ -20,10 +20,10 @@ What artifacts are left behind when running a docker container using Ubuntu WSL 
 This is a pretty wide open challenge as there are no specifications on what docker container to run or even version of WSL. So, we get to make those choices and figure out what we want to test and how we're going to test it. 
 
 ### OS Setup
-Windows 11 24H2 
-WSL 2 [https://learn.microsoft.com/en-us/windows/wsl/compare-versions](https://learn.microsoft.com/en-us/windows/wsl/compare-versions)
-Docker Desktop v4.40.0
-Kali Linux Container 
+Windows 11 24H2    
+WSL 2 [https://learn.microsoft.com/en-us/windows/wsl/compare-versions](https://learn.microsoft.com/en-us/windows/wsl/compare-versions)   
+Docker Desktop v4.40.0   
+Kali Linux Container    
 
 We'll spin up our standard W11 VM and make sure WSL2 is configured and enabled. Next, we'll install Docker Desktop and make sure that it is using WSL2. Last step is to get the Kali Linux Container up and running. 
 
