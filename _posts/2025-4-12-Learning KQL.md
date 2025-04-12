@@ -17,4 +17,9 @@ Some things that I really like about KQL:
 - Handling of dynamic columns/JSON. This is incredibly hard/impossible to do in SQL.
 - Have I mentioned how it handles time and queries with time based criteria?
 
-I'm hopin to give the [https://detective.kusto.io/](https://detective.kusto.io/) a whirl at some point. I wonder if it is something I could do together with my kid. 
+I'm hopin to give the [https://detective.kusto.io/](https://detective.kusto.io/) a whirl at some point. I wonder if it is something I could do together with my kid. I leave you with this terrible KQL joke query given to me by ChatGPT:
+
+> let humor = "Why did the SQL query go to therapy?";  
+> let punchline = "It had too many joins!";   
+> print humor, punchline
+
