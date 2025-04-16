@@ -8,6 +8,8 @@ tags:
  - WebBrowserPassView
 ---
 
+Today, we look at WebBrowserPassView from NirSoft as part of the [Sunday Funday Challenge](https://ogmini.github.io/2025/04/14/David-Cowen-Sunday-Funday-Browser-Password-Extraction.html). Nothing groundbreaking but a good exercise in double checking and verifying understanding and artifacts. 
+
 ### WebBrowserPassView
 
 ![WebBrowserPassView](/images/browserpass/WebBrowserPassView.png)
