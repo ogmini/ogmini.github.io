@@ -36,8 +36,12 @@ Event Logs related to Windows Defender are under Applications and Services Logs 
 
 ![Threat Quarantined](/images/browserpass/threat_quarantined.png)
 
+Windows Defender also has its own support logs located at `%ProgramData%\Microsoft\Windows Defender\Support\`. One thing that you might have noticed from the screenshots is a number **2147754837** that shows up in the Registry Keys, Event Logs, and the Support Logs. This ID Number can be used to follow/correlate records between the three sources. More importantly, this ID Number appears to be universal for the threat across systems. I had the same ID Number of **2147754837** on three different VMs for the same python file. Is this some internal ID Number on Microsoft's side or some other database? If anyone knows, I'm all ears.  
+
 ### LaZagne
 
 ![LaZagne](/images/browserpass/LaZagne.png)
 
-Running LaZagne with the command line arguments `browsers -oN` kicks out a text file of results that contains the timestamp in the filename. The timestamp follows the format of DDMMYYY_HHMMSS. Sadly, nothing of note was found in the Shimcache or AmCache. We do get a hit on the Prefetch files using PECmd which is related to python being executed. The "Files Loaded" and "Directories" contain references to the path were LaZagne exists. 
+Running LaZagne with the command line arguments `browsers -oN` kicks out a text file of results that contains the timestamp in the filename. The timestamp follows the format of DDMMYYY_HHMMSS. Sadly, nothing of note was found in the Shimcache or AmCache. We do get a hit on the Prefetch files using PECmd which is related to python being executed. The "Files Loaded" and "Directories" contain references to the path were LaZagne exists. Tenuous but something. 
+
+![Pefetch](/images/browserpass/prefetch.png)
