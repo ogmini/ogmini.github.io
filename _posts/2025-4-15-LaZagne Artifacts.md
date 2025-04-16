@@ -1,6 +1,6 @@
 ---
 layout: post
-title: David Cowen Sunday Funday Challenge - Browser Password Extraction Evidence
+title: David Cowen Sunday Funday Challenge - Browser Password Extraction Evidence (LaZagne)
 author: 'ogmini'
 tags:
  - sunday funday
