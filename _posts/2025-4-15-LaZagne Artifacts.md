@@ -42,6 +42,10 @@ Windows Defender also has its own support logs located at `%ProgramData%\Microso
 
 ![LaZagne](/images/browserpass/LaZagne.png)
 
-Running LaZagne with the command line arguments `browsers -oN` kicks out a text file of results that contains the timestamp in the filename. The timestamp follows the format of DDMMYYY_HHMMSS. Sadly, nothing of note was found in the Shimcache or AmCache. We do get a hit on the Prefetch files using PECmd which is related to python being executed. The "Files Loaded" and "Directories" contain references to the path were LaZagne exists. Tenuous but something. 
+Running LaZagne with the command line arguments `browsers -oN` kicks out a text file of results that contains the timestamp in the filename. The timestamp follows the format of DDMMYYY_HHMMSS. 
+
+![output](/images/browserpass/output_lazagne.png)
+
+Sadly, nothing of note was found in the Shimcache or AmCache. We do get a hit on the Prefetch files using PECmd which is related to python being executed. The "Files Loaded" and "Directories" contain references to the path were LaZagne exists. Tenuous but something. 
 
 ![Pefetch](/images/browserpass/prefetch.png)
