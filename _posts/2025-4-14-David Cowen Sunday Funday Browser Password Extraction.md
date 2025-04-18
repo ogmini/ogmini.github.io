@@ -80,3 +80,66 @@ Windows Defender also has its own support logs located at `%ProgramData%\Microso
 Running LaZagne with the command line arguments `browsers -oN` kicks out a text file of results that contains the timestamp in the filename. The timestamp follows the format of DDMMYYY_HHMMSS. Sadly, nothing of note was found in the Shimcache or AmCache. We do get a hit on the Prefetch files using PECmd which is related to python being executed. The "Files Loaded" and "Directories" contain references to the path were LaZagne exists. Tenuous but something. 
 
 ![Pefetch](/images/browserpass/prefetch.png)
+
+### WebBrowserPassView
+
+![WebBrowserPassView](/images/browserpass/WebBrowserPassView.png)
+
+Windows Defender does not seem to block the execution of WebBrowserPassView. It does however log its execution with an EventID of 1160. This is not the case with LaZagne as we had added it as an Allowed Threat.  
+
+![EventID 1160](/images/browserpass/event_passview.png)
+
+Every time WebBrowserPassView is executed, it will create/update a WebBrowserPassView.cfg on closing the application. The MAC Timestamps for this file can prove useful as it potentially show first closing and last closing.  
+
+![output](/images/browserpass/output_passview.png)
+
+There are artifacts to be found in the Prefetch, Shimcache, Amcache, amd MUICache. All the standard caveats apply to these artifacts and much research has already been published on them. I'll provide some links in the References section below.
+
+![Prefetch](/images/browserpass/prefetch_passview.png)
+
+![Shimcache](/images/browserpass/appcompatcache_passview.png)
+
+![Amcache](/images/browserpass/amcache_passview.png)
+
+![MUICache](/images/browserpass/muicache.png)
+
+### HackBrowserData
+
+Windows Defender REALLY does not like this executable. Just downloading the release from the GitHub required adding two seperate Allowed Threat exceptions. Again, we see similar Event Logs to LaZagne of detecting the threat, quarantining the threat, and allowing the threat.
+
+![Allowed Threats](/images/browserpass/hackbrowserdata_allowed.png)
+
+![Registry](/images/browserpass/hackbrowserdata_registry.png)
+
+![Event](/images/browserpass/hackbrowserdata_event.png)
+
+Every time HackBrowserData is executed, it will create/update csv files in a results folder. The MAC Timestamps for this file can prove useful as it potentially shows first execution by looking at the folder and the last execution by looking at the csv files. In this test I just ran the executable from Windows Explorer the same way that WebBrowserPassView was tested. 
+
+![Screenshot](/images/browserpass/hackbrowserdata_screenshot.png)
+
+There are artifacts to be found in the Prefetch and Amcache,  All the standard caveats apply to these artifacts and much research has already been published on them. I'll provide some links in the References section below.
+
+![Prefetch](/images/browserpass/hackbrowserdata_prefetch.png)
+
+![Amcache](/images/browserpass/hackbrowserdata_amcache.png)
+
+## Conclusion
+
+I didn't find any artifacts that would be considered out of the ordinary. Most of the artifacts centered around messing with Windows Defender to just get these tools to execute properly. Otherwise, they left some traces in a mixture of the Shimcache, Prefetch, Amcache, and MUICache. 
+
+| Tool | Windows Defender Artifacts | File Artifacts | Shimcache | Prefetch | Amcache | MUICache |
+| --- | --- | --- | --- | --- | --- | --- | 
+| LaZagne (Python Version) | x | * | | x | | |
+| WebBrowserPassView | x | * | x | x | x | x |  
+| HackBrowserData | x | * | | x | x | |
+
+Each of the tools did leave some sort of file system artifacts behind ranging from cfg files to folders. There is no guarantee these would be left behind and in the case of LaZagne it can be configured to not write to a file. 
+
+Sidenote, of the three tools I prefer LaZagne if I was just trying to get passwords from everything possible. HackBrowserData is a far more comprehensive tool for grabbing web browser data as it will get cookies, bookmarks, history, and much more. Windows Defender REALLY doesn't like it though. 
+
+## References
+
+[Shimcache - 13Cubed](https://www.youtube.com/watch?v=7byz1dR_CLg)  
+[Prefetch - 13Cubed](https://www.youtube.com/watch?v=f4RAtR_3zcs)   
+[Shimcache and Amcache - Magnet Forensics](https://www.magnetforensics.com/blog/shimcache-vs-amcache-key-windows-forensic-artifacts/)  
+[MUICache -13Cubed](https://www.youtube.com/watch?v=ea2nvxN878s)
