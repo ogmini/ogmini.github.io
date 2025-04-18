@@ -29,11 +29,13 @@ The browser password extractor is being left up to us though we were given two e
 
 ### Unrealistic Steps
 
-From my viewpoint, the following steps would be a little unrealistic for an attacker to actually perform. They would leave behind more artifacts though...
+Ended up not doing this
 
-4. Open/verify the contents of the output file from LaZagne
-5. Extract the file by uploading to an open NextCloud shared folder
-6. Look for more artifacts
+~~From my viewpoint, the following steps would be a little unrealistic for an attacker to actually perform. They would leave behind more artifacts though...~~
+
+4. ~~Open/verify the contents of the output file from LaZagne~~
+5. ~~Extract the file by uploading to an open NextCloud shared folder~~
+6. ~~Look for more artifacts~~
 
 ## Assumptions
 
