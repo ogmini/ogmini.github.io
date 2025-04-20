@@ -7,7 +7,7 @@ tags:
  - Research
 ---
 
-![Another One](another_one_cowen.png)
+![Another One](/images/memes/another_one_cowen.png)
 
 "Another One" - David Cowen, [https://www.hecfblog.com/2025/04/daily-blog-813-solution-saturday-41925.html](https://www.hecfblog.com/2025/04/daily-blog-813-solution-saturday-41925.html) that involved looking at artifacts left behind browser password tools. This reminded me that most of my understanding of Shimcache, Amcache, MUICache, and Prefetch is from other people's research, writeups, and classes. I have never personally done any verification or thorough testing. Maybe things have changed in Windows 11? The best way to truly know an artifact is to test it yourself.
 
