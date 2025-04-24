@@ -45,4 +45,4 @@ If you were to examine the state files while Windows Notepad was still open and 
 
 | Data | 11.2402.22.0 | 11.2407.9.0 | 11.2408.12.0 | Notes
 | --- | --- | --- | --- | --- |
-| Unsaved Buffer Chunks | x | x | x |  Identical |
+| Unsaved Buffer Chunks | x | x | x | Identical |
