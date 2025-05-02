@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MacOS / CISSP Practic Tests
+title: MacOS / CISSP Practice Tests
 author: 'ogmini'
 tags:
  - certification
