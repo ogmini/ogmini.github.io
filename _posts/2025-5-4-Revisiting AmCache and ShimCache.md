@@ -16,5 +16,7 @@ If you don't read the article for some terrible reason. The biggest takeaway/TLD
 
 ShimCache and AmCache provide evidence of EXISTENCE of an entry at a location. They should NOT be used to provide evidence of EXECUTION due to their complex behavior. 
 
+Finally, a big thanks to Andrew Rathbun for his continued work on maintaining KapeFiles so responsively. Everytime I submit something, I somehow learn something. My [pull request](https://github.com/EricZimmerman/KapeFiles/pull/1031) for a new Module got merged earlier today. 
+
 ## References
 - [https://www.cybertriage.com/blog/shimcache-and-amcache-forensic-analysis-2025/](https://www.cybertriage.com/blog/shimcache-and-amcache-forensic-analysis-2025/)
