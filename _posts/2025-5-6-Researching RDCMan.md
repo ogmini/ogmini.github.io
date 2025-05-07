@@ -23,7 +23,9 @@ These files are XML files and store all the information related to remote deskto
 Location: `%localappdata%\Microsoft\Remote Desktop Connection Manager`    
 Format: Folder Names
 
-From initial glance, it appears that RDCMan will create seemingly empty folders tied to the version of RDCMan being run. 
+From initial glance, it appears that RDCMan will create seemingly empty folders tied to the version of RDCMan being run.  
+
+CORRECTION - The folder that is created is for the version of RDCMan that was launched without a RDCMan.settings file previously existing. This is an interesting distinction.  
 
 ![RDCMan Version Folders](/images/RDCMan/rdcmanversions.png)
 
