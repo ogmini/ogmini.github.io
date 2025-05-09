@@ -2,6 +2,11 @@
 
 Links to pages on my research into various DFIR artifacts.
 
+- RDMan
+	- [https://ogmini.github.io/2025/05/06/Researching-RDCMan.html](https://ogmini.github.io/2025/05/06/Researching-RDCMan.html)
+	- [https://ogmini.github.io/2025/05/07/Researching-RDCMan-Part-2.html](https://ogmini.github.io/2025/05/07/Researching-RDCMan-Part-2.html)
+	- [https://ogmini.github.io/2025/05/08/RDCMan-Kape-Target.html](https://ogmini.github.io/2025/05/08/RDCMan-Kape-Target.html)
+	- [https://ogmini.github.io/2025/05/09/Researching-RDCMan-Part-3.html](https://ogmini.github.io/2025/05/09/Researching-RDCMan-Part-3.html)
 - Notepad++
 	- [https://ogmini.github.io/2025/02/08/Notepad++-Documenting-Digital-Artifacts.html](https://ogmini.github.io/2025/02/08/Notepad++-Documenting-Digital-Artifacts.html)
 	- [https://ogmini.github.io/2025/02/09/Notepad++-Documenting-Digital-Artifacts-Part-2.html](https://ogmini.github.io/2025/02/09/Notepad++-Documenting-Digital-Artifacts-Part-2.html)
