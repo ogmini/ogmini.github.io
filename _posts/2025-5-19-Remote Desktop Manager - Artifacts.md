@@ -17,7 +17,7 @@ Right off the bat, a folder is created in %localappdata% called "Devolutions" th
 | File | Location | File Type | Notes |
 | --- | --- | --- | --- |
 | Connections.db | %localappdata%\Devolutions\RemoteDesktopManager\Connections.db | SQLite Database | This is the default location and file. It contains all the information about connections. More details later. |
-| Connections.txt | %localappdata%\Devolutions\RemoteDesktopManager\Connections.txt | Text File | Appears to mirror log information in the Connections.db file. |
+| Connections.log | %localappdata%\Devolutions\RemoteDesktopManager\Connections.log | Text File | Appears to mirror log information in the Connections.db file. |
 | RemoteDesktopManager.cfg | %localappdata%\Devolutions\RemoteDesktopManager\RemoteDesktopManager.cfg | Text File | Configuration Settings. |
 | Mru.xml | %localappdata%\Devolutions\RemoteDesktopManager\[GUID]\Mru.xml | XML File | Contains most recently used connections. |
 | Favorites.xml | %localappdata%\Devolutions\RemoteDesktopManager\[GUID]\Favorites.xml | XML File | Contains favorited connections. |
