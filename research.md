@@ -7,6 +7,10 @@ Links to pages on my research into various DFIR artifacts.
 	- [https://ogmini.github.io/2025/05/07/Researching-RDCMan-Part-2.html](https://ogmini.github.io/2025/05/07/Researching-RDCMan-Part-2.html)
 	- [https://ogmini.github.io/2025/05/08/RDCMan-Kape-Target.html](https://ogmini.github.io/2025/05/08/RDCMan-Kape-Target.html)
 	- [https://ogmini.github.io/2025/05/09/Researching-RDCMan-Part-3.html](https://ogmini.github.io/2025/05/09/Researching-RDCMan-Part-3.html)
+- Remote Desktop Manager 
+	- [https://ogmini.github.io/2025/05/19/Remote-Desktop-Manager-Artifacts.html](https://ogmini.github.io/2025/05/19/Remote-Desktop-Manager-Artifacts.html)
+	- [https://ogmini.github.io/2025/05/20/Remote-Desktop-Manager-Artifacts-Part-2.html](https://ogmini.github.io/2025/05/20/Remote-Desktop-Manager-Artifacts-Part-2.html)
+	- [https://ogmini.github.io/2025/05/21/Remote-Desktop-Manager-Artifacts-Part-3.html](https://ogmini.github.io/2025/05/21/Remote-Desktop-Manager-Artifacts-Part-3.html)
 - Notepad++
 	- [https://ogmini.github.io/2025/02/08/Notepad++-Documenting-Digital-Artifacts.html](https://ogmini.github.io/2025/02/08/Notepad++-Documenting-Digital-Artifacts.html)
 	- [https://ogmini.github.io/2025/02/09/Notepad++-Documenting-Digital-Artifacts-Part-2.html](https://ogmini.github.io/2025/02/09/Notepad++-Documenting-Digital-Artifacts-Part-2.html)
