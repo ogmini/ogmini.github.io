@@ -35,11 +35,11 @@ activityKey,activityId,externalNumber,number,activityType,content,dataPath,direc
 
 I prompted all three LLMs with the same prompt and got different answers from all three.
 
-![Qwen](/images/sansransomeware2025/qwen.png)
+![Qwen](/images/sansransomeware2025/qwen.PNG)
 
-![CyberLlama](/images/sansransomeware2025/cyberllama.png)
+![CyberLlama](/images/sansransomeware2025/cyberllama.PNG)
 
-![Deepseek](/images/sansransomeware2025/deepseek.png)
+![Deepseek](/images/sansransomeware2025/deepseek.PNG)
 
 What really leaps out is that all three got the timestamps wrong. Taking a detailed look at the Unix Timestamp of 1705445560504 for the first record which translates to Tue Jan 16 2024 22:52:40 GMT.
 
