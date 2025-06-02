@@ -2,28 +2,33 @@
 
 Links to pages on my research into various DFIR artifacts.
 
-### RDCMan
+### <a name="RDCMan">RDCMan</a>
 - [https://ogmini.github.io/2025/05/06/Researching-RDCMan.html](https://ogmini.github.io/2025/05/06/Researching-RDCMan.html)
 - [https://ogmini.github.io/2025/05/07/Researching-RDCMan-Part-2.html](https://ogmini.github.io/2025/05/07/Researching-RDCMan-Part-2.html)
 - [https://ogmini.github.io/2025/05/08/RDCMan-Kape-Target.html](https://ogmini.github.io/2025/05/08/RDCMan-Kape-Target.html)
 - [https://ogmini.github.io/2025/05/09/Researching-RDCMan-Part-3.html](https://ogmini.github.io/2025/05/09/Researching-RDCMan-Part-3.html)
 
-### Remote Desktop Manager 
+### <a name="RDM">Remote Desktop Manager</a>  
 - [https://ogmini.github.io/2025/05/19/Remote-Desktop-Manager-Artifacts.html](https://ogmini.github.io/2025/05/19/Remote-Desktop-Manager-Artifacts.html)
 - [https://ogmini.github.io/2025/05/20/Remote-Desktop-Manager-Artifacts-Part-2.html](https://ogmini.github.io/2025/05/20/Remote-Desktop-Manager-Artifacts-Part-2.html)
 - [https://ogmini.github.io/2025/05/21/Remote-Desktop-Manager-Artifacts-Part-3.html](https://ogmini.github.io/2025/05/21/Remote-Desktop-Manager-Artifacts-Part-3.html)
+- [https://ogmini.github.io/2025/05/22/Remote-Desktop-Manager-SQLECmd-Map-Part-1.html](https://ogmini.github.io/2025/05/22/Remote-Desktop-Manager-SQLECmd-Map-Part-1.html)
+- [https://ogmini.github.io/2025/05/23/Remote-Desktop-Manager-Artifacts-Part-4.html](https://ogmini.github.io/2025/05/23/Remote-Desktop-Manager-Artifacts-Part-4.html)
+- [https://ogmini.github.io/2025/05/24/Remote-Desktop-Manager-Artifacts-Part-5.html](https://ogmini.github.io/2025/05/24/Remote-Desktop-Manager-Artifacts-Part-5.html)
+- [https://ogmini.github.io/2025/05/25/Remote-Desktop-Manager-Artifacts-Part-6.html](https://ogmini.github.io/2025/05/25/Remote-Desktop-Manager-Artifacts-Part-6.html)
 
-### Notepad++
+
+### <a name="Notepad++">Notepad++</a>  
 - [https://ogmini.github.io/2025/02/08/Notepad++-Documenting-Digital-Artifacts.html](https://ogmini.github.io/2025/02/08/Notepad++-Documenting-Digital-Artifacts.html)
 - [https://ogmini.github.io/2025/02/09/Notepad++-Documenting-Digital-Artifacts-Part-2.html](https://ogmini.github.io/2025/02/09/Notepad++-Documenting-Digital-Artifacts-Part-2.html)
 - [https://ogmini.github.io/2025/02/14/Windows-Notepad-vs-Notepad++.html](https://ogmini.github.io/2025/02/14/Windows-Notepad-vs-Notepad++.html)
 
-### Visual Studio Code
+### <a name="VSCode">Visual Studio Code</a>  
 - [https://ogmini.github.io/2025/02/15/Investigating-Visual-Studio-Code.html](https://ogmini.github.io/2025/02/15/Investigating-Visual-Studio-Code.html)
 - [https://ogmini.github.io/2025/02/16/Investigating-Visual-Studio-Code-Part-2.html](https://ogmini.github.io/2025/02/16/Investigating-Visual-Studio-Code-Part-2.html)
 - [https://ogmini.github.io/2025/02/22/Investigating-Visual-Studio-Code-Part-3.html](https://ogmini.github.io/2025/02/22/Investigating-Visual-Studio-Code-Part-3.html)
 
-### Windows Notepad
+### <a name="WindowsNotepad">Windows Notepad</a>  
 - [https://github.com/ogmini/Notepad-State-Library](https://github.com/ogmini/Notepad-State-Library)
 - [https://ogmini.github.io/2025/03/08/Windows-Notepad-Rewrite.html](https://ogmini.github.io/2025/03/08/Windows-Notepad-Rewrite.html)
 - [https://ogmini.github.io/2025/03/14/Windows-Notepad-Rewrite-Part-2.html](https://ogmini.github.io/2025/03/14/Windows-Notepad-Rewrite-Part-2.html)
@@ -31,8 +36,8 @@ Links to pages on my research into various DFIR artifacts.
 - [https://ogmini.github.io/2025/03/18/Windows-Notepad-Rewrite-Part-4.html](https://ogmini.github.io/2025/03/18/Windows-Notepad-Rewrite-Part-4.html)
 - [https://ogmini.github.io/2025/03/19/Windows-Notepad-Rewrite-Part-5.html](https://ogmini.github.io/2025/03/19/Windows-Notepad-Rewrite-Part-5.html)
 
-### OpenSSH on Debian
+### <a name="OpenSSHDebian">OpenSSH on Debian</a>  
 - [https://ogmini.github.io/2025/03/21/David-Cowen-Sunday-Funday-SSH.html](https://ogmini.github.io/2025/03/21/David-Cowen-Sunday-Funday-SSH.html)
 
-### OpenSSH on Windows 11
+### <a name="OpenSSHW11">OpenSSH on Windows 11</a>  
 - [https://ogmini.github.io/2025/03/25/David-Cowen-Sunday-Funday-SSH-Windows.html](https://ogmini.github.io/2025/03/25/David-Cowen-Sunday-Funday-SSH-Windows.html)
