@@ -30,7 +30,7 @@ The XML data stored in the Data column should not be glossed over as it contains
 - ModifiedDate is also stored here and named appropriately. 
 - ModifiedUsername/ModifiedLoggedUsername lets us know who last modified the attachment record. 
 - Filename provides the original filepath of the added file
-- SafePassword is an optional field that stores an encrypted password that was set by the user. This doesn't appear to have any security implications on the actual attachment. You do not need to provide it to view the attachment and it doesn't alter the AttachmentData column. 
+- SafePassword is an optional field that stores an encrypted password that was set by the user. This doesn't appear to have any security implications on the actual attachment. You do not need to provide it to view the attachment and it doesn't alter the AttachmentData column. This also doesn't appear to be seeded as the same password has the same bytes in different records.
 - Size provides the size in bytes of the original file. This does match unlike FileSize.
 - Title is the user provided name for this attachment.
 
