@@ -12,7 +12,7 @@ This is nothing new and has been around for years. But it is good practice to va
 
 `dpapi::rdg /in:[PATH_TO_RDG] /unprotect`  
 
-![mimiktaz](/images/mimitkaz/unprotect.png)
+![mimiktaz](/images/mimikatz/unprotect.png)
 
 Even though it is test data, I've covered over some information in the screenshot above. You can also see I had a typo. 
 
