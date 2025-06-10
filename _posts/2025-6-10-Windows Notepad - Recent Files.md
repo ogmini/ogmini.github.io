@@ -20,6 +20,8 @@ Windows Notepad keeps the recent list in the `settings.dat` which I've previousl
 | RecentFiles | 0x5f5e10c | CSV array. List is in descending order with the most recently closed file at the top. |
 | RecentFilesFirstLoad | 0x5f5e10b | 0 = Off / 1 = On |
 
+The items in the list are the full path to the file.
+
 ![Recent Files Registry](/images/windowsnotepad/recent_registry.png)
 
 ## Behaviour
@@ -27,3 +29,6 @@ Windows Notepad keeps the recent list in the `settings.dat` which I've previousl
 - Only keeps the last 10 recently closed files
 - Updates on closing a file and not when Windows Notepad itself is closed
 
+## Importance
+
+This artifact is seperate from the RecentFiles/RecentDocs registry entries and other artifacts that can show file/folder interactions. It can be used to validate other evidence and/or show evidence of a user attempting to hide their tracks. A user may clear the Recent Files while not being aware of the Recent Files in Windows Notepad and vice versa.   
