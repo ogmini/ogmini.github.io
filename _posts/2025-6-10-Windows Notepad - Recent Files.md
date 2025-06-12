@@ -18,6 +18,7 @@ Windows Notepad keeps the recent list in the `settings.dat` which I've previousl
 | KeyName | Type | Notes |
 | --- | --- | --- |
 | RecentFiles | 0x5f5e10c | CSV array. List is in descending order with the most recently closed file at the top. |
+| RecentFilesEnabled | 0x5f5e10b | 0 = Off / 1 = On |
 | RecentFilesFirstLoad | 0x5f5e10b | 0 = Off / 1 = On |
 
 The items in the list are the full path to the file.
