@@ -34,6 +34,13 @@ Links to pages on my research into various DFIR artifacts.
 - [https://ogmini.github.io/2025/03/16/Windows-Notepad-Rewrite-Part-3.html](https://ogmini.github.io/2025/03/16/Windows-Notepad-Rewrite-Part-3.html)
 - [https://ogmini.github.io/2025/03/18/Windows-Notepad-Rewrite-Part-4.html](https://ogmini.github.io/2025/03/18/Windows-Notepad-Rewrite-Part-4.html)
 - [https://ogmini.github.io/2025/03/19/Windows-Notepad-Rewrite-Part-5.html](https://ogmini.github.io/2025/03/19/Windows-Notepad-Rewrite-Part-5.html)
+- [https://ogmini.github.io/2025/04/23/Windows-Notepad-Version-Changes-(11.2402.22.0).html](https://ogmini.github.io/2025/04/23/Windows-Notepad-Version-Changes-(11.2402.22.0).html)
+- [https://ogmini.github.io/2025/04/24/Windows-Notepad-Version-Changes-(11.2407.9.0).html](https://ogmini.github.io/2025/04/24/Windows-Notepad-Version-Changes-(11.2407.9.0).html)
+- [https://ogmini.github.io/2025/04/25/Windows-Notepad-Version-Changes-(11.2408.12.0).html](https://ogmini.github.io/2025/04/25/Windows-Notepad-Version-Changes-(11.2408.12.0).html)
+- [https://ogmini.github.io/2025/04/27/Windows-Notepad-Version-Changes-(11.2049.9.0).html](https://ogmini.github.io/2025/04/27/Windows-Notepad-Version-Changes-(11.2049.9.0).html)
+- [https://ogmini.github.io/2025/06/10/Windows-Notepad-Recent-Files.html](https://ogmini.github.io/2025/06/10/Windows-Notepad-Recent-Files.html)
+- [https://ogmini.github.io/2025/06/11/Windows-Notepad-Find-Replace-Bing.html](https://ogmini.github.io/2025/06/11/Windows-Notepad-Find-Replace-Bing.html)
+- [https://ogmini.github.io/2025/06/12/Windows-Notepad-Revisiting-Application-Hive.html](https://ogmini.github.io/2025/06/12/Windows-Notepad-Revisiting-Application-Hive.html)
 
 ### OpenSSH on Debian 
 - [https://ogmini.github.io/2025/03/21/David-Cowen-Sunday-Funday-SSH.html](https://ogmini.github.io/2025/03/21/David-Cowen-Sunday-Funday-SSH.html)
