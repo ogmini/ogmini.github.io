@@ -18,6 +18,8 @@ The `User.dat` is found at `%localappdata%\Packages\Microsoft.WindowsNotepad_8we
 
 Chris Ray has a great post at [https://www.cybertriage.com/blog/windows-registry-forensics-cheat-sheet-2025/](https://www.cybertriage.com/blog/windows-registry-forensics-cheat-sheet-2025/) highlighting areas of interest in the Windows Registry. The `User.dat` follows the structure of the `NTUSER.DAT` but is application specific for Windows Notepad. The `UserClasses.dat` follows the structure of the `UsrClass.dat` but is application specific for Windows Notepad. Granted, I would not expect to see the RunMRU or OfficeMRU keys in the `User.dat`. 
 
+He has also posted about the Shellbags in the `UserClasses.dat` file at [https://www.cybertriage.com/blog/shellbags-forensic-analysis-2025/](https://www.cybertriage.com/blog/shellbags-forensic-analysis-2025/). Specifically using the Windows Notepad package as an example. Tools such as ShellBags Explorer/SBECmd can extract these digital artifacts. 
+
 I'll have to play around with this to verify behaviour. From what quick testing I've done already, I can see that TypedPaths is populated. I've also started on a batch file for RECmd to pull these out for faster analysis. Thanks as always to [Andrew Rathbun](https://www.linkedin.com/in/andrewrathbun) for pointing out more ways to contribute.  
 
 ![TypedPaths](/images/windowsnotepad/typedpaths.png)
