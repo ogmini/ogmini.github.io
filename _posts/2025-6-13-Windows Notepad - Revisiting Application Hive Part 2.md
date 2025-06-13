@@ -20,10 +20,12 @@ Chris Ray has a great post at [https://www.cybertriage.com/blog/windows-registry
 
 I'll have to play around with this to verify behaviour. From what quick testing I've done already, I can see that TypedPaths is populated. I've also started on a batch file for RECmd to pull these out for faster analysis. Thanks as always to [Andrew Rathbun](https://www.linkedin.com/in/andrewrathbun) for pointing out more ways to contribute.  
 
-![TypedPaths]](/images/windowsnotepad/typedpaths.png)
+![TypedPaths](/images/windowsnotepad/typedpaths.png)
 
 ## settings.dat
 
-RECmd and RegistryExplorer are currently unable to display the information from this file in a nice way. I took a peek at the various RegistryPlugins and I'm hoping to extend support to this file in the future. Should hopefully be straightforward. Just requires translating/interpreting the hex data. At the moment, if you run RECmd against the `settings.dat` you get the output below. If you know what you're looking at in the Value Data column it all makes sense.
+RECmd and RegistryExplorer are currently unable to display the information from this file in a nice way. I took a peek at the various RegistryPlugins and I'm hoping to extend support to this file in the future. At the moment, if you run RECmd/Registry Explorer against the `settings.dat` you get the output below. If you know what you're looking at in the Value Data column it all makes sense.
 
-![Future Registry Plugin]](/images/windowsnotepad/futureregistryplugin.png)
+![RECmd](/images/windowsnotepad/futureregistryplugin.png)
+
+![Registry Explorer](/images/windowsnotepad/futureregistryplugin2.png)
