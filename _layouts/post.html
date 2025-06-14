@@ -15,6 +15,16 @@ layout: default
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
 {% endif %}
 
+{% if page.tags %}
+  <small> tags:
+    {% for tag in page.tags %}
+        <a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">
+            #{{ tag }}
+        </a>
+    {% endfor %}
+  </small>
+{% endif %}
+
 <script src="https://giscus.app/client.js"
         data-repo="ogmini/ogmini.github.io"
         data-repo-id="R_kgDONPaN7Q"
