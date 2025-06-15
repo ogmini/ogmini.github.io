@@ -4,7 +4,7 @@ title: Remote Desktop Manager - Artifacts Part 2
 author: 'ogmini'
 tags:
  - DFIR
- - Remote Desktop Manager
+ - Remote-Desktop-Manager
 ---
 
 I submitted a Kape Target for Remote Desktop Manager. I fully expect that I'll be making changes to the Target even if it is to just update the documentation. Since yesterday's post, I've found a few things that I missed/glossed over initially. 
