@@ -8,11 +8,11 @@ tags:
 
 More of a thought exercise post on how UWP/Windows App SDK impacts the digital artifacts. It is Father's Day today so a really quick post. UWP was deprecated in favor of the Windows App SDK - [https://github.com/microsoft/WindowsAppSDK](https://github.com/microsoft/WindowsAppSDK). One of the key features is [MSIX](https://learn.microsoft.com/en-us/windows/msix/overview) which offers some nice features such as app containers. Quoting Microsoft here:
 
-```
-Apps that are packaged using MSIX can be configured to run in a lightweight app container. The app's process, and its child processes, run inside the container, and are isolated using file system and registry virtualization. For more info, see MSIX AppContainer apps.
 
-All AppContainer apps can read the global registry. An AppContainer app writes to its own virtual registry and application data folder, and that data is deleted when the app is uninstalled or reset. Other apps don't have access to the virtual registry or virtual file system of an AppContainer app.
-```
+> Apps that are packaged using MSIX can be configured to run in a lightweight app container. The app's process, and its child processes, run inside the container, and are isolated using file system and registry virtualization. For more info, see MSIX AppContainer apps.
+>
+> All AppContainer apps can read the global registry. An AppContainer app writes to its own virtual registry and application data folder, and that data is deleted when the app is uninstalled or reset. Other apps don't have access to the virtual registry or virtual file system of an AppContainer app.
+
 
 This is why we see the existence of `User.dat` and `UserClasses.dat` in very specific locations for each application. 
 
