@@ -12,13 +12,9 @@ layout: default
 {{content}}
 
 {% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
-
-{% if page.tags %}
   <small> tags:
     {% for tag in page.tags %}
-        <a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">
+        <a href="{{site.baseurl}}/tags.html#{{tag | slugize}}">
             #{{ tag }}
         </a>
     {% endfor %}
