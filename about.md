@@ -14,3 +14,7 @@ Hi, I'm Chris, also known as ogmini. My online alias reflects my passion for own
 
 ![Subaru Impreza 2.5RS](/images/SubaruImpreza1999.png)
 1999 Subaru Impreza 2.5RS - Road race car
+
+
+![Mini Cooper S R53](/images/2005_Mini_R53.jpg)
+2005 Mini Cooper S
