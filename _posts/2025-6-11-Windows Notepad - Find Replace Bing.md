@@ -4,7 +4,7 @@ title: Windows Notepad - Find/Replace/Bing
 author: 'ogmini'
 tags:
  - research
- - windows notepad 
+ - windows-notepad 
 ---
 
 As is often the case, investigating something new leads to finding more new stuff that I hadn't noticed before. The `settings.dat` application hive stores a few more digital artifacts that I had not documented previously.  There are four more keys and a network/browser history artifact.

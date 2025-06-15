@@ -5,7 +5,7 @@ author: 'ogmini'
 tags:
  - DFIR
  - AI
- - Cursor AI
+ - Cursor-AI
 ---
 
 David Cowen recently introduced me to [Cursor](https://www.cursor.com) which is an AI Code Editor and he has a few posts on his blog about using it that you can find [here](https://www.hecfblog.com/search/label/ai%20programming?&max-results=10). I wanted to play around with this and my recent work on researching Notepad++ gave me a good excuse as it provided a target that wasn't too complex. 

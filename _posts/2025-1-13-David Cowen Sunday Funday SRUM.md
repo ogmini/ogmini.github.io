@@ -3,7 +3,7 @@ layout: post
 title: David Cowen Sunday Funday Challenge - SRUM Validation 
 author: 'ogmini'
 tags:
- - sunday funday
+ - sunday-funday
  - challenge
 ---
 

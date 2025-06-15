@@ -3,7 +3,7 @@ layout: post
 title: Hurdles to competing in CTFs
 author: 'ogmini'
 tags:
- - CTF Challenges 
+ - CTF-Challenges 
 ---
 
 > How do you make the time to compete in CTFs? 

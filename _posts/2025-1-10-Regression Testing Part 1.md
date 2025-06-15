@@ -4,7 +4,7 @@ title: Forensics Software - Automated Regression/Version Testing Part 1
 author: 'ogmini'
 tags:
  - research
- - windows notepad 
+ - windows-notepad 
 ---
 
 I'm looking for some advice on how to automate regression testing for forensics software. As I researched Windows Notepad, Microsoft continually updated and made changes to how the binary files worked. I touched upon this issue in a previous post [https://ogmini.github.io/2024/11/27/Microsoft-Store-Older-Versions.html](https://ogmini.github.io/2024/11/27/Microsoft-Store-Older-Versions.html). 

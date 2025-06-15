@@ -4,7 +4,7 @@ title: Windows Notepad - Revisiting Application Hive
 author: 'ogmini'
 tags:
  - research
- - windows notepad 
+ - windows-notepad 
 ---
 
 Let's keep this ball rolling! Two different things I'm still looking at in more detail to understand them as much as possible. The first was a reminder by [@M4shl3](https://github.com/M4shl3) to look at the `User.dat` who recently left a comment on yesterday's [post](https://ogmini.github.io/2025/06/11/Windows-Notepad-Find-Replace-Bing.html). The second is more keys in the `settings.dat` that I had somehow missed previously or are new and a datapoint that isn't so obvious depending on how you look at the file. 

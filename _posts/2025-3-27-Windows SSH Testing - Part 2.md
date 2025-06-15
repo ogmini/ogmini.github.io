@@ -3,7 +3,7 @@ layout: post
 title: SSH Artifacts in Windows 11 - Part 2
 author: 'ogmini'
 tags:
- - sunday funday
+ - sunday-funday
  - challenge
 ---
 

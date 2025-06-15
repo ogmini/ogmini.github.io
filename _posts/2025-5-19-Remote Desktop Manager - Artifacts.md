@@ -4,7 +4,7 @@ title: Remote Desktop Manager - Artifacts
 author: 'ogmini'
 tags:
  - DFIR
- - Remote Desktop Manager
+ - Remote-Desktop-Manager
 ---
 
 Remote Desktop Manager from Devolutions is an alternative to RDCMan that offers more features and centralized capabilities. You can read more about the them on their website - [https://devolutions.net/remote-desktop-manager/](https://devolutions.net/remote-desktop-manager/). Today, I'll be looking at version 2025.1.38.0 of the "Free edition" on Windows 11 24H2 to see what digital artifacts it leaves behind. For now, I'll be using the default installation using the installer and not the standalone version.

@@ -4,6 +4,8 @@ title: Windows Notepad vs Notepad++ - Artifact Comparison
 author: 'ogmini'
 tags:
  - DFIR
+ - Windows-Notepad
+ - Notepad++
 ---
 
 It is always interesting to look at two different approaches to the same problem. Both Windows Notepad and Notepad++ are at their core text editors that support tabs and have the ability to keep unsaved changes between sessions. How they approach these features differ and we'll be talking about how these manifest themselves in the digital artifacts.

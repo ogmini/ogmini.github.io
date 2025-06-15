@@ -4,7 +4,7 @@ title: Microsoft Edge - AutoFill Database
 author: 'ogmini'
 tags:
  - DFIR
- - Microsoft Edge
+ - Microsoft-Edge
  - AutoFill
 ---
 

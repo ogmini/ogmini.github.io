@@ -4,6 +4,7 @@ title: Notepad++ - Documenting Digital Artifacts Part 2
 author: 'ogmini'
 tags:
  - DFIR
+ - Notepad++
 ---
 
 I think I'm done researching what digital artifacts can be retrieved from [Notepad++](https://notepad-plus-plus.org/). I've been able to confirm/validate the findings from [Forensafe](https://forensafe.com/blogs/windows_notepad++.html) and I will be providing more detailed information about them below. As I stated in [Part 1](https://ogmini.github.io/2025/02/08/Notepad++-Documenting-Digital-Artifacts.html), there is no real complication to the digital artifacts and everything is human readable with any text editor. In a future post, I will be pointing out how Windows Notepad and Notepad++ achieve similar functionality while storing the information differently. 

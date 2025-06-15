@@ -4,7 +4,7 @@ title: Remote Desktop Manager - Working on SQLECmd Map
 author: 'ogmini'
 tags:
  - DFIR
- - Remote Desktop Manager
+ - Remote-Desktop-Manager
 ---
 
 In the middle of finishing up a SQLMap for [SQLECmd](https://github.com/EricZimmerman/SQLECmd). Handy tool that can pull out targetted information from mapped SQLite databases and export them to CSV/JSON for ingestion by other tools such as Timeline Explorer. Pretty straightforward process and if you can write a SQL query, you can make a SQLMap for SQLECmd.

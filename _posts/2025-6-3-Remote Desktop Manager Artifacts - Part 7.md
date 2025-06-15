@@ -4,7 +4,7 @@ title: Remote Desktop Manager - Artifacts Part 7
 author: 'ogmini'
 tags:
  - DFIR
- - Remote Desktop Manager
+ - Remote-Desktop-Manager
 ---
 
 The 2025 NYS Cybersecurity Conference has been great so far and there is still one more day of presentations. I'm going to digest everything a little bit before posting my thoughts and experiences. Instead, I'm going back to Remote Desktop Manager and the ability to store attachments or files to a connection. Again, maybe useful for storing a script or some other file. The `Connections.db` stores the information related to this artifact in the Attachment table.

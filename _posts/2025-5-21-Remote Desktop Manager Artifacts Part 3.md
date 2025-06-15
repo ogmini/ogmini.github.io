@@ -4,7 +4,7 @@ title: Remote Desktop Manager - Artifacts Part 3
 author: 'ogmini'
 tags:
  - DFIR
- - Remote Desktop Manager
+ - Remote-Desktop-Manager
 ---
 
 Busy day at work today. Didn't have much bandwidth to poke around Remote Desktop Manager. I've always found it useful to utilize Database Diagrams to both understand and explain a database's data structure. For SQLite databases, I use a tool called [Dbeaver](https://dbeaver.io/) to easily auto-generate the Database Diagram for me and give me a good base to start better documentation. Oddly, I still prefer using SQLite Browser to examine the data. I've attached the generated image below.

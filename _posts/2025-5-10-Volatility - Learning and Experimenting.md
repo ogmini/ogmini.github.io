@@ -5,7 +5,7 @@ author: 'ogmini'
 tags:
  - DFIR
  - Volatility
- - Memory Forensics
+ - Memory-Forensics
 ---
 
 I've been wanting to dabble more with Volatility beyond the standard CTF or assignments that I had in my courses. I recently came across a [post](https://infosecwriteups.com/extracting-an-unsaved-memory-content-by-walking-through-windows-heaps-but-how-6992589d872e) talking about using Volatility to recover text from Notepad (The old version) for a CTF Challenge. I think it would be a fun exercise to write a Volatility plugin to specifically scan and parse out the Unsaved Buffer Chunks from active Windows Notepad sessions.    

@@ -4,7 +4,7 @@ title: Remote Desktop Manager - LOLRMM
 author: 'ogmini'
 tags:
  - DFIR
- - Remote Desktop Manager
+ - Remote-Desktop-Manager
  - LOLRMM
 ---
 

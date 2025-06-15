@@ -3,7 +3,7 @@ layout: post
 title: David Cowen Sunday Funday Challenge - Docker Containers on WSL Artifacts - Part 3
 author: 'ogmini'
 tags:
- - sunday funday
+ - sunday-funday
  - challenge
 ---
 

@@ -4,7 +4,7 @@ title: Remote Desktop Manager - Artifacts Part 4
 author: 'ogmini'
 tags:
  - DFIR
- - Remote Desktop Manager
+ - Remote-Desktop-Manager
 ---
 
 Quick post today as it is the start of the Memorial Day weekend! Remote Desktop Manager has the ability to add documentation to a connection. Useful for keeping notes, processes, and documentation in a place specifically related to that system. It is similar to a OneNote Notebook. The `Connections.db` stores the information related to this artifact in the following tables:

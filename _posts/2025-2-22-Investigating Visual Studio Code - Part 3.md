@@ -4,7 +4,7 @@ title: Investigating Visual Studio Code - Part 3
 author: 'ogmini'
 tags:
  - DFIR
- - Visual Studio Code
+ - Visual-Studio-Code
 ---
 
 Continuing from [Part 2](https://ogmini.github.io/2025/02/16/Investigating-Visual-Studio-Code-Part-2.html), the existence of the History folder threw me for a bit of a loop as I use other tools such as Git or TFS to handle versioning and history. There is a setting under Workbench related to Local History that is enabled by default. You can see the options in the screenshot below. 

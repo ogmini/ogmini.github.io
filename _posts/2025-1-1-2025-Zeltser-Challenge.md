@@ -3,6 +3,7 @@ layout: post
 title: 2025 Zeltser Challenge
 author: 'ogmini'
 tags:
+ - musing
 ---
 
 **Happy New Year and welcome to 2025!**

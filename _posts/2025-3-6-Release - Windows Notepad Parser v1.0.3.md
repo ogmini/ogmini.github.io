@@ -4,7 +4,7 @@ title: Release - Windows Notepad Parser v1.0.3
 author: 'ogmini'
 tags:
  - DFIR
- - Windows Notepad
+ - Windows-Notepad
 ---
 
 Releasing Version 1.0.3 of Windows Notepad Parser [https://github.com/ogmini/Notepad-State-Library/releases/tag/v1.0.3](https://github.com/ogmini/Notepad-State-Library/releases/tag/v1.0.3). This is a pure bug fix release. The Windowstate CSV file wasn't outputting the coordinates correctly.

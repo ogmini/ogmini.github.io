@@ -3,7 +3,7 @@ layout: post
 title: David Cowen Sunday Funday Challenge - Browser Password Extraction Evidence
 author: 'ogmini'
 tags:
- - sunday funday
+ - sunday-funday
  - challenge
 ---
 

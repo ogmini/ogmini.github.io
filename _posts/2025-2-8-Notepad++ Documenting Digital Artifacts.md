@@ -4,6 +4,7 @@ title: Notepad++ - Documenting Digital Artifacts
 author: 'ogmini'
 tags:
  - DFIR
+ - Notepad++
 ---
 
 Stemming from my research into Windows Notepad, I think it would be fun to take a look at Notepad++ and maybe other text editors like Visual Studio Code to see what kind of digital artifacts we can uncover. Personally, I use Notepad++ and I'm sure it is a very popular text editor for many other people. I'm sure others have already looked and I've found information from [Forensafe](https://forensafe.com/blogs/windows_notepad++.html) mainly showing how their tool can recover information. They didn't go into many details on the page and I think it would be worthwhile to document that more fully in the open for all to see. It is also possible that changes have been made to Notepad++ since the article. 

@@ -5,7 +5,7 @@ author: 'ogmini'
 tags:
  - DFIR
  - Volatility
- - Memory Forensics
+ - Memory-Forensics
 ---
 
 Had a little bit of time today to start an attempt at using Volatility to look at Windows Notepad. Sadly, I immediately encountered some issues and went into troubleshooting mode. I used both FTK Imager and DumpIt to obtain memory dumps from my test Windows 11 24H2 26100.3775 install just to make sure it wasn't an issue with the tool I was using. I also downloaded an older Windows 11 sample memory dump from [https://www.osforensics.com/tools/volatility-workbench.html](https://www.osforensics.com/tools/volatility-workbench.html). This loaded up fine in Volatility3 and I was able to examine it as expected. The windows.info plugin provided the information below:

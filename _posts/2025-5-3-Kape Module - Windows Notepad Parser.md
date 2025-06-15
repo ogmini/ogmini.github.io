@@ -4,7 +4,7 @@ title: KAPE Module - Windows Notepad Parser
 author: 'ogmini'
 tags:
  - DFIR
- - Windows Notepad
+ - Windows-Notepad
  - KapeFiles
 ---
 

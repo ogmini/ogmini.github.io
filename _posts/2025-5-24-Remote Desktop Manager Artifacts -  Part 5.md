@@ -4,7 +4,7 @@ title: Remote Desktop Manager - Artifacts Part 5
 author: 'ogmini'
 tags:
  - DFIR
- - Remote Desktop Manager
+ - Remote-Desktop-Manager
 ---
 
 Stealing 15 minutes away from the family weekend. Remote Desktop Manager supports the use of a master key for security. It encrypts the data sources [https://docs.devolutions.net/rdm/commands/file/change-master-key/](https://docs.devolutions.net/rdm/commands/file/change-master-key/). What artifacts do we lose access to if the master key is set?

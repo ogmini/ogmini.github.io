@@ -3,7 +3,7 @@ layout: post
 title: New Beginnings
 author: 'ogmini'
 tags:
- - Life Plan
+ - Life-Plan
 ---
 
 This blog will document my exploration of Digital Forensics and Incident Response (DFIR) as I make the transition into this exciting field. More importantly, it will serve as a centralized place to store my notes, observations, and learnings.

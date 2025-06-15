@@ -4,7 +4,7 @@ title: Windows Notepad - Version Changes (11.2407.9.0)
 author: 'ogmini'
 tags:
  - research
- - windows notepad 
+ - windows-notepad 
 ---
 
 Continuing to document the version changes to Windows Notepad state files and today we're comparing version 11.2407.9.0 to 11.2408.12.0. This could be useful if you somehow come across an older version of Windows Notepad on a system that is being investigated. For more details refer to [https://github.com/ogmini/Notepad-State-Library](https://github.com/ogmini/Notepad-State-Library). Unfortunately, I have been unable to track down the installer for 11.2404.10.0 and I don't seem to have a VM Snapshot with that version. If anyone happens to have that version, please reach out!

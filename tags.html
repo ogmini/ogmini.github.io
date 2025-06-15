@@ -4,9 +4,16 @@ title: "Posts by Tags"
 permalink: /tags.html
 ---
 
+{% capture tags %}
+  {% for tag in site.tags %}
+    {{ tag[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
 <h2> Posts organized by Tags</h2>
 
-{% for tag in site.tags %}
+{% for tag in sortedtags %}
   {% assign tag_name = tag | first %}
   <a href="{{site.baseurl}}/tags.html#{{tag_name | slugize}}">
             #{{ tag_name }}
@@ -16,7 +23,7 @@ permalink: /tags.html
 <hr/>
 
 <div id="tags-list">
-{% for tag in site.tags %}
+{% for tag in sortedtags %}
   {% assign tag_name = tag | first %}
   {% assign tag_name_pretty = tag_name | replace: "_", " " | capitalize %}
   <div class="tag-list">

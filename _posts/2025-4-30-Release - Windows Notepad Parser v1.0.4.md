@@ -4,7 +4,7 @@ title: Release - Windows Notepad Parser v1.0.4
 author: 'ogmini'
 tags:
  - DFIR
- - Windows Notepad
+ - Windows-Notepad
 ---
 
 Releasing Version 1.0.4 of Windows Notepad Parser [https://github.com/ogmini/Notepad-State-Library/releases/tag/v1.0.4](https://github.com/ogmini/Notepad-State-Library/releases/tag/v1.0.4). This is a bug/security fix release. 

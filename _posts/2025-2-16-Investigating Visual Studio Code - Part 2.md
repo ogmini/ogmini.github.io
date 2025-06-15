@@ -4,6 +4,7 @@ title: Investigating Visual Studio Code - Part 2
 author: 'ogmini'
 tags:
  - DFIR
+ - Visual-Studio-Code
 ---
 
 Still banging my head with the 2025 Magnet CTF and was able to solve a few more today. Let us get back to investigating Visual Studio Code!
