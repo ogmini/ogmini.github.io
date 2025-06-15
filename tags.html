@@ -15,9 +15,8 @@ permalink: /tags.html
 <h2> Posts organized by Tags</h2>
 
 {% for tag in sortedtags %}
-  {% assign tag_name = tag | first %}
-  <a href="{{site.baseurl}}/tags.html#{{tag_name | slugize}}">
-            #{{ tag_name }}
+  <a href="{{site.baseurl}}/tags.html#{{tag | slugize}}">
+            #{{ tag }}
         </a>
 {% endfor %}
 
@@ -25,14 +24,12 @@ permalink: /tags.html
 
 <div id="tags-list">
 {% for tag in sortedtags %}
-  {% assign tag_name = tag | first %}
-  {% assign tag_name_pretty = tag_name | replace: "_", " " | capitalize %}
   <div class="tag-list">
-    <div id="#{{ tag_name | slugize }}"></div>
-    <h3 class="post-list-heading line-bottom"> #{{ tag_name }}: </h3>
-    <a name="{{ tag_name | slugize }}"></a>
+    <div id="#{{ tag | slugize }}"></div>
+    <h3 class="post-list-heading line-bottom"> #{{ tag }}: </h3>
+    <a name="{{ tag | slugize }}"></a>
     <ul class="post-list post-list-narrow">
-     {% for post in site.tags[tag_name] %}
+     {% for post in site.tags[tag] %}
      <li>
        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
        <b>
