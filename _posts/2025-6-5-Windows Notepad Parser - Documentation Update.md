@@ -4,7 +4,7 @@ title: Windows Notepad Parser - Documentation Update
 author: 'ogmini'
 tags:
  - DFIR
- - Windows-Notepad
+ - windows-notepad
 ---
 
 No major changes to Windows Notepad Parser. Yogesh Khatri helpfully pointed out that I had not actually documented the command line arguments and it appeared that the program would only work on a live machine. I thank him for opening an [issue](https://github.com/ogmini/Notepad-State-Library/issues/1) to point this out. 

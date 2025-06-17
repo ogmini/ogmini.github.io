@@ -4,7 +4,7 @@ title: Windows Notepad - Rewrite / AI Part 2
 author: 'ogmini'
 tags:
  - DFIR
- - Windows-Notepad
+ - windows-notepad
 ---
 
 Continuing my research on Windows Notepad Rewrite [https://ogmini.github.io/2025/03/08/Windows-Notepad-Rewrite.html](https://ogmini.github.io/2025/03/08/Windows-Notepad-Rewrite.html). 

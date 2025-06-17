@@ -4,7 +4,7 @@ title: Windows Notepad vs Notepad++ - Artifact Comparison
 author: 'ogmini'
 tags:
  - DFIR
- - Windows-Notepad
+ - windows-notepad
  - Notepad++
 ---
 
