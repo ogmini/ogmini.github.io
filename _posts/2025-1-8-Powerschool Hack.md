@@ -3,7 +3,7 @@ layout: post
 title: Powerschool Hack
 author: 'ogmini'
 tags:
- - news 
+ - News 
 ---
 
 Yesterday news hit that Powerschool was hacked resulting in a threat actor stealing student and teacher data. Powerschool provides SIS platform software to K-12 schools. Bleeping Computer has a good article on the incident - [https://www.bleepingcomputer.com/news/security/powerschool-hack-exposes-student-teacher-data-from-k-12-districts/](https://www.bleepingcomputer.com/news/security/powerschool-hack-exposes-student-teacher-data-from-k-12-districts/).

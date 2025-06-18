@@ -3,7 +3,7 @@ layout: post
 title: Pearson - Cyberattack
 author: 'ogmini'
 tags:
- - news 
+ - News 
 ---
 
 ![Legacy Data](/images/memes/only_legacy_data.png)

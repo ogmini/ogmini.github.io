@@ -3,8 +3,7 @@ layout: post
 title: MSLab - Part 1
 author: 'ogmini'
 tags:
- - tools
- - homelab 
+ - Homelab 
 ---
 
 I've had a few free moments to test out [MSLab](https://github.com/microsoft/MSLab) and it seems very promising. By just downloading the scripts, two ISOs, and modifying 2 lines in a configuration script I was able to spin up a virtual network with a Server 2025 Domain Controller and two Windows 11 client machines that are already joined to the domain. When I'm done with the lab, I can just run the cleanup script and it removes all the VMs from Hyper-V. Redeploying the exact same lab again just requires running the deploy script with the appropriate configuration. 

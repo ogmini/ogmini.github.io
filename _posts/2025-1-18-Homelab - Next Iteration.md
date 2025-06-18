@@ -3,8 +3,7 @@ layout: post
 title: Homelab Part 2 - The Next Iteration        
 author: 'ogmini'
 tags:
- - tools
- - homelab
+ - Homelab
 ---
 
 Parts have started to arrive for the next iteration of my next server. I'll be keeping the same software stack as the current server and obviously repurposing the current server for other duties. In Part 3, I'll talk about the thought process that led me to this configuration and what other options I investigated.

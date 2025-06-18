@@ -3,8 +3,7 @@ layout: post
 title: Homelab Part 1 - The Current Setup        
 author: 'ogmini'
 tags:
- - tools
- - homelab
+ - Homelab
 ---
 
 I've always run a few personal "servers" at home running simple services like Plex, file storage, etc. When I started my Master's Degree, I wanted to setup a server to run Hyper-V so that I could keep all my coursework contained, backed up, and I could easily spin up VMs for exploration. Utilizing [tailscale](https://tailscale.com/) allowed me to access these VMs anytime, anywhere giving me the ability to easily work on assignments while on vacation or travelling. 

@@ -3,7 +3,7 @@ layout: post
 title: Hex Editors for Digital Forensics and Reverse Engineering        
 author: 'ogmini'
 tags:
- - tools
+ - Hex-Editors
 ---
 
 > What Hex Editor(s) do you prefer to use?

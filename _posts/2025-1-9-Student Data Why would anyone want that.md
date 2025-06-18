@@ -3,7 +3,7 @@ layout: post
 title: K-12 Student Data - Why would anyone steal that?
 author: 'ogmini'
 tags:
- - news 
+ - News 
 ---
 
 Today, I was talking to a few people about the PowerSchool hack and the question was posed, "Why would anyone want student data?". I was taken aback. In this post, I want to explore that question and give reasons why a threat actor would want this data with some hypothetical scenarios.

@@ -3,8 +3,7 @@ layout: post
 title: Homelab Part 3 - Thought Process        
 author: 'ogmini'
 tags:
- - tools
- - homelab
+ - Homelab
 ---
 
 ![5900xt](/images/5900xt.png)

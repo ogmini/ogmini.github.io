@@ -3,7 +3,7 @@ layout: post
 title: 010 Editor - RegistryHive Binary Template
 author: 'ogmini'
 tags:
- - registryhive
+ - Registryhive
  - 010-editor 
 ---
 
