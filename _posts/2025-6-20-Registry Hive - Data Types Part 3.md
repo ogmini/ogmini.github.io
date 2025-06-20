@@ -82,7 +82,7 @@ I have not completely figured out the format since I'm stuck on two things:
 1. The structure of the composite value subkeys
 2. Finish testing/clean up code for the array values 
 
-Just need to keep plugging away at it. Just knee deep in staring at a hex editor...
+Just need to keep plugging away at it. Just knee deep in staring at a hex editor... For the structure of the composite value keys, I can't figure out how the various subkey values are marked. How do I tell if a value is an int, string, etc. 
 
 ![010 Editor](/images/registry/settings_composite.png)
 
