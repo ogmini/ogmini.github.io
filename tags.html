@@ -7,7 +7,7 @@ permalink: /tags.html
 
 {% capture tags %}
   {% for tag in site.tags %}
-    {% if tag != '' %}
+    {% if tag != '-' %}
       {{ tag[0] }}
     {% endif %}
   {% endfor %}
