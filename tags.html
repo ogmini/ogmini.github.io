@@ -7,9 +7,7 @@ permalink: /tags.html
 
 {% capture tags %}
   {% for tag in site.tags %}
-    {% if tag != '-' %}
       {{ tag[0] }}
-    {% endif %}
   {% endfor %}
 {% endcapture %}
 {% assign sortedtags = tags | split:' ' | sort %}
