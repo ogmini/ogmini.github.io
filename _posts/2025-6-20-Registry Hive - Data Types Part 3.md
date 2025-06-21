@@ -33,7 +33,7 @@ indows.Storage.ApplicationDataContainer roamingSettings = Windows.Storage.Applic
 roamingSettings.Values["roamMyName"] = "Rover12";
 ```
 
-I'm happy to say that I have confirmed that there are 36 data types. 18 of them are arrays of the other 18. 
+I'm happy to say that I have confirmed that there are 37 data types with one of them being the Composite Value. 18 of them are arrays of the other 18 that are not the Composite Value. 
 
 | DataType | Identifier | 
 | --- | --- |
