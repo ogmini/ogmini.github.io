@@ -6,7 +6,7 @@ tags:
  - windows-notepad
 ---
 
-So yes, ended up quickly slamming out a not thoroughly tested pre-release of Windows State Editor. You can find the application at [https://github.com/ogmini/Notepad-State-Library/releases/tag/WindowsStateEditor](https://github.com/ogmini/Notepad-State-Library/releases/tag/WindowsStateEditor). 
+So yes, ended up quickly slamming out a not thoroughly tested pre-release of Window State Editor. You can find the application at [https://github.com/ogmini/Notepad-State-Library/releases/tag/WindowStateEditor](https://github.com/ogmini/Notepad-State-Library/releases/tag/WindowStateEditor). 
 
 No guardrails to stop you from breaking everything. Allows you to edit the list of tabs and specify the active tab. As the release notes state:
 
