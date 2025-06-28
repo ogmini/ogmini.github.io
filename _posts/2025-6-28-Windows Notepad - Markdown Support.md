@@ -7,7 +7,7 @@ tags:
  - windows-notepad 
 ---
 
-I picked a great time to go on vacation. Looks like my test system got the update (11.2504.62.0) for Windows Notepad that adds support for Markdown. 
+I picked a great time to go on vacation. Looks like my test system got the update (11.2504.62.0) for Windows Notepad that adds support for Markdown.
 
 ![Markdown](/images/windowsnotepad/markdown.png)
 
