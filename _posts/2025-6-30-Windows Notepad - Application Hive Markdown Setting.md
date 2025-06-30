@@ -11,6 +11,10 @@ With the introduction of Markdown support we have a new setting in the `settings
 
 ![FormattingEnabled](/images/windowsnotepad/FormattingEnabled.png)
 
+Using 010 Editor and the template.
+
+![010FormattingEnabled](/images/windowsnotepad/010FormattingEnabled.png)
+
 | KeyName | Type | Notes |
 | --- | --- | --- |
 | Formatting Enabled | 0x5f5e10b | 0 = Off / 1 = On |
