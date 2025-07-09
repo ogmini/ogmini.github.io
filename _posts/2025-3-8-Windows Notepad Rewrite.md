@@ -5,6 +5,7 @@ author: 'ogmini'
 tags:
  - DFIR
  - windows-notepad
+ - rewrite-AI
 ---
 
 Microsoft had previously added Rewrite to Windows Notepad on their dev release channels. It is now live to the public as of Windows Notepad Version 11.2412.16.0 and requires a subscription to Microsoft 365. I've already partially updated some of my documentation to note the new Application Hive entries related to Rewrite. 

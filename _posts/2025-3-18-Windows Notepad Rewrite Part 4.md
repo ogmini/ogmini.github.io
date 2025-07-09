@@ -5,6 +5,7 @@ author: 'ogmini'
 tags:
  - DFIR
  - windows-notepad
+ - rewrite-AI
 ---
 
 Progress has been made since [Part 3](https://ogmini.github.io/2025/03/16/Windows-Notepad-Rewrite-Part-3.html) in relation to the network traffic and API calls. As we discovered earlier, Windows Notepad makes API calls to apsaiservices.microsoft.com using TLSv1.3. I've now successfully decrypted the calls and I'm making progress in understanding the traffic. 
