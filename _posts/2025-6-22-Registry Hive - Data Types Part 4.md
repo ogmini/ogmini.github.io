@@ -6,7 +6,7 @@ tags:
  - Registryhive
 ---
 
-Still stuck on the CompositeValue and this is a reminder that most of my posts are daily updates on what I'm working on. This is where I currently stand and I have a feeling the fix is easy and I'm just unsure on how to account for it within 010 Editor's Binary Templates. 
+Still stuck on the CompositeValue and this is a reminder that most of my posts are daily updates on what I'm working on. This is where I currently stand and I have a feeling the fix is easy and I'm just unsure on how to account for it within 010 Editor's Binary Templates.
 
 The individual values contained within a CompositeValue are each  structured as:
 

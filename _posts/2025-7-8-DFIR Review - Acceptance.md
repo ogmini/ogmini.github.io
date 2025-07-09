@@ -10,4 +10,4 @@ I'm pretty sure I can talk about this. At the end of 2024, I submitted my resear
 
 I just sent a cleaned up document for some additions and a final review. Excited to see it published at some point in the future. I will have some pretty large revisions for the future as this was written prior to the Rewrite AI and Markdown features.  
 
-DFIR Review is made up of all volunteers and they definitely put a lot of work into reviewing submissions. Utmost admiration and respect to their work. I would love to see if I could volunteer in the future. 
+DFIR Review is made up of all volunteers and they definitely put a lot of work into reviewing submissions. Utmost admiration and respect to their work. I would love to see if I could volunteer in the future.

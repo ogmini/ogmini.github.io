@@ -4,7 +4,7 @@ title: KAPE Target - Windows Notepad
 author: 'ogmini'
 tags:
  - DFIR
- - windows-notepad
+ - Windows-Notepad
  - KAPE
 ---
 

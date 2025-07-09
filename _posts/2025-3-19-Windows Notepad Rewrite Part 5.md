@@ -4,8 +4,8 @@ title: Windows Notepad - Rewrite / AI Part 5
 author: 'ogmini'
 tags:
  - DFIR
- - windows-notepad
- - rewrite-AI
+ - Windows-Notepad
+ - Rewrite-AI
 ---
 
 Continuing from [Part 4](https://ogmini.github.io/2025/03/18/Windows-Notepad-Rewrite-Part-4.html) on researching Windows Notepad - Rewrite. Taking a little detour and looking at the Correlation Vector. I don't think this will be useful for anything; but I'll doument what I'm seeing. Maybe someone will recognize this or knows more than me and can reach out with more details!
@@ -22,5 +22,4 @@ NI01LloYmku1iDGUgN3LXQ.1
 
 ## Conclusion
 
-Is this useful? I doubt it. Is it interesting? Yes, it is always interesting to see how things work. 
-
+Is this useful? I doubt it. Is it interesting? Yes, it is always interesting to see how things work.

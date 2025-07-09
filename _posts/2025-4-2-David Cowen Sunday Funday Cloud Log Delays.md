@@ -3,8 +3,8 @@ layout: post
 title: David Cowen Sunday Funday Challenge - Cloud Log Availability Delays
 author: 'ogmini'
 tags:
- - sunday-funday
- - challenge
+ - Sunday-Funday
+ - Challenge
 ---
 
 David Cowen has posted his weekly Sunday Funday challenge at his [blog](https://www.hecfblog.com/2025/03/daily-blog-793-sunday-funday-33025.html) and it is about the looking at the delays present between action and log availability.
@@ -24,7 +24,7 @@ For the main cloud providers (AWS, Azure, Google Cloud) determine how long it ta
 ## Test Setup
 
 - I am performing testing on Microsoft Entra as part of a subscription for Microsoft 365 Business Standard.
-- I will be checking Sign-in, Audit, and Provisioning Logs under the Microsoft Entra admin center. 
+- I will be checking Sign-in, Audit, and Provisioning Logs under the Microsoft Entra admin center.
 - MFA is configured on this tenant.
 - Seconds are enabled on the Task Tray Clock
 
@@ -34,7 +34,7 @@ Initially, I had planned to check the logs using Graph API; but I do not have th
 
 [https://learn.microsoft.com/en-us/entra/identity/monitoring-health/quickstart-access-log-with-graph-api](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/quickstart-access-log-with-graph-api)
   
-One important thing to note from the Microsoft Documentation is they explicitly state to 
+One important thing to note from the Microsoft Documentation is they explicitly state to
 > Wait for 5 minutes to ensure that you can find the event in the sign-in log.
 
 We're going to test and verify this statement.
@@ -49,20 +49,20 @@ I successfully log in at 4:23:10 PM and start refreshing the search screen.
 
 ![Success Refresh](/images/cloudlogdelays/Success-Refresh.png)
 
-After refreshing the page at 4:27:04 the Success Log-in records are seen. 
+After refreshing the page at 4:27:04 the Success Log-in records are seen.
 
 ![Success Found](/images/cloudlogdelays/Success-Found.png)
 
 | RequestID (Censored) | Date | Status |
 | --- | --- | --- |
 | f1bb9a | 4/1/2025 4:23:09 PM | Interrupted |
-| 43e60d | 4/1/2025 4:23:11 PM | Success | 
+| 43e60d | 4/1/2025 4:23:11 PM | Success |
 | 225002 | 4/1/2025 4:23:12 PM | Success |
 | 0f4a0f | 4/1/2025 4:23:12 PM | Success |
 
-It is nice to see that the timestamps are not off or show any appreciable delay. I'm going to chalk the second difference up to network delay. 
+It is nice to see that the timestamps are not off or show any appreciable delay. I'm going to chalk the second difference up to network delay.
 
-There is a delay of about 4 minutes. 
+There is a delay of about 4 minutes.
 
 ### Failing to login
 
@@ -78,7 +78,7 @@ After refreshing the page at 4:42:59 PM the Failure Log-in record is seen.
 | --- | --- | --- |
 | 6351f6 | 4/2/2025 4:39:06 PM | Failure |
 
-Again the timestamps are not off or show any appreciable delay. I'm going to chalk the second difference up to network delay. 
+Again the timestamps are not off or show any appreciable delay. I'm going to chalk the second difference up to network delay.
 
 There is a delay of about 4 minutes.
 

@@ -7,7 +7,7 @@ tags:
  - Visual-Studio-Code
 ---
 
-Continuing from [Part 2](https://ogmini.github.io/2025/02/16/Investigating-Visual-Studio-Code-Part-2.html), the existence of the History folder threw me for a bit of a loop as I use other tools such as Git or TFS to handle versioning and history. There is a setting under Workbench related to Local History that is enabled by default. You can see the options in the screenshot below. 
+Continuing from [Part 2](https://ogmini.github.io/2025/02/16/Investigating-Visual-Studio-Code-Part-2.html), the existence of the History folder threw me for a bit of a loop as I use other tools such as Git or TFS to handle versioning and history. There is a setting under Workbench related to Local History that is enabled by default. You can see the options in the screenshot below.
 
 ![Settings - Local History](/images/visualstudiocode/Settings-LocalHistory.png)
 
@@ -19,9 +19,9 @@ I created a text file named "SecretConfig.txt" using Visual Studio Code and save
 
 ![Initial Password](/images/visualstudiocode/InitialSecret.png)
 
-I reopened Visual Studio Code and edited the file to change the SuperDuperSecretPassword to "NoOneW1llGuessThis!". I closed Visual Studio Code without saving the file. 
+I reopened Visual Studio Code and edited the file to change the SuperDuperSecretPassword to "NoOneW1llGuessThis!". I closed Visual Studio Code without saving the file.
 
-I again reopened Visual Studio Code, saved the changes to the file, and closed Visual Studio Code. 
+I again reopened Visual Studio Code, saved the changes to the file, and closed Visual Studio Code.
 
 ![Middle Password](/images/visualstudiocode/MiddleSecret.png)
 
@@ -31,7 +31,7 @@ I again reopened Visual Studio Code, changed the SuperDuperSecretPassword to "B3
 
 ## Artifacts
 
-Refer back to [Part 2](https://ogmini.github.io/2025/02/16/Investigating-Visual-Studio-Code-Part-2.html) and [Part 1](https://ogmini.github.io/2025/02/15/Investigating-Visual-Studio-Code.html) for specifics on files and file locations. 
+Refer back to [Part 2](https://ogmini.github.io/2025/02/16/Investigating-Visual-Studio-Code-Part-2.html) and [Part 1](https://ogmini.github.io/2025/02/15/Investigating-Visual-Studio-Code.html) for specifics on files and file locations.
 
 As we were making changes to the "SecretConfig.txt" file, a file was created in the Backup folder at the following path:
 
@@ -41,7 +41,7 @@ The name of the folder 1740273425117 is a Unix Timestamp and actually correspond
 
 ![Backup Contents](/images/visualstudiocode/Backup.png)
 
-We can see the filepath, a JSON object, and contents of the file. 
+We can see the filepath, a JSON object, and contents of the file.
 
 If we zip over to the History folder at the conclusion of our Scenario we find the following path:
 
@@ -54,7 +54,7 @@ I have yet to determine how the name of the folder is determined. This folder co
 - Em27.txt
 - SwdK.txt
 
-Examining `entries.json` shows us a handy JSON file with with entries that chronologically order the other files with timestamps and IDs. There is also a handy source for the first entry that lets us know the file was created by Visual Studio Code. 
+Examining `entries.json` shows us a handy JSON file with with entries that chronologically order the other files with timestamps and IDs. There is also a handy source for the first entry that lets us know the file was created by Visual Studio Code.
 
 ![entries.json](/images/visualstudiocode/Entries-JSON.png)
 
@@ -66,4 +66,4 @@ Opening those files reveals the change history of this file overtime as seen bel
 
 ![SwdK.txt](/images/visualstudiocode/SwdK.png)
 
-I feel like it is pretty clear how this would be useful to investigators and how it could be leveraged by an attacker. I still have more to research on Visual Studio Code. Namely those SQLite databases and looking for more interesting related artifacts. 
+I feel like it is pretty clear how this would be useful to investigators and how it could be leveraged by an attacker. I still have more to research on Visual Studio Code. Namely those SQLite databases and looking for more interesting related artifacts.

@@ -4,20 +4,20 @@ title: Diving Deep - LevelDB Part 3
 author: 'ogmini'
 tags:
  - LevelDB
- - exploration
+ - Exploration
 ---
 
-Continuing my analysis of the ChatGPT Desktop App by creating binary template files to help me understand the LevelDB and IndexedDB databases. I personally find it useful to "visually" see the binary files structured in hex editors like 010 Editor and ImHex. It helps me know if I'm on the right track and it is pretty easy to later convert that to code for a tool. 
+Continuing my analysis of the ChatGPT Desktop App by creating binary template files to help me understand the LevelDB and IndexedDB databases. I personally find it useful to "visually" see the binary files structured in hex editors like 010 Editor and ImHex. It helps me know if I'm on the right track and it is pretty easy to later convert that to code for a tool.
 
-I'll be starting with the easier LevelDB .log files and work my way up in complexity. Alex Caithness over at CCL Solutions Group has a great [article](https://www.cclsolutionsgroup.com/post/hang-on-thats-not-sqlite-chrome-electron-and-leveldb) on the format and I worked from that as a starting point. 
+I'll be starting with the easier LevelDB .log files and work my way up in complexity. Alex Caithness over at CCL Solutions Group has a great [article](https://www.cclsolutionsgroup.com/post/hang-on-thats-not-sqlite-chrome-electron-and-leveldb) on the format and I worked from that as a starting point.
 
-I created the binary template file for the standard LevelDB .log files. The file needs some cleanup and I haven't yet had the chance to create a GitHub Repository to hold them. I'll post it below, but it would be wise to check my GitHub for an updated/clean version at a later date. I've started on the binary template file for the LevelDB .ldb files. This one is a little more complex and I've run out of steam for the day. 
+I created the binary template file for the standard LevelDB .log files. The file needs some cleanup and I haven't yet had the chance to create a GitHub Repository to hold them. I'll post it below, but it would be wise to check my GitHub for an updated/clean version at a later date. I've started on the binary template file for the LevelDB .ldb files. This one is a little more complex and I've run out of steam for the day.
 
 The IndexdDB files are a different beast all together. Again, I'll be leveraging prior research by [Alex Caithness](https://www.cclsolutionsgroup.com/post/indexeddb-on-chromium).
 
 ## Preliminary Binary Template
 
-```
+``` C
 //------------------------------------------------
 //--- 010 Editor v15.0.1 Binary Template
 //
@@ -92,4 +92,3 @@ local int i;
 bl block;     
 }
 ```
-

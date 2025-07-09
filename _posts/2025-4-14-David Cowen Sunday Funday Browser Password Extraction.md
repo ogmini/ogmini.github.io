@@ -3,13 +3,13 @@ layout: post
 title: David Cowen Sunday Funday Challenge - Browser Password Extraction Evidence
 author: 'ogmini'
 tags:
- - sunday-funday
- - challenge
+ - Sunday-Funday
+ - Challenge
 ---
 
-Another week, another David Cowen Sunday Funday challenge posted at his [blog](https://www.hecfblog.com/2025/04/daily-blog-807-sunday-funday-41325.html) and it is about looking for artifacts left behind by browser password extraction programs such as WebBrowserPassView. 
+Another week, another David Cowen Sunday Funday challenge posted at his [blog](https://www.hecfblog.com/2025/04/daily-blog-807-sunday-funday-41325.html) and it is about looking for artifacts left behind by browser password extraction programs such as WebBrowserPassView.
 
-Can I defend my streak? I'm not in this to win anything. These challenges provide a good way to focus on different areas and work on methodology. I'm really hoping for others to participate as I feel I can learn a lot more from their writeups. 
+Can I defend my streak? I'm not in this to win anything. These challenges provide a good way to focus on different areas and work on methodology. I'm really hoping for others to participate as I feel I can learn a lot more from their writeups.
 
 ## Challenge
 
@@ -33,23 +33,23 @@ Ended up not doing this
 
 ~~From my viewpoint, the following steps would be a little unrealistic for an attacker to actually perform. They would leave behind more artifacts though...~~
 
-4. ~~Open/verify the contents of the output file from LaZagne~~
-5. ~~Extract the file by uploading to an open NextCloud shared folder~~
-6. ~~Look for more artifacts~~
+- ~~Open/verify the contents of the output file from LaZagne~~
+- ~~Extract the file by uploading to an open NextCloud shared folder~~
+- ~~Look for more artifacts~~
 
 ## Assumptions
 
-Honestly, I'll be surprised if we can find any weird artifacts. I may have to add Windows Defender exclusions to let the program run. An attacker could customize and compile their own version but that will be out of scope of this testing. This could make it harder to detect. I will look for artifacts of these exclusions being put into place and later removed. 
+Honestly, I'll be surprised if we can find any weird artifacts. I may have to add Windows Defender exclusions to let the program run. An attacker could customize and compile their own version but that will be out of scope of this testing. This could make it harder to detect. I will look for artifacts of these exclusions being put into place and later removed.
 
-There might be some artifacts left in the Prefetch files, Shimcache, and Amcache. I don't expect to see much in the Event Logs; but it is worth checking. 
+There might be some artifacts left in the Prefetch files, Shimcache, and Amcache. I don't expect to see much in the Event Logs; but it is worth checking.
 
 ## Testing
 
-Messing around with Windows Defender just to download and execute LaZagne locally leaves artifacts behind related to exclusions. There are of course other more stealthy ways to run LaZagne by using RATs such as [Pupy](https://github.com/n1nj4sec/pupy/) or [Meterpreter/Metasploit](https://www.metasploit.com/). 
+Messing around with Windows Defender just to download and execute LaZagne locally leaves artifacts behind related to exclusions. There are of course other more stealthy ways to run LaZagne by using RATs such as [Pupy](https://github.com/n1nj4sec/pupy/) or [Meterpreter/Metasploit](https://www.metasploit.com/).
 
-### Windows Defender 
+### Windows Defender
 
-For this testing, I downloaded the python script for LaZagne and Windows Defender alerted on and removed the files. I added an Exclusion Folder to Windows Defender. I did not use the standalone executable as it doesn't appear to have been compiled with all the modules required to grab browser passwords. Running the python script results in Windows Defender quarantining the file and I have to add it to the Allowed threats list. 
+For this testing, I downloaded the python script for LaZagne and Windows Defender alerted on and removed the files. I added an Exclusion Folder to Windows Defender. I did not use the standalone executable as it doesn't appear to have been compiled with all the modules required to grab browser passwords. Running the python script results in Windows Defender quarantining the file and I have to add it to the Allowed threats list.
 
 Exclusions can be found in the Registry at the following location `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions`
 
@@ -79,7 +79,7 @@ Windows Defender also has its own support logs located at `%ProgramData%\Microso
 
 ![LaZagne](/images/browserpass/LaZagne.png)
 
-Running LaZagne with the command line arguments `browsers -oN` kicks out a text file of results that contains the timestamp in the filename. The timestamp follows the format of DDMMYYY_HHMMSS. Sadly, nothing of note was found in the Shimcache or AmCache. We do get a hit on the Prefetch files using PECmd which is related to python being executed. The "Files Loaded" and "Directories" contain references to the path were LaZagne exists. Tenuous but something. 
+Running LaZagne with the command line arguments `browsers -oN` kicks out a text file of results that contains the timestamp in the filename. The timestamp follows the format of DDMMYYY_HHMMSS. Sadly, nothing of note was found in the Shimcache or AmCache. We do get a hit on the Prefetch files using PECmd which is related to python being executed. The "Files Loaded" and "Directories" contain references to the path were LaZagne exists. Tenuous but something.
 
 ![Pefetch](/images/browserpass/prefetch.png)
 
@@ -115,7 +115,7 @@ Windows Defender REALLY does not like this executable. Just downloading the rele
 
 ![Event](/images/browserpass/hackbrowserdata_event.png)
 
-Every time HackBrowserData is executed, it will create/update csv files in a results folder. The MAC Timestamps for this file can prove useful as it potentially shows first execution by looking at the folder and the last execution by looking at the csv files. In this test I just ran the executable from Windows Explorer the same way that WebBrowserPassView was tested. 
+Every time HackBrowserData is executed, it will create/update csv files in a results folder. The MAC Timestamps for this file can prove useful as it potentially shows first execution by looking at the folder and the last execution by looking at the csv files. In this test I just ran the executable from Windows Explorer the same way that WebBrowserPassView was tested.
 
 ![Screenshot](/images/browserpass/hackbrowserdata_screenshot.png)
 
@@ -127,21 +127,21 @@ There are artifacts to be found in the Prefetch and Amcache,  All the standard c
 
 ## Conclusion
 
-I didn't find any artifacts that would be considered out of the ordinary. Most of the artifacts centered around messing with Windows Defender to just get these tools to execute properly. Otherwise, they left some traces in a mixture of the Shimcache, Prefetch, Amcache, and MUICache. 
+I didn't find any artifacts that would be considered out of the ordinary. Most of the artifacts centered around messing with Windows Defender to just get these tools to execute properly. Otherwise, they left some traces in a mixture of the Shimcache, Prefetch, Amcache, and MUICache.
 
 | Tool | Windows Defender Artifacts | File Artifacts | Shimcache | Prefetch | Amcache | MUICache |
-| --- | --- | --- | --- | --- | --- | --- | 
+| --- | --- | --- | --- | --- | --- | --- |
 | LaZagne (Python Version) | x | * | | x | | |
 | WebBrowserPassView | x | * | x | x | x | x |  
 | HackBrowserData | x | * | | x | x | |
 
-Each of the tools did leave some sort of file system artifacts behind ranging from cfg files to folders. There is no guarantee these would be left behind and in the case of LaZagne it can be configured to not write to a file. 
+Each of the tools did leave some sort of file system artifacts behind ranging from cfg files to folders. There is no guarantee these would be left behind and in the case of LaZagne it can be configured to not write to a file.
 
-Sidenote, of the three tools I prefer LaZagne if I was just trying to get passwords from everything possible. HackBrowserData is a far more comprehensive tool for grabbing web browser data as it will get cookies, bookmarks, history, and much more. Windows Defender REALLY doesn't like it though. 
+Sidenote, of the three tools I prefer LaZagne if I was just trying to get passwords from everything possible. HackBrowserData is a far more comprehensive tool for grabbing web browser data as it will get cookies, bookmarks, history, and much more. Windows Defender REALLY doesn't like it though.
 
 ## References
 
 [Shimcache - 13Cubed](https://www.youtube.com/watch?v=7byz1dR_CLg)  
-[Prefetch - 13Cubed](https://www.youtube.com/watch?v=f4RAtR_3zcs)   
+[Prefetch - 13Cubed](https://www.youtube.com/watch?v=f4RAtR_3zcs)
 [Shimcache and Amcache - Magnet Forensics](https://www.magnetforensics.com/blog/shimcache-vs-amcache-key-windows-forensic-artifacts/)  
 [MUICache -13Cubed](https://www.youtube.com/watch?v=ea2nvxN878s)

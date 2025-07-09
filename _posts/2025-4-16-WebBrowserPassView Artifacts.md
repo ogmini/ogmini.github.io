@@ -3,12 +3,12 @@ layout: post
 title: David Cowen Sunday Funday Challenge - Browser Password Extraction Evidence (WebBrowserPassView)
 author: 'ogmini'
 tags:
- - sunday-funday
- - challenge
+ - Sunday-Funday
+ - Challenge
  - WebBrowserPassView
 ---
 
-Today, we look at WebBrowserPassView from NirSoft as part of the [Sunday Funday Challenge](https://ogmini.github.io/2025/04/14/David-Cowen-Sunday-Funday-Browser-Password-Extraction.html). Nothing groundbreaking but a good exercise in double checking and verifying understanding and artifacts. 
+Today, we look at WebBrowserPassView from NirSoft as part of the [Sunday Funday Challenge](https://ogmini.github.io/2025/04/14/David-Cowen-Sunday-Funday-Browser-Password-Extraction.html). Nothing groundbreaking but a good exercise in double checking and verifying understanding and artifacts.
 
 ### WebBrowserPassView
 
@@ -35,6 +35,6 @@ There are artifacts to be found in the Prefetch, Shimcache, Amcache, amd MUICach
 ## References
 
 [Shimcache - 13Cubed](https://www.youtube.com/watch?v=7byz1dR_CLg)  
-[Prefetch - 13Cubed](https://www.youtube.com/watch?v=f4RAtR_3zcs)   
+[Prefetch - 13Cubed](https://www.youtube.com/watch?v=f4RAtR_3zcs)
 [Shimcache and Amcache - Magnet Forensics](https://www.magnetforensics.com/blog/shimcache-vs-amcache-key-windows-forensic-artifacts/)  
 [MUICache -13Cubed](https://www.youtube.com/watch?v=ea2nvxN878s)

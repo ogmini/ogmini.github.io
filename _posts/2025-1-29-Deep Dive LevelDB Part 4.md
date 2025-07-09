@@ -4,7 +4,7 @@ title: Diving Deep - LevelDB Part 4
 author: 'ogmini'
 tags:
  - LevelDB
- - exploration
+ - Exploration
 ---
 
 Continuing work on the binary template file for the LevelDB .ldb files. Learning a lot and pushing my knowledge boundaries. I am definitely recreating prior research; but I find this is the best way to learn and also validate previous findings. It is also possible things have changed.
@@ -29,4 +29,4 @@ I have also been able to mark and locate the following:
 - Meta Index Block
 - Magic Bytes/File Signature
 
-I'm trying to wrap my head around how the Block and BlockEntry structures work. I'll also have to tackle the compression. 
+I'm trying to wrap my head around how the Block and BlockEntry structures work. I'll also have to tackle the compression.

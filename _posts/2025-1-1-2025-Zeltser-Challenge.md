@@ -3,7 +3,7 @@ layout: post
 title: 2025 Zeltser Challenge
 author: 'ogmini'
 tags:
- - musing
+ - Musings
 ---
 
 **Happy New Year and welcome to 2025!**
@@ -14,16 +14,14 @@ For anyone unaware of what the Zeltser Challenge is, you essentially post daily 
 
 ## THE PLAN
 
-What follows is my weekly outline. As we all know, no plan survives first contact with the enemy. Expect changes and updates and deviations. 
+What follows is my weekly outline. As we all know, no plan survives first contact with the enemy. Expect changes and updates and deviations.
 
 | Day | General Topic |
-| --- | ---| 
+| --- | ---|
 | Monday | Forensics Topic |
-| Tuesday | CyberSecurity in Higher Education | 
-| Wednesday | Exploring Tools | 
-| Thursday | CTF/Challenges | 
-| Friday | GitHub Project Updates | 
+| Tuesday | CyberSecurity in Higher Education |
+| Wednesday | Exploring Tools |
+| Thursday | CTF/Challenges |
+| Friday | GitHub Project Updates |
 | Saturday | Certification Study |
 | Sunday | Weekly Wrapup / News Roundup |
-
-

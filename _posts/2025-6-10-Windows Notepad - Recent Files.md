@@ -3,11 +3,11 @@ layout: post
 title: Windows Notepad - Recent Files (New Option)
 author: 'ogmini'
 tags:
- - research
- - windows-notepad 
+ - Research
+ - Windows-Notepad
 ---
 
-I need to get back to documenting the changes in Windows Notepad. I left off on version 11.2410.20.0 with my last [post](https://ogmini.github.io/2025/04/27/Windows-Notepad-Version-Changes-(11.2049.9.0).html) back on 4/27/2025. I'm going to skip ahead as Microsoft added a new "Recent Files" option. I have not yet identified which specific version introduced the change. I'll go back to that project at some point. 
+I need to get back to documenting the changes in Windows Notepad. I left off on version 11.2410.20.0 with my last [post](https://ogmini.github.io/2025/04/27/Windows-Notepad-Version-Changes-(11.2049.9.0).html) back on 4/27/2025. I'm going to skip ahead as Microsoft added a new "Recent Files" option. I have not yet identified which specific version introduced the change. I'll go back to that project at some point.
 
 ![Recent Files Option](/images/windowsnotepad/recent_files.png)
 
@@ -32,4 +32,4 @@ The items in the list are the full path to the file.
 
 ## Importance
 
-This artifact is seperate from the RecentFiles/RecentDocs registry entries and other artifacts that can show file/folder interactions. It can be used to validate other evidence and/or show evidence of a user attempting to hide their tracks. A user may clear the Recent Files while not being aware of the Recent Files in Windows Notepad and vice versa.   
+This artifact is seperate from the RecentFiles/RecentDocs registry entries and other artifacts that can show file/folder interactions. It can be used to validate other evidence and/or show evidence of a user attempting to hide their tracks. A user may clear the Recent Files while not being aware of the Recent Files in Windows Notepad and vice versa.

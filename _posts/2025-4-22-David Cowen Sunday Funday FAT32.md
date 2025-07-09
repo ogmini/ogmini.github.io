@@ -3,13 +3,13 @@ layout: post
 title: David Cowen Sunday Funday Challenge - FAT32 Access Date?!
 author: 'ogmini'
 tags:
- - sunday-funday
- - challenge
+ - Sunday-Funday
+ - Challenge
 ---
 
 ![FAT32 Party](/images/memes/FAT32_Party.png)
 
-Another David Cowen Sunday Funday challenge posted at his [blog](https://www.hecfblog.com/2025/04/daily-blog-814-sunday-funday-42025.html) and it is about FAT32 Timestamps and the non-existence of the accessed timestamp. 
+Another David Cowen Sunday Funday challenge posted at his [blog](https://www.hecfblog.com/2025/04/daily-blog-814-sunday-funday-42025.html) and it is about FAT32 Timestamps and the non-existence of the accessed timestamp.
 
 ## Challenge
 
@@ -19,15 +19,15 @@ FAT32 does not store a time stamp for access dates, it only records the date. Ho
 
 I don't have access to any of the commercial tools so I'll be doing testing using:
 
-- FTK Imager 4.7.3.81 
+- FTK Imager 4.7.3.81
 - Autopsy 4.22.1
 - PowerShell
 
-Decided to have a little fun with this one and I'll be examining the timestamps on the mp4 recordings from a Wyze Cam OG. The various Wyze Cameras support the use of microSD cards to locally record footage. I [reformatted](https://support.wyze.com/hc/en-us/articles/360031488091-How-to-Format-your-microSD-Card) the card to FAT32 before inserting it into the camera. After letting it record some footage, I pulled the card and made a forensically sound E01 image using FTK Imager. I ensured that the card was write blocked by using the hardware switch on my SD Card adaptor. 
+Decided to have a little fun with this one and I'll be examining the timestamps on the mp4 recordings from a Wyze Cam OG. The various Wyze Cameras support the use of microSD cards to locally record footage. I [reformatted](https://support.wyze.com/hc/en-us/articles/360031488091-How-to-Format-your-microSD-Card) the card to FAT32 before inserting it into the camera. After letting it record some footage, I pulled the card and made a forensically sound E01 image using FTK Imager. I ensured that the card was write blocked by using the hardware switch on my SD Card adaptor.
 
 ## Testing
 
-After acquiring the image, I opened the image and examined the `\record\20250422\11\39.mp4` file for timestamps. In the case of PowerShell, I mounted the image using FTK Imager. 
+After acquiring the image, I opened the image and examined the `\record\20250422\11\39.mp4` file for timestamps. In the case of PowerShell, I mounted the image using FTK Imager.
 
 ### FTK Imager
 
@@ -43,7 +43,7 @@ FTK Imager only reports back Date Created and Modified. There is no Date Accesse
 
 ![Autopsy_TSK](/images/fat32timestamps/Autopsy_TSK.png)
 
-Autopsy displays the Accessed and Changed timestamps as 0000-00-00 00:00:00. Autopsy is built upon TSK and we can see the same output from istat where it shows the Accessed timestamp as 0000-00-00 00:00:00. One important thing to note is that Autopsy has you set the Timezone of the Data Source at time of ingestion. That is why we are seeing EDT and not because it is coming from the Filesystem information. In the screenshots below, we are seeing the timestamp information for a file on a NTFS filesystem. 
+Autopsy displays the Accessed and Changed timestamps as 0000-00-00 00:00:00. Autopsy is built upon TSK and we can see the same output from istat where it shows the Accessed timestamp as 0000-00-00 00:00:00. One important thing to note is that Autopsy has you set the Timezone of the Data Source at time of ingestion. That is why we are seeing EDT and not because it is coming from the Filesystem information. In the screenshots below, we are seeing the timestamp information for a file on a NTFS filesystem.
 
 ![Autopsy NTFS](/images/fat32timestamps/Autopsy_NTFS.png)
 
@@ -57,7 +57,7 @@ Better be careful if you are using PowerShell to examine timestamps on FAT32 fil
 
 > Get-Item filename | Select-Object Name, CreationTime, LastAccessTime, LastWriteTime
 
- It reports back a access date and time of 12/31/1979 11:00:00 PM. For completions sake, below is a screenshot of running the same PowerShell command on a file in a NTFS filesystem. 
+ It reports back a access date and time of 12/31/1979 11:00:00 PM. For completions sake, below is a screenshot of running the same PowerShell command on a file in a NTFS filesystem.
 
 ![PowerShell NTFS](/images/fat32timestamps/Powershell_NTFS.png)
 
@@ -70,4 +70,3 @@ Understanding how FAT32 works and how it stores or doesn't store timestamps is s
 | FTK Imager | Doesn't display any accessed timestamp for FAT32. |
 | Autopsy | Displays 0000-00-00 00:00:00 for Accessed timestamp. Timezone is set by investigator when ingesting the data source. |
 | PowerShell | Displays 12/31/1979 11:00:00 PM for Accessed timestamp. |
-

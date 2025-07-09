@@ -3,39 +3,39 @@ layout: post
 title: David Cowen Sunday Funday Challenge - SSH Artifacts in Windows 11 
 author: 'ogmini'
 tags:
- - sunday-funday
- - challenge
+ - Sunday-Funday
+ - Challenge
 ---
 
-David Cowen has posted his weekly Sunday Funday challenge at his [blog](https://www.hecfblog.com/2025/03/daily-blog-786-sunday-funday-32325.html) and it is related to his previous challenge on SSH Artifacts in Linux systems. I had [posted](https://ogmini.github.io/2025/03/22/Beyond-Sunday-Funday-SSH-Artifacts-in-Windows-11.html) that looking at SSH Artifacts in Windows would be a natural extension and here we are. 
+David Cowen has posted his weekly Sunday Funday challenge at his [blog](https://www.hecfblog.com/2025/03/daily-blog-786-sunday-funday-32325.html) and it is related to his previous challenge on SSH Artifacts in Linux systems. I had [posted](https://ogmini.github.io/2025/03/22/Beyond-Sunday-Funday-SSH-Artifacts-in-Windows-11.html) that looking at SSH Artifacts in Windows would be a natural extension and here we are.
 
-This week is a bit crazy, so I'll be working on this over a few days and doing small updates. This post will compile all the work for submission. 
+This week is a bit crazy, so I'll be working on this over a few days and doing small updates. This post will compile all the work for submission.
 
 ## Challenge
 
-Test what artifacts are left behind from SSHing into a Windows 11 or 10 system using the native SSH server. Bonus points for tunnels. 
+Test what artifacts are left behind from SSHing into a Windows 11 or 10 system using the native SSH server. Bonus points for tunnels.
 
 ## Test Setup
 
 I am performing testing using three Hyper-V VMs
 
 **Windows 11 Client**  
-Windows 11 Pro 24H2 26100.3476     
-Default installation   
-OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2   
-![SSH Version](/images/ssh-challenge-windows/SSH-version-windows.png)       
+Windows 11 Pro 24H2 26100.3476
+Default installation
+OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
+![SSH Version](/images/ssh-challenge-windows/SSH-version-windows.png)
 
-**Windows 11 Server**   
-Windows 11 Pro 24H2 26100.3476       
-Default installation w/SSH Server Feature           
+**Windows 11 Server**
+Windows 11 Pro 24H2 26100.3476
+Default installation w/SSH Server Feature
 OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2  
-![SSHD Version](/images/ssh-challenge-windows/SSHD-version-windows.png)   
+![SSHD Version](/images/ssh-challenge-windows/SSHD-version-windows.png)
 
-**Debian-Server**   
-Debian GNU/Linux 12   
-Default installation w/SSH Server 
+**Debian-Server**
+Debian GNU/Linux 12
+Default installation w/SSH Server
 OpenSSH_9.2p1 Debian-2+deb12u5, OpenSSL 3.0.15 3 Sep 2024
-![SSH Version](/images/ssh-challenge-windows/SSH-version-debian.png)   
+![SSH Version](/images/ssh-challenge-windows/SSH-version-debian.png)
 
 ### SSH Testing Steps
 
@@ -50,39 +50,39 @@ OpenSSH_9.2p1 Debian-2+deb12u5, OpenSSL 3.0.15 3 Sep 2024
 ### SSH Tunnel Testing Steps
 
 1. Open Local Port Forwarding from Client to Windows-Server using the private key
-2. Explore for artifacts 
+2. Explore for artifacts
 
 ## Artifact Theories
 
-I believe the artifacts will be similar to those found in Linux since both use OpenSSH. The paths will differ, but I expect to see a known_hosts file along with any public and private keys. Unlike Linux, Windows does not use systemd for logging; instead, it collects event logs which can be viewed in Event Viewer. It will be interesting to compare them and see if they both log similar information. 
+I believe the artifacts will be similar to those found in Linux since both use OpenSSH. The paths will differ, but I expect to see a known_hosts file along with any public and private keys. Unlike Linux, Windows does not use systemd for logging; instead, it collects event logs which can be viewed in Event Viewer. It will be interesting to compare them and see if they both log similar information.
 
 ### Exploring for Artifacts
 
-I'll be using the built in Windows Event Viewer to search for logs and Process Monitor to look for any registry keys or files that have been touched during testing. 
+I'll be using the built in Windows Event Viewer to search for logs and Process Monitor to look for any registry keys or files that have been touched during testing.
 
 ## SSH Test Results
 
 ### Standard Username/Password Authentication to Debian OpenSSH Server
 
-As expected and similarly to the [testing](https://ogmini.github.io/2025/03/21/David-Cowen-Sunday-Funday-SSH.html) we did on Linux, the client leaves behind very few artifacts. We don't even have the .bash_history to fall back on. Windows Command Prompt doesn't keep a history across sessions unless you delve into memory forensics in the moment. 
+As expected and similarly to the [testing](https://ogmini.github.io/2025/03/21/David-Cowen-Sunday-Funday-SSH.html) we did on Linux, the client leaves behind very few artifacts. We don't even have the .bash_history to fall back on. Windows Command Prompt doesn't keep a history across sessions unless you delve into memory forensics in the moment.
 
 #### known_hosts
 
 The only artifact we have is the known_hosts file which is located at `%userprofile%\.ssh`. Unlike Debian which hashes the hostname and IP by default, Windows does not so we can get more information from the file.
 
-![known_hosts](/images/ssh-challenge-windows/known_hosts.png) 
+![known_hosts](/images/ssh-challenge-windows/known_hosts.png)
 
-#### Event Viewer
+#### Event Viewer - Debian
 
 On the client Windows 11 machine, there are no relevant logs to be found in Event Viewer.
 
 #### systemd
 
-On the Debian machine, we again see logs relating the connection of the user. Nothing that specifically identifies the connecting machine as Windows 11. 
+On the Debian machine, we again see logs relating the connection of the user. Nothing that specifically identifies the connecting machine as Windows 11.
 
 ![systemd](/images/ssh-challenge-windows/systemd.png)
 
-#### Active Connections
+#### Active Connections - Debian
 
 Using Process Monitor on the client Windows 11 Machine, we can see network traffic related to the SSH connection. This could also be done using net stat and other tools.
 
@@ -90,11 +90,11 @@ Using Process Monitor on the client Windows 11 Machine, we can see network traff
 
 ### Standard Username/Password Authentication to Windows OpenSSH Server
 
-The artifacts on the client Windows 11 machine are the same as when connecting to the Debian machine. 
+The artifacts on the client Windows 11 machine are the same as when connecting to the Debian machine.
 
-#### Event Viewer
+#### Event Viewer - Windows
 
-On the server Windows 11 machine, there are relevant logs to be found in the Event Viewer. 
+On the server Windows 11 machine, there are relevant logs to be found in the Event Viewer.
 
 Under Applications and Services Logs -> OpenSSH -> Operational we find log entries related:
 
@@ -108,12 +108,12 @@ Success
 Failure  
 ![password failure](/images/ssh-challenge-windows/ssh_logs_fail.png)
 
-Disconnect   
+Disconnect
 ![Disconnect 1](/images/ssh-challenge-windows/operational_disconnect_1.png)
 
 ![Disconnect 2](/images/ssh-challenge-windows/operational_disconnect_2.png)
 
-Connection Reset   
+Connection Reset
 ![Connection Reset](/images/ssh-challenge-windows/ctrl_c.png)
 
 The next logs are found under Windows Logs -> Security and some will start to look familiar as being related to the normal user logon process.
@@ -123,6 +123,7 @@ The next logs are found under Windows Logs -> Security and some will start to lo
 ![ssh security logs full](/images/ssh-challenge-windows/ssh_security_full.png)
 
 We can see the following EventIDs are related to a user connecting to the machine:
+
 - 4717
 - 4648
 - 4624
@@ -138,6 +139,7 @@ What is interesting is that the account is initially logged in with a temporary 
 ##### Logon IDs
 
 In the log analysis below, we will see the following Logon IDs:
+
 - 0x3E7
 - 0x44C61B
 - 0x44C8A8
@@ -145,9 +147,9 @@ In the log analysis below, we will see the following Logon IDs:
 
 ##### Successful Login
 
-Pay special attention to the Logon IDs which are listed right after the EventID. Also note that "WINDOWS-SSH-SER$" is the shortened name of the server Windows 11 machine. 
+Pay special attention to the Logon IDs which are listed right after the EventID. Also note that "WINDOWS-SSH-SER$" is the shortened name of the server Windows 11 machine.
 
-1. EventID 4717 (0x3E7) - WINDOWS-SSH-SER$ is given the [SeServiceLogonRight](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/log-on-as-a-service). [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4717](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4717)       
+1. EventID 4717 (0x3E7) - WINDOWS-SSH-SER$ is given the [SeServiceLogonRight](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/log-on-as-a-service). [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4717](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4717)
 ![20090](/images/ssh-challenge-windows/20090.png)
 2. EventID 4648 (0x3E7) - The sshd.exe process now logs on (RUNAS) as the Account "sshd_4568". [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4648](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4648)  
 ![20091](/images/ssh-challenge-windows/20091.png)
@@ -159,7 +161,7 @@ Pay special attention to the Logon IDs which are listed right after the EventID.
 ![20094](/images/ssh-challenge-windows/20094.png)
 6. EventID 4798 (0x3E7) - Enumerates local groups for the User we'ved logged in as. Again, I chose a bad username of "User" for testing purposes. [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4798](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4798)  
 ![20095](/images/ssh-challenge-windows/20095.png)
-7. EventID 4648 (0x3E7) - The sshd.exe process now logs on (RUNAS) as the Account "User".    
+7. EventID 4648 (0x3E7) - The sshd.exe process now logs on (RUNAS) as the Account "User".
 ![20096](/images/ssh-challenge-windows/20096.png)
 8. EventID 4624 (0x3E7) - Take note of the Logon Type, Virtual Account, and Elevated Token.  
 ![20097](/images/ssh-challenge-windows/20097.png)
@@ -171,11 +173,11 @@ Pay special attention to the Logon IDs which are listed right after the EventID.
     - SeBackupPrivilege - Back up files and directories
     - SeRestorePrivilege - Restore files and directories
     - SeDebugPrivilege - Debug programs
-    - SeSystemEnvironmentPrivilege - Modify firmware environment values 
+    - SeSystemEnvironmentPrivilege - Modify firmware environment values
     - SeImpersonatePrivilege - Impersonate a client after authentication
-    - SeDelegateSessionUserImpersonatePrivilege 
+    - SeDelegateSessionUserImpersonatePrivilege
 ![20098](/images/ssh-challenge-windows/20098.png)
-10. EventID 4634 (0x44C8A8) - The "User" is now logged out which is interesting because I hadn't closed the SSH Session yet. Note the Logon ID of 0x44C8A8. [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4634](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4634)    
+10. EventID 4634 (0x44C8A8) - The "User" is now logged out which is interesting because I hadn't closed the SSH Session yet. Note the Logon ID of 0x44C8A8. [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4634](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventID=4634)
 ![20099](/images/ssh-challenge-windows/20099.png)
 11. EventID 4798 (0x3E7) - Repeat of Step 6 above.  
 ![20100](/images/ssh-challenge-windows/20100.png)
@@ -183,7 +185,7 @@ Pay special attention to the Logon IDs which are listed right after the EventID.
 ![20101](/images/ssh-challenge-windows/20101.png)
 13. EventID 4624 (0x3E7) - Repeat of Step 8 above.  
 ![20102](/images/ssh-challenge-windows/20102.png)
-14. EventID 4672 (0x44C907) - Repeat of Step 9 above.   
+14. EventID 4672 (0x44C907) - Repeat of Step 9 above.
 ![20103](/images/ssh-challenge-windows/20103.png)
 15. EventID 4634 (0x44C61B) - The "sshd_4568" is now logged out and this correlates with closing the actual SSH Session.  
 ![20104](/images/ssh-challenge-windows/20104.png)
@@ -194,23 +196,23 @@ Pay special attention to the Logon IDs which are listed right after the EventID.
 
 When a user inputs a bad password, the logs are similar for Steps 1 - 10 above. There would be the obvious differences in Logon IDs and the "sshd_####" account.
 
-11. EventID 4625 - The "User" account fails to login. [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=4625](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=4625)   
+1. EventID 4625 - The "User" account fails to login. [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=4625](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=4625)
 ![badlogin](/images/ssh-challenge-windows/bad_login.png)
-12. EventID 4634 - The "sshd_####" is now logged out and this correlates with closing the actual SSH Session.  
+2. EventID 4634 - The "sshd_####" is now logged out and this correlates with closing the actual SSH Session.  
 
 ##### Connect No Attempt
 
 When a user connects but makes no attempt to enter a password, the logs are similar for Steps 1 - 10 above. There would be the obvious differences in Logon IDs and the "sshd_####" account.
 
-11. EventID 4634 - The "sshd_####" is now logged out and this correlates with closing the actual SSH Session.  
+1. EventID 4634 - The "sshd_####" is now logged out and this correlates with closing the actual SSH Session.  
 
 ### SSH Private/Public Key
 
-Unlike Debian, authenticating with keys must be explicitly enabled in Windows. I had to modify the sshd_config file located at `C:\ProgramData\ssh\sshd_config` to allow connections using a public key. Steps can be found at the following link along with some other details [https://woshub.com/connect-to-windows-via-ssh/](https://woshub.com/connect-to-windows-via-ssh/). One point to note, you can enable local logging to the sshd.log file. Again, this is not enabled by default and instead logs are stored in the Windows Event Logs. 
+Unlike Debian, authenticating with keys must be explicitly enabled in Windows. I had to modify the sshd_config file located at `C:\ProgramData\ssh\sshd_config` to allow connections using a public key. Steps can be found at the following link along with some other details [https://woshub.com/connect-to-windows-via-ssh/](https://woshub.com/connect-to-windows-via-ssh/). One point to note, you can enable local logging to the sshd.log file. Again, this is not enabled by default and instead logs are stored in the Windows Event Logs.
 
 By default the Private/Public keys are stored at `%userprofile%\.ssh`.
 
-The Windows 11 Server saves the public key in the authorized_keys file located at `%userprofile%\.ssh` for the relevant user. They could also be stored at `C:\ProgramData\ssh\administrators_authorized_keys` for system-wide management. 
+The Windows 11 Server saves the public key in the authorized_keys file located at `%userprofile%\.ssh` for the relevant user. They could also be stored at `C:\ProgramData\ssh\administrators_authorized_keys` for system-wide management.
 
 #### Event Viewer
 
@@ -220,7 +222,7 @@ Under Applications and Services Logs -> OpenSSH -> Operational, we see a record 
 
 The Windows Logs -> Security records are no different from the standard username/password authentication.
 
-### Active Connections
+### Active Connections - Windows
 
 While an SSH connection is active lets see what is visible. Unlike Debian, the Windows alternative to the `who` and `w` command shows us no useful information. By looking at the "Users" tab in Task Manager, we can see all users accounts that are currently logged into the computer. In the screenshot below, we only see the "User" that we logged into the server Windows machine and no "User" account for the SSH connection.
 
@@ -248,7 +250,7 @@ A nicer hierarchical view is given by user Process Explorer.
 
 ## Conclusion
 
-I ran out of time to do the testing for SSH Tunnels. I have a suspicion that the artifacts would be the similar just like they were for the Debian testing. 
+I ran out of time to do the testing for SSH Tunnels. I have a suspicion that the artifacts would be the similar just like they were for the Debian testing.
 
 For a default installation of Windows 11 the following files/locations could be of interest when trying to track SSH connections:
 
@@ -260,7 +262,7 @@ For a default installation of Windows 11 the following files/locations could be 
 | Private Key | Client | Typically stored at `%userprofile%\.ssh`. |
 | Public Key | Both | Typically stored at `%userprofile%\.ssh` and possibly `C:\ProgramData\ssh\administrators_authorized_keys` on the server. |
 
-Assuming the Private key isn't passphrase protected, having the Private/Public keys are a big boon to any investigation. They would allow the investigator to connect to the remote host. 
+Assuming the Private key isn't passphrase protected, having the Private/Public keys are a big boon to any investigation. They would allow the investigator to connect to the remote host.
 
 One interesting note, you can turn on local logging for sshd by editing the `C:\ProgramData\ssh\sshd_config` file. This will end up writing logs to the `C:\ProgramData\ssh\logs\sshd.log` file. Something to keep in mind if you are ever investigating SSH as this might be another source of artifacts. I did not test this.
 
@@ -269,7 +271,7 @@ In the moment, the following tools/commands can be useful to investigate SSH con
 |Tool/Command|Server/Client|Notes|
 |---|---|---|
 |Task Manager/Process Explorer|Both|Shows either the `ssh` process on a client Windows machine or `sshd` processes and their children on a server Windows machine.|
-|netstat|Both|Shows active network connections and their ports| 
+|netstat|Both|Shows active network connections and their ports|
 
 ## References
 
@@ -277,4 +279,3 @@ In the moment, the following tools/commands can be useful to investigate SSH con
 - [https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/)
 - [https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4672](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4672)
 - [https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/log-on-as-a-service](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/log-on-as-a-service)
-

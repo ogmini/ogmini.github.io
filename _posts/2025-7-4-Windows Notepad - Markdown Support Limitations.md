@@ -3,8 +3,8 @@ layout: post
 title: Windows Notepad - Markdown Support Limitations
 author: 'ogmini'
 tags:
- - research
- - windows-notepad 
+ - Research
+ - Windows-Notepad
 ---
 
 Markdown Support is pretty limited in Windows Notepad. You have a toolbar at the top that lets you choose your formatting options. Most helpfully at the bottom is a toggle between "Formatted" and "Markdown Syntax". This lets you see and manually write the Markdown syntax.

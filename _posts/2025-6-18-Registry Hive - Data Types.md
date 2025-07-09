@@ -10,11 +10,7 @@ While continuing to research the `settings.dat` file, I came across a Github rep
 
 The repo does not state where this information comes from or provide much in the way of documentation. The 4 that I know about do line up correctly.
 
-This will require some testing/validation and my plan is to write a simple UWP application that leverages the `settings.dat` to save/edit some test data. This should mimic how other UWP applications interact. 
+This will require some testing/validation and my plan is to write a simple UWP application that leverages the `settings.dat` to save/edit some test data. This should mimic how other UWP applications interact.
 
 [https://learn.microsoft.com/en-us/uwp/api/windows.storage.applicationdata.localsettings?view=winrt-26100](https://learn.microsoft.com/en-us/uwp/api/windows.storage.applicationdata.localsettings?view=winrt-26100)
 [https://blogs.windows.com/windowsdeveloper/2016/05/10/getting-started-storing-app-data-locally/#_Local](https://blogs.windows.com/windowsdeveloper/2016/05/10/getting-started-storing-app-data-locally/#_Local)
-
-
-
-

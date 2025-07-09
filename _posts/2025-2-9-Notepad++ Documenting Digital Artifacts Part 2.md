@@ -7,7 +7,7 @@ tags:
  - Notepad++
 ---
 
-I think I'm done researching what digital artifacts can be retrieved from [Notepad++](https://notepad-plus-plus.org/). I've been able to confirm/validate the findings from [Forensafe](https://forensafe.com/blogs/windows_notepad++.html) and I will be providing more detailed information about them below. As I stated in [Part 1](https://ogmini.github.io/2025/02/08/Notepad++-Documenting-Digital-Artifacts.html), there is no real complication to the digital artifacts and everything is human readable with any text editor. In a future post, I will be pointing out how Windows Notepad and Notepad++ achieve similar functionality while storing the information differently. 
+I think I'm done researching what digital artifacts can be retrieved from [Notepad++](https://notepad-plus-plus.org/). I've been able to confirm/validate the findings from [Forensafe](https://forensafe.com/blogs/windows_notepad++.html) and I will be providing more detailed information about them below. As I stated in [Part 1](https://ogmini.github.io/2025/02/08/Notepad++-Documenting-Digital-Artifacts.html), there is no real complication to the digital artifacts and everything is human readable with any text editor. In a future post, I will be pointing out how Windows Notepad and Notepad++ achieve similar functionality while storing the information differently.
 
 ## Location
 
@@ -15,7 +15,7 @@ In [Part 1](https://ogmini.github.io/2025/02/08/Notepad++-Documenting-Digital-Ar
 
 | Version | XML Locations | Backup Location |
 | --- | --- | --- |
-| Installed | %appdata%\Notepad++ | %appdata%\Notepad++\backup
+| Installed | %appdata%\Notepad++ | %appdata%\Notepad++\backup |
 | Portable | portable folder (Ex. D:\notepad) | backup folder in the portable folder (Ex. D:\notepad++\backup) |
 
 ## Recent History
@@ -46,8 +46,8 @@ FILETIME consists of two 32-bit values:
 
  More details can be found at:
 
- - [https://learn.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-filetime?redirectedfrom=MSDN](https://learn.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-filetime?redirectedfrom=MSDN)
- - [https://zetcode.com/gui/winapi/datetime/](https://zetcode.com/gui/winapi/datetime/)
+- [https://learn.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-filetime?redirectedfrom=MSDN](https://learn.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-filetime?redirectedfrom=MSDN)
+- [https://zetcode.com/gui/winapi/datetime/](https://zetcode.com/gui/winapi/datetime/)
 
 ## Backup
 
@@ -61,4 +61,4 @@ Example: `new 2@2025-02-09_201043`
 
 Tab is called "New 2" and was created/opened at 2/9/2025 8:10:43 PM. Note, that this doesn't need to match with the file's modified timestamp as that reflects when changes were made to the file.
 
-These files are very easy to read as they are just straight text and can be opened by any text editor. 
+These files are very easy to read as they are just straight text and can be opened by any text editor.

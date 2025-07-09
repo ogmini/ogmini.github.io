@@ -3,16 +3,16 @@ layout: post
 title: Magnet Virtual Summit 2025 CTF - AAR "Dead Portrait Society"
 author: 'ogmini'
 tags:
- - CTF 
+ - CTF
  - Challenges
  - Writeups
 ---
 
-Continuing with my writeups on my "fails" or the ones I just couldn't figure out in the timeframe alloted. I want to talk about how I went about trying to solve the challenge and where I went wrong. This should help me in the future by highlighting weaknesses and areas for improvement. Each post will focus on just one "fail" challenge. You can find all my writeups [here](https://ogmini.github.io/ctf).
+Continuing with my writeups on my "fails" or the ones I just couldn't figure out in the timeframe alloted. I want to talk about how I went about trying to solve the challenge and where I went wrong. This should help me in the future by highlighting weaknesses and areas for improvement. Each post will focus on just one "fail" challenge. You can find all my writeups [page](https://ogmini.github.io/ctf).
 
 ## Dead Portrait Society
 
-Title: Dead Portrait Society     
+Title: Dead Portrait Society
 Description: When was the last written record created?
 
 This challenge was under the iOS section and worth 75 points making it the hardest challenge in the section. It was so difficult, I didn't even know where to begin with this one. I decided not to devote much time to this one as I wanted to solve other more obvious challenges.
@@ -34,4 +34,3 @@ Checking this database for the last written record would give you the relevant t
 
 1. Need to expand my knowledge of iOS artifacts and its structure. I'm far more comfortable with the file structure and layout of Windows and to some extend Android due to its similarity to Linux.
 2. CTFs are a good way to highlight knowledge niches or potentially obscure artifacts to a wide audience.
-

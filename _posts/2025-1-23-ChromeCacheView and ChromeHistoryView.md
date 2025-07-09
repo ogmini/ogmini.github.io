@@ -4,16 +4,16 @@ title: ChromeCacheView / ChromeHistoryView
 author: 'ogmini'
 tags:
  - Chrome
- - exploration
+ - Exploration
 ---
 
-Continuing my [work](https://ogmini.github.io/2025/01/20/David-Cowen-Sunday-Funday-ChatGPT.html) on David Cowen's Sunday Funday challenge, I leveraged ChromeCacheView and ChromeHistoryView to look both at the Edge Browser and the ChatGPT Desktop App. I want to see if we can capture the user authentication process with timestamps and any artifacts related to uploaded files. 
+Continuing my [work](https://ogmini.github.io/2025/01/20/David-Cowen-Sunday-Funday-ChatGPT.html) on David Cowen's Sunday Funday challenge, I leveraged ChromeCacheView and ChromeHistoryView to look both at the Edge Browser and the ChatGPT Desktop App. I want to see if we can capture the user authentication process with timestamps and any artifacts related to uploaded files.
 
 ## User Authentication
 
 ### ChromeCacheView
 
-The cache for the ChatGPT Desktop App is examined using ChromeCacheView. Typically the location for this will be `%localappdata%\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\Cache`. 
+The cache for the ChatGPT Desktop App is examined using ChromeCacheView. Typically the location for this will be `%localappdata%\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\Cache`.
 
 Some records related to authentication can be seen starting at 9:58:05 AM which lines up with our test scenario.  
 
@@ -27,9 +27,9 @@ The actual authentication process can be see using ChromeHistoryView in the next
 
 ### ChromeHistoryView
 
-Next, I looked at the History for the Edge Browser which is currently set as the default browser. 
+Next, I looked at the History for the Edge Browser which is currently set as the default browser.
 
-Some records related to the authentication can be seen starting at 9:58:40 AM which again lines up with our test scenario. These records culminate with the prompt to open the ChatGPT Desktop App at 9:59:13 AM after successful authentication. 
+Some records related to the authentication can be seen starting at 9:58:40 AM which again lines up with our test scenario. These records culminate with the prompt to open the ChatGPT Desktop App at 9:59:13 AM after successful authentication.
 
 ![chview](/images/chatgpt/chromehistoryview-login.png)
 
@@ -61,5 +61,3 @@ This led me to once again, use strings to search for "QovPq6QZ7EK4CrJzMjxN7S" an
 Zipping over to ChromeCacheView, I see a handy record that links "file-QovPq6QZ7EK4CrJzMjxN7S" to "chromecacheview-startuppage.png". Right-clicking and choosing "Open Selected Cache File" even retrieves the image for us. In this case, the file is stored in the f_00001d data stream file and renaming the file to *.png allows us to open the file manually.  
 
 ![chuploadview](/images/chatgpt/chromecacheview-fileupload.png)
-
-

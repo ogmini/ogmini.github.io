@@ -3,14 +3,14 @@ layout: post
 title: Microsoft Store Apps - Challenge in validating previous versions
 author: 'ogmini'
 tags:
- - DFIR 
+ - DFIR
 ---
 
 > Have you ever needed a previous version of an application from the Microsoft Store?
 
 During my research on [Windows Notepad](https://github.com/ogmini/Notepad-State-Library), I diligently kept track of the versions; but made one novice mistake. In digital forensics and IT as a whole, knowing what version of the software you're dealing with makes a huge impact on understanding artifacts or troubleshooting issues. The novice mistake I made was to not keep VMs or backups of the previous versions. I kept my testing VM up to date with the latest release and tested for changes for the format. I had taken it for granted that I would be able to download previous versions...
 
-I am lucky that I started researching Windows Notepad when I did since I have seen changes in the behavior of the state files. The overall format hasn't changed, but the information that is kept and stored in the various sections has been altered. I will be writing a more detailed blog post and documentation at a later date expanding on these changes. This blog post will be focusing on my search on how to get previous versions of Microsoft Store Apps. 
+I am lucky that I started researching Windows Notepad when I did since I have seen changes in the behavior of the state files. The overall format hasn't changed, but the information that is kept and stored in the various sections has been altered. I will be writing a more detailed blog post and documentation at a later date expanding on these changes. This blog post will be focusing on my search on how to get previous versions of Microsoft Store Apps.
 
 I know that I tested on the following versions:
 
@@ -20,7 +20,7 @@ I know that I tested on the following versions:
 - 11.2408.12.0
 - 11.2409.9.0
 
-Quick searching brought up [https://store.rg-adguard.net/](https://store.rg-adguard.net/) that is an "Online link generator for Microsoft Store". It potentially allows you to download previous versions of Microsoft Store Apps. Instructions on how to use the site can be found at [https://woshub.com/how-to-download-appx-installation-file-for-any-windows-store-app/](https://woshub.com/how-to-download-appx-installation-file-for-any-windows-store-app/). 
+Quick searching brought up [https://store.rg-adguard.net/](https://store.rg-adguard.net/) that is an "Online link generator for Microsoft Store". It potentially allows you to download previous versions of Microsoft Store Apps. Instructions on how to use the site can be found at [https://woshub.com/how-to-download-appx-installation-file-for-any-windows-store-app/](https://woshub.com/how-to-download-appx-installation-file-for-any-windows-store-app/).
 
 The following versions are able to be retrieved:
 
@@ -52,7 +52,7 @@ Take note of the Version and Installer Type differences.
 
 ![WinGet Information for VS Code - Versions](/images/msstore/VSCode-2.png)
 
-This is where my searching came to an end leaving us with an uncomfortable resolution. 
+This is where my searching came to an end leaving us with an uncomfortable resolution.
 
 __There is no good way to get all previous versions of a native Microsoft Store Application.__
 
@@ -61,6 +61,7 @@ I'm tempted to write up something to constantly poll [https://store.rg-adguard.n
 ![And on that bombshell](https://media1.tenor.com/m/lDojqc8WeegAAAAd/bombshell-clarkson.gif)
 
 ## References
+
 - [https://store.rg-adguard.net/](https://store.rg-adguard.net/)
 - [https://woshub.com/how-to-download-appx-installation-file-for-any-windows-store-app/](https://woshub.com/how-to-download-appx-installation-file-for-any-windows-store-app/)
 - [https://github.com/edgarchinchilla/ms-store-pkg-downloader](https://github.com/edgarchinchilla/ms-store-pkg-downloader)

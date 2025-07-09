@@ -14,7 +14,7 @@ The DataTypes that I've tested/verified so far:
 | --- | --- |
 | 4 | Int |
 | 8 | Float |
-| 11 | Bool | 
+| 11 | Bool |
 | 12 | String |
 | 14 | DateTime Offset |
 | 15 | Timespan |
@@ -29,35 +29,35 @@ Judging by patterns, these should follow the others and result in the following 
 | 3 | uInt16|
 | 4 | Int32 |
 | 5 | uInt32 |
-| 6 | Int64 | 
+| 6 | Int64 |
 | 7 | uInt64 |
 | 8 | Single |
-| 9 | Double | 
+| 9 | Double |
 | 10 | Char |
 | 11 | Bool |
 | 12 | String |
 | 13 | CompositeValue (Nest Composite Values?) |
 | 14 | DateTime Offset |
-| 15 | Timespan | 
+| 15 | Timespan |
 | 16 | GUID |
-| 17 | Point | 
+| 17 | Point |
 | 18 | Size |
-| 19 | Rect | 
+| 19 | Rect |
 | 20 | ArrayByte |
 | 21 | ArrayInt16 |
 | 22 | ArrayuInt16|
 | 23 | ArrayInt32 |
 | 24 | ArrayuInt32 |
-| 25 | ArrayInt64 | 
+| 25 | ArrayInt64 |
 | 26 | ArrayuInt64 |
 | 27 | ArraySingle |
-| 28| ArrayDouble | 
+| 28| ArrayDouble |
 | 29 | ArrayChar |
 | 30 | ArrayBool |
 | 31 | ArrayString |
 | 32 | ArrayDateTime Offset |
-| 33 | ArrayTimespan | 
+| 33 | ArrayTimespan |
 | 34 | ArrayGUID |
-| 35 | ArrayPoint | 
+| 35 | ArrayPoint |
 | 36 | ArraySize |
-| 37 | ArrayRect | 
+| 37 | ArrayRect |

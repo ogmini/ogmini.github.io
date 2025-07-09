@@ -8,7 +8,7 @@ tags:
  - Cursor-AI
 ---
 
-David Cowen recently introduced me to [Cursor](https://www.cursor.com) which is an AI Code Editor and he has a few posts on his blog about using it that you can find [here](https://www.hecfblog.com/search/label/ai%20programming?&max-results=10). I wanted to play around with this and my recent work on researching Notepad++ gave me a good excuse as it provided a target that wasn't too complex. 
+David Cowen recently introduced me to [Cursor](https://www.cursor.com) which is an AI Code Editor and he has a few posts on his blog about using it that you can find [page](https://www.hecfblog.com/search/label/ai%20programming?&max-results=10). I wanted to play around with this and my recent work on researching Notepad++ gave me a good excuse as it provided a target that wasn't too complex.
 
 Just a few minutes of prompts in the Composer resulted in a simple Python script that will output the "File" elements from the `session.xml` file along with their attributes to a CSV file. It will also compare the "File" elements to the Backup folder and note any differences in another csv file. A few of my prompts:
 
@@ -20,9 +20,9 @@ Just a few minutes of prompts in the Composer resulted in a simple Python script
 
 Sidenote: I don't know why I'm so polite to the AI.
 
-Below is the python code that it generated. I don't primarily code in Python and this would have taken me a bit longer to write manually. 
+Below is the python code that it generated. I don't primarily code in Python and this would have taken me a bit longer to write manually.
 
-~~~
+~~~ python
 import xml.etree.ElementTree as ET
 from typing import List, Dict
 import os

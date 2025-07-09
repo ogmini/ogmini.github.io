@@ -19,7 +19,7 @@ typedef struct (int DataLength) {
 } CompVal;
 ```
 
-If it isn't obvious, I limit myself to about 45 minutes a day to work on these projects. This leaves me 15 minutes to write up the post. 
+If it isn't obvious, I limit myself to about 45 minutes a day to work on these projects. This leaves me 15 minutes to write up the post.
 
 The DataTypes that I've tested so far:
 

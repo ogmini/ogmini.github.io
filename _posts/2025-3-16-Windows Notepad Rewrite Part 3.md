@@ -4,8 +4,8 @@ title: Windows Notepad - Rewrite / AI Part 3
 author: 'ogmini'
 tags:
  - DFIR
- - windows-notepad
- - rewrite-AI
+ - Windows-Notepad
+ - Rewrite-AI
 ---
 
 Short post today, continuing my research on Windows Notepad Rewrite [https://ogmini.github.io/2025/03/14/Windows-Notepad-Rewrite-Part-2.html](https://ogmini.github.io/2025/03/14/Windows-Notepad-Rewrite-Part-2.html)
@@ -16,9 +16,9 @@ Still not sure what this seeming 17 character string maps back to. When you sign
 
 I think I'll need to spin up a second test MS365 account just to see if that gives me any more clues.
 
-I'll probably also spin up some test code projects to interface with the Graph API and see if I can retrieve a WebAccountId. 
+I'll probably also spin up some test code projects to interface with the Graph API and see if I can retrieve a WebAccountId.
+
 - [https://learn.microsoft.com/en-us/windows/uwp/security/web-account-manager](https://learn.microsoft.com/en-us/windows/uwp/security/web-account-manager)
 - [https://github.com/MicrosoftDocs/windows-dev-docs/blob/docs/uwp/security/web-account-manager.md](https://github.com/MicrosoftDocs/windows-dev-docs/blob/docs/uwp/security/web-account-manager.md)
 
 Maybe I should try my hand at this "vibe coding" to do this part.
-

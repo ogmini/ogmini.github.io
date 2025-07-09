@@ -10,14 +10,15 @@ tags:
 
 Had the pleasure of listening to some great talks at the online SANS - Ransomware Summit 2025. I particularly enjoyed the Hands-On Workshop put on by Mari DeGrazia titled "Forensic AI, Your Way: A Local LLM Installation". The workshop we participated in is part of the SANS FOR563 course as a lab and you can find more information at [https://for563.com/](https://for563.com/). My main takeaway is that a local LLM can be powerful when used appropriately.
 
-We utilized [https://lightning.ai/](https://lightning.ai/) to handle the GPU processing for the workshop. I'm sure many of us don't have a GPU with enough memory to run some of the better LLMs. In Lightning.AI, we created a studio and installed [Ollama](https://ollama.com/) on it to easily download various LLMs and run them using [Open WebUI](https://github.com/open-webui/open-webui). 
+We utilized [https://lightning.ai/](https://lightning.ai/) to handle the GPU processing for the workshop. I'm sure many of us don't have a GPU with enough memory to run some of the better LLMs. In Lightning.AI, we created a studio and installed [Ollama](https://ollama.com/) on it to easily download various LLMs and run them using [Open WebUI](https://github.com/open-webui/open-webui).
 
 The LLMs that we experimented with were:
+
 - llama3.1:8b
 - qwen2.5:14b
 - deepseek-r1:14b
 
-After some configuration, we asked the various LLMs to analyze csv data to look for malicious or suspicious activity. One of the more enlightening prompts was having the LLMs look at the csv data below and convert the timestamps, translate the messages to english, and provide a summary. 
+After some configuration, we asked the various LLMs to analyze csv data to look for malicious or suspicious activity. One of the more enlightening prompts was having the LLMs look at the csv data below and convert the timestamps, translate the messages to english, and provide a summary.
 
 ``` csv
 activityKey,activityId,externalNumber,number,activityType,content,dataPath,direction,timeStamp
@@ -49,7 +50,7 @@ What really leaps out is that all three got the timestamps wrong. Taking a detai
 | qwen2.5:14b | February 22, 2024 18:39:20 UTC |
 | deepseek-r1:14b | January 19, 2023 at approximately 1:39:20 PM UTC |
 
-The translations are pretty spot on. I want to call out one interesting result though. There is a message of "Tienes algun oxi". Which do you think is the more correct translation? I would argue deepseek-r1:14b provided the more straight translation while llama3.1:8b read into the shorthand of oxi and made an assumption. qwen2.5:14b seemed to split the two. I prefer the translation from deepseek-r1:14b. 
+The translations are pretty spot on. I want to call out one interesting result though. There is a message of "Tienes algun oxi". Which do you think is the more correct translation? I would argue deepseek-r1:14b provided the more straight translation while llama3.1:8b read into the shorthand of oxi and made an assumption. qwen2.5:14b seemed to split the two. I prefer the translation from deepseek-r1:14b.
 
 | LLM | Translation |
 | --- | --- |
@@ -57,8 +58,8 @@ The translations are pretty spot on. I want to call out one interesting result t
 | qwen2.5:14b | Do you have any oxy [Oxycodone?] |
 | deepseek-r1:14b | Do you have any oxi? |
 
-One last "funny" thing, it appears that the llama3.1:8b LLM thought that the individual was talking to the Phoner assistant and not another contact. It did not understand or take into account the externalNumber column. 
+One last "funny" thing, it appears that the llama3.1:8b LLM thought that the individual was talking to the Phoner assistant and not another contact. It did not understand or take into account the externalNumber column.
 
 ## Thoughts
 
-LLMs used appropriately can be a useful tool to quickly triage and get a sense of the data you are looking at. It does NOT replace the need to actually investigate, verify, and understand the context. Do not implicitly trust the LLM. 
+LLMs used appropriately can be a useful tool to quickly triage and get a sense of the data you are looking at. It does NOT replace the need to actually investigate, verify, and understand the context. Do not implicitly trust the LLM.

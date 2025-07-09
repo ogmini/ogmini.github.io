@@ -3,7 +3,7 @@ layout: post
 title: Zeltser Challenge - Third Month Accomplishments
 author: 'ogmini'
 tags:
- - musing
+ - Musings
 ---
 
 The third month of the Zeltser Challenge has been tough as I'm fully getting into my role as CIO, restructuring the department, and getting acquainted with everything involved in this new role. This new role is very taxing mentally as I'm trying to juggle so many different projects, problems, and goals. Despite all this, I've still somehow managed kept to my daily post cadence.
@@ -17,6 +17,6 @@ Looking back at the highlights for the third month:
 
 This list feels so short; but the AAR/Writeups for the MVS 2025 CTF took up a lot of posts and time. Going back over them revealed some good lessons learned with the top lesson being not get get fixated.
 
-I still need to finish my writeup for the first Belkasoft CTF. 
+I still need to finish my writeup for the first Belkasoft CTF.
 
-Oh, I've also changed the theme of the website. The "hacker" theme was getting old and seemed sort of juvenile. 
+Oh, I've also changed the theme of the website. The "hacker" theme was getting old and seemed sort of juvenile.

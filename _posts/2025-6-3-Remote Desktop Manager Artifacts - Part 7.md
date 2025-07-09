@@ -25,17 +25,17 @@ Some specific columns that are useful/interesting:
 
 Lot of oddities in this record... Starting with the first one that ModifiedDateTime is stored as CreationDateTime. Why? Who knows; but testing proves it. Funny tidbit, this reminds me of a mistake I made naming a database column as "timestampe" instead of "timestamp". It somehow made it past all the reviews and still lives today...
 
-The XML data stored in the Data column should not be glossed over as it contains some "missing" information from the columns. 
+The XML data stored in the Data column should not be glossed over as it contains some "missing" information from the columns.
 
-- ModifiedDate is also stored here and named appropriately. 
-- ModifiedUsername/ModifiedLoggedUsername lets us know who last modified the attachment record. 
+- ModifiedDate is also stored here and named appropriately.
+- ModifiedUsername/ModifiedLoggedUsername lets us know who last modified the attachment record.
 - Filename provides the original filepath of the added file
 - SafePassword is an optional field that stores an encrypted password that was set by the user. This doesn't appear to have any security implications on the actual attachment. You do not need to provide it to view the attachment and it doesn't alter the AttachmentData column. This also doesn't appear to be seeded as the same password has the same bytes in different records.
 - Size provides the size in bytes of the original file. This does match unlike FileSize.
 - Title is the user provided name for this attachment.
 
-The AttachmentData column at the moment has me stumped. I'm pretty sure its encrypted in some fashion as when I add the same exact file multiple times, I end up with different values. This will probably require some reverse engineering to figure out. 
+The AttachmentData column at the moment has me stumped. I'm pretty sure its encrypted in some fashion as when I add the same exact file multiple times, I end up with different values. This will probably require some reverse engineering to figure out.
 
-The discrepancy in the FileSize is also interesting but possibly related to the encryption? The increase is not static but does appear to be related to the original file size. 
+The discrepancy in the FileSize is also interesting but possibly related to the encryption? The increase is not static but does appear to be related to the original file size.
 
 Areas to explore for the future...

@@ -3,7 +3,7 @@ layout: post
 title: The Intersection of DFIR and IT Troubleshooting
 author: 'ogmini'
 tags:
- - musing 
+ - Musings 
 ---
 
 In the world of Digital Forensics and Incident Response (DFIR), the line between traditional IT troubleshooting skills and forensic investigation isn't as wide as it might seem. Both disciplines require a strong foundation in understanding system behavior, analyzing logs, and identifying the actions of users. A skilled IT professional is adept at navigating logs and system reports to identify irregularities, similar to a DFIR investigator who examines system artifacts, event logs, and network traffic to reconstruct incidents. The key similarity is the ability to trace actions across systems, understand what was done, and pinpoint where things went wrong. Whether it is identifying a user's misstep during a hardware/software failure or determining the sequence of events leading to a security breach, both skill sets are rooted in keen investigative abilities and a methodical approach to troubleshooting.

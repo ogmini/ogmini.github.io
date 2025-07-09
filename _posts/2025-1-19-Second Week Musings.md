@@ -3,7 +3,7 @@ layout: post
 title: Second Week Musings
 author: 'ogmini'
 tags:
- - musing
+ - Musings
 ---
 
 It has been a busy week with multiple big changes on the horizon. Definitely feel like I have too many irons in the fire. Hopefully by next month, I can talk about them. Still fighting that imposter syndrome. What have I been able to accomplish this week though?
@@ -18,5 +18,3 @@ There are a few aspects of my answer and what I found that bother me. I'm hoping
 - Try to figure out how to isolate SRUM data as much as possible
 
 I've made no progress on my Notepad State Library or associated projects as I got sidetracked by exploring [MSLab](https://ogmini.github.io/2025/01/17/MSLab-Part-1.html). I also started the build on a new server.
-
-

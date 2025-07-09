@@ -11,17 +11,17 @@ Parts have started to arrive for the next iteration of my next server. I'll be k
 ## Hardware Specs
 
 - AMD Ryzen 9 5900XT
-- EVGA CLC240 AIO 
+- EVGA CLC240 AIO
 - MSI MAG B550 Tomahawk ATX
 - 128GB (4x32GB) DDR4-3600 TEAMGROUP T-Create Expert DIMM
-- Nvidia GTX 1070 
+- Nvidia GTX 1070
 - 2TB Western Digital Blue NVMe
-- Corsair RM750x PSU 
+- Corsair RM750x PSU
 - Storage TBD
 - Lian Li Lancool 207
 
-I'm reusing some parts that I or friends had laying around from older computers that got upgraded. 
+I'm reusing some parts that I or friends had laying around from older computers that got upgraded.
 
-This isn't a huge change from the [current system](https://ogmini.github.io/2025/01/12/Homelab-Current-Setup.html) as they are both AM4 based. But it should address my only complaints about the current system. 
+This isn't a huge change from the [current system](https://ogmini.github.io/2025/01/12/Homelab-Current-Setup.html) as they are both AM4 based. But it should address my only complaints about the current system.
 
-Oh also, the case is very gamer RGB and cheap. I won't be hooking up the RGB. 
+Oh also, the case is very gamer RGB and cheap. I won't be hooking up the RGB.

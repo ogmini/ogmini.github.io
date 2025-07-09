@@ -3,11 +3,11 @@ layout: post
 title: SSH Artifacts in Windows 11 - Part 3
 author: 'ogmini'
 tags:
- - sunday-funday
- - challenge
+ - Sunday-Funday
+ - Challenge
 ---
 
-Continuing from yesterday's [post](https://ogmini.github.io/2025/03/27/Windows-SSH-Testing-Part-2.html), we are looking at how to tell if someone is connected via SSH. I did not have time to look at SSH Tunnels. Please refer back to the main [post](https://ogmini.github.io/2025/03/25/David-Cowen-Sunday-Funday-SSH-Windows.html) for full details as this post will only talk about the tests and results. 
+Continuing from yesterday's [post](https://ogmini.github.io/2025/03/27/Windows-SSH-Testing-Part-2.html), we are looking at how to tell if someone is connected via SSH. I did not have time to look at SSH Tunnels. Please refer back to the main [post](https://ogmini.github.io/2025/03/25/David-Cowen-Sunday-Funday-SSH-Windows.html) for full details as this post will only talk about the tests and results.
 
 ### Active Connections
 

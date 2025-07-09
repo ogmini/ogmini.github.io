@@ -3,8 +3,8 @@ layout: post
 title: David Cowen Sunday Funday Challenge - ChatGPT Desktop Artifacts
 author: 'ogmini'
 tags:
- - sunday-funday
- - challenge
+ - Sunday-Funday
+ - Challenge
 ---
 
 My submission to another one of David Cowen's Sunday Funday challenges. This time related to the ChatGPT Desktop Application. [https://www.hecfblog.com/2025/01/daily-blog-723-sunday-funday-11925.html](https://www.hecfblog.com/2025/01/daily-blog-723-sunday-funday-11925.html)
@@ -34,7 +34,6 @@ The following tools are being used:
 - LevelDBDumper
 - leveldb-cli
 
-
 ### Steps
 
 1. Install ChatGPT via the Windows Store
@@ -43,26 +42,26 @@ The following tools are being used:
     - My GPTs
     - Customize ChatGPT
     - Settings
-4. Perform various actions 
+4. Perform various actions
     - Start Chat
     - Attach File
     - ~~Use voice mode~~ TODO
     - ~~Temporary Chat Flag~~ TODO
 
-At each step of the way, we will monitor for changes to the system using Process Monitor. The `%localappdata%\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0` folder will also be copied using FTK Imager for further analysis and comparison. 
+At each step of the way, we will monitor for changes to the system using Process Monitor. The `%localappdata%\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0` folder will also be copied using FTK Imager for further analysis and comparison.
 
 ## Preliminary Analysis
 
 This is a standard Electron App installed by the Windows App Store that contains the standard:
 
-- a `setting.dat` file just like I described in my research into Notepad [https://github.com/ogmini/Notepad-State-Library?tab=readme-ov-file#settings](https://github.com/ogmini/Notepad-State-Library?tab=readme-ov-file#settings). 
-- a Helium container folder holding User and UserClasses registry hives. 
+- a `setting.dat` file just like I described in my research into Notepad [https://github.com/ogmini/Notepad-State-Library?tab=readme-ov-file#settings](https://github.com/ogmini/Notepad-State-Library?tab=readme-ov-file#settings).
+- a Helium container folder holding User and UserClasses registry hives.
 - various SQLite databases
 - various leveldb databases
 
 Initial search using [strings](https://learn.microsoft.com/en-us/sysinternals/downloads/strings) is unable to find anything related to login of "ogmini". We might need to look into the browser's artifacts to find anything. Maybe they have a saved credential in the browser.
 
-~~~
+~~~ cmd
 strings -s "%localappdata%\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0" | findstr /i "ogmini"
 ~~~
 
@@ -71,13 +70,13 @@ Strings does find files containing words that were part of a chat I had with Cha
 - `%localappdata%\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\IndexedDB\https_chatgpt.com_0.indexeddb.leveldb`
 - `%localappdata\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\Local Storage\leveldb`
 
-~~~
+~~~ cmd
 strings -s "%localappdata%\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0" | findstr /i "snow"
 ~~~
 
-Both of these are LevelDB databases. They also appear to log both sides of the conversation. Have to find a tool that can view/parse these into something more structured and readable. Viewing some of the files with 010 Editor makes it very obvious that conversations are contained within. 
+Both of these are LevelDB databases. They also appear to log both sides of the conversation. Have to find a tool that can view/parse these into something more structured and readable. Viewing some of the files with 010 Editor makes it very obvious that conversations are contained within.
 
-Preliminary glimpses at the registry hives using RegistryExplorer do not find anything of note. This isn't too unexpected as I haven't made any changes to settings or defaults and these might not even be utilized by the application. If this behaves similarly to Windows Notepad, registry records will only be created when the default value for a setting is changed. 
+Preliminary glimpses at the registry hives using RegistryExplorer do not find anything of note. This isn't too unexpected as I haven't made any changes to settings or defaults and these might not even be utilized by the application. If this behaves similarly to Windows Notepad, registry records will only be created when the default value for a setting is changed.
 
 Registry Hives exist in the following locations:
 
@@ -123,11 +122,11 @@ Using the above artifacts, we can construct a generalized timeline of actions as
 
 Using leveldb-cli and running the following command:
 
-~~~
+~~~ cmd
 leveldb -d "XXXXX\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\IndexedDB\https_chatgpt.com_0.indexeddb.leveldb" -i dump
 ~~~
 
-Dumps out all the messages from the chat with ChatGPT along with a load of other information. I haven't had a chance to explore what the other information is. I'll have to cross reference the research done by CCL Solutions Group. What is interesting, it is very obvious that ChatGPT uses Markdown to handle the formatting for the messages. 
+Dumps out all the messages from the chat with ChatGPT along with a load of other information. I haven't had a chance to explore what the other information is. I'll have to cross reference the research done by CCL Solutions Group. What is interesting, it is very obvious that ChatGPT uses Markdown to handle the formatting for the messages.
 
 ![leveldb-cli output](/images/leveldb/leveldb-cli-1.png)
 
@@ -155,15 +154,12 @@ Zipping over to ChromeCacheView, I see a handy record that links "file-QovPq6QZ7
 
 ## Future Research
 
-- Read more into the LevelDB / IndexedDB to fully understand the format. 
-- Improve existing tooling or write new ones to more easily understand the data in the LevelDB / IndexedDB files. 
+- Read more into the LevelDB / IndexedDB to fully understand the format.
+- Improve existing tooling or write new ones to more easily understand the data in the LevelDB / IndexedDB files.
 - Explore the other scenarios of changing settings, temporary chat flag, and voice mode.
 
 ## Conclusion
 
-Artifacts related to the chat messages and uploaded files can be recovered using a combination of ChromeCacheView and leveldb-cli. 
+Artifacts related to the chat messages and uploaded files can be recovered using a combination of ChromeCacheView and leveldb-cli.
 
-Artifacts related to login can be recovered using ChromeCacheView and using other tools to examine the history of the browser used for authentication. These artifacts can help place a timeline for when the user signed into the service. 
-
-
-
+Artifacts related to login can be recovered using ChromeCacheView and using other tools to examine the history of the browser used for authentication. These artifacts can help place a timeline for when the user signed into the service.

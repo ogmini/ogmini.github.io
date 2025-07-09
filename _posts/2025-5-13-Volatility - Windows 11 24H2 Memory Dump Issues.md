@@ -12,7 +12,7 @@ Had a little bit of time today to start an attempt at using Volatility to look a
 
 ![Sample](/images/volatilityerrors/sampledump.png)
 
-Running windows.info on my obtained memory dump gave initially encouraging information. Correctly reporting back the Major/Minor version. 
+Running windows.info on my obtained memory dump gave initially encouraging information. Correctly reporting back the Major/Minor version.
 
 ![Mine](/images/volatilityerrors/mydump.png)
 
@@ -21,7 +21,7 @@ Unfortunately, upon running windows.pslist I got the following message:
 ![Error Message](/images/volatilityerrors/errmsg.png)
 
 > Volatility experienced a symbol-related issue:  
-> symbol_table_name1!_MM_SESSION_SPACE: Enumeration not found in symbol_table_name1 table: _MM_SESSION_SPACE
+> symbol_table_name1!_MM_SESSION_SPACE: Enumeration not found in symbol_table_name1 table:_MM_SESSION_SPACE
 >
 >        * An invalid symbol table
 >        * A plugin requesting a bad symbol
@@ -29,4 +29,4 @@ Unfortunately, upon running windows.pslist I got the following message:
 >
 >No further results will be produced
 
-As you can see from the screenshots, I'm using Volatility 3 2.11.0 and I used the symbol pack for Windows from [https://github.com/volatilityfoundation/volatility3?tab=readme-ov-file#symbol-tables](https://github.com/volatilityfoundation/volatility3?tab=readme-ov-file#symbol-tables). That is as far as I got today, I'll probably open up an issue on the GitHub. I'm pretty sure I'm not missing anything. 
+As you can see from the screenshots, I'm using Volatility 3 2.11.0 and I used the symbol pack for Windows from [https://github.com/volatilityfoundation/volatility3?tab=readme-ov-file#symbol-tables](https://github.com/volatilityfoundation/volatility3?tab=readme-ov-file#symbol-tables). That is as far as I got today, I'll probably open up an issue on the GitHub. I'm pretty sure I'm not missing anything.
