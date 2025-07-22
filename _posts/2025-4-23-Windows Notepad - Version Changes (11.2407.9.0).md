@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows Notepad - Version Changes (11.2402.22.0)
+title: Windows Notepad - Version Changes (11.2407.9.0)
 author: 'ogmini'
 tags:
  - Research
