@@ -9,7 +9,7 @@ tags:
 
 Today, I'm looking at Windows Notepad 11.2410.21.0 and comparing it to the previous version 11.2410.20.0. This could be useful if you somehow come across an older version of Windows Notepad on a system that is being investigated. For more details refer to [https://github.com/ogmini/Notepad-State-Library](https://github.com/ogmini/Notepad-State-Library).
 
-If you don't want to read the rest. __No significant changes from 11.2410.20.0 to 11.2410.21.0.__.
+If you don't want to read the rest. __No significant changes from 11.2410.20.0 to 11.2410.21.0.__. I have a feeling this was a bug fix potentially related to the Rewrite/AI feature that was added in 11.2410.20.0.
 
 ## Features
 
