@@ -15,7 +15,7 @@ If you don't want to read the rest. __No significant changes from 11.2410.20.0 t
 
 | Feature | 11.2402.22.0 | 11.2407.9.0 | 11.2408.12.0 | 11.2409.9.0 | 11.2410.20.0 | 11.2410.21.0 | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Spellcheck | | | | | x | x |  |
+| Spellcheck | | x | x | x | x | x |  |
 | Rewrite/AI | | | | | x | x | Will only appear on Windows 11 24H2 |
 | Recent Files | | | | |  |  |  |
 | Markdown | | | | |  |  |  |
