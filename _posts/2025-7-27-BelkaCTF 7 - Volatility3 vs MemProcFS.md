@@ -39,8 +39,8 @@ Using the latest version of MemProcFS 5.15. I browsed to the location of the dum
 
 | Tool | Size | MD5 | Notes |
 | --- | --- | --- | --- |
-| Volatility 3 - pslist | 1,138,688 bytes | ec3a90bdde9ca0cb315b8789795436f1 | 010 Editor Compare shows many differences scattered throughout |
-| Volatility 3 - dumpfiles | 1,115,136 bytes | 3b8fa53e349ad40ad78e23dd9134cfa2 | 010 Editor Compare shows that the beginning is the same |
+| Volatility 3 - pslist | 1,138,688 bytes | ec3a90bdde9ca0cb315b8789795436f1 | 010 Editor Compare shows many differences scattered throughout from the correct file. |
+| Volatility 3 - dumpfiles | 1,115,136 bytes | 3b8fa53e349ad40ad78e23dd9134cfa2 | 010 Editor Compare shows that the beginning is the same as the correct file. This file just has more null bytes at the end. |
 | MemProcFS | 1,111,552 bytes | 75ea94b54420c39dcd3d8ce574ba9d34 | Correct File |
 
 Either one of these files would have let you solve the later challenges. 
