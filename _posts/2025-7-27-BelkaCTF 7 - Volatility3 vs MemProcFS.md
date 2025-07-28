@@ -11,11 +11,21 @@ I encountered an interesting situation during BelkaCTF 7. This is not a writeup 
 
 ## Volatility 3
 
-Using the latest version of Volatility 3 2.26.0. I ran the following command to dump the identified process.
+Using the latest version of Volatility 3 2.26.0. I ran the following command to dump the identified process using the pslist plugin.
+
+### pslist dump
 
 ~~~ cmd
 vol -f BelkaCTF_7_CASE250722_KTSOAERO.mem windows.pslist --pid #### --dump
 ~~~
+
+I also ran the dumpfiles plugin.
+
+### dumpfiles
+
+~~~ cmd 
+vol -f BelkaCTF_7_CASE250722_KTSOAERO.mem windows.dumpfiles.DumpFiles --pid ####
+~~~ 
 
 ## MemProcFS
 
@@ -27,9 +37,10 @@ Using the latest version of MemProcFS 5.15. I browsed to the location of the dum
 
 ## Differences
 
-| Tool | Size | MD5 |
-| --- | --- | --- |
-| Volatility 3 | 1,138,688 bytes | ec3a90bdde9ca0cb315b8789795436f1 |
-| MemProcFS | 1,111,552 bytes | 75ea94b54420c39dcd3d8ce574ba9d34 |
+| Tool | Size | MD5 | Notes |
+| --- | --- | --- | --- |
+| Volatility 3 - pslist | 1,138,688 bytes | ec3a90bdde9ca0cb315b8789795436f1 | 010 Editor Compare shows many differences scattered throughout |
+| Volatility 3 - dumpfiles | 1,115,136 bytes | 3b8fa53e349ad40ad78e23dd9134cfa2 | 010 Editor Compare shows that the beginning is the same |
+| MemProcFS | 1,111,552 bytes | 75ea94b54420c39dcd3d8ce574ba9d34 | Correct File |
 
-Comparing them in 010 Editor shows differences between the files scattered throughout. Either one of these files would have let you solve the later challenges. 
+Either one of these files would have let you solve the later challenges. 
