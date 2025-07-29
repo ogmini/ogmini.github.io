@@ -36,7 +36,7 @@ vol -f BelkaCTF_7_CASE250722_KTSOAERO.mem windows.envars --pid 5316
 
 ![envars](/images/BelkaCTF7/Task1-2.png)
 
-COMPUTERNAME=TSO-ATC-CT412
+COMPUTERNAME=TSO-ATC-CT412  
 USERNAME=award
 
 ### MemProcFS - Approach 1
@@ -45,7 +45,7 @@ This time we go to the `name` folder of the mounted memory image and look for a 
 
 ![envars-memprocfs](/images/BelkaCTF7/Task1-3.png)
 
-COMPUTERNAME=TSO-ATC-CT412
+COMPUTERNAME=TSO-ATC-CT412  
 USERNAME=award
 
 #### Bonus Approach
