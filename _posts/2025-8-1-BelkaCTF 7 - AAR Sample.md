@@ -22,7 +22,19 @@ We can dump the malware by using the dumpfiles plugin.
 vol -f BelkaCTF_7_CASE250722_KTSOAERO.mem windows.dumpfiles --pid 9920
 ~~~
 
-This gives us many files associated with the process; but we only care about the `epxlorer.exe.img`.
+There is another option where we run the filescan plugin to get the offset of the malware.
+
+~~~ cmd
+vol -f BelkaCTF_7_CASE250722_KTSOAERO.mem windows.filescan
+~~~
+
+This gives us an offset of 0xe6892af1f1f0 for `\Users\award\Downloads\epxlorer.exe`. Using this offset we can run the dumpfiles plugin for that specific virtual address.
+
+~~~ cmd
+vol -f BelkaCTF_7_CASE250722_KTSOAERO.mem windows.dumpfiles --virtaddr 0xe6892af1f1f0
+~~~
+
+Both options will give us the `epxlorer.exe.img` file that we care about for the next steps.
 
 ![PID 9920](/images/BelkaCTF7/Task3-1.png)
 
