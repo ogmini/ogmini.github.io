@@ -6,9 +6,8 @@ tags:
  - Registryhive
 ---
 
-> NOTE   
+> NOTE
 > This has been superseded by [https://ogmini.github.io/2025/07/10/Registry-Hive-Data-Types-Part-8.html](https://ogmini.github.io/2025/07/10/Registry-Hive-Data-Types-Part-8.html)
-
 
 Continuation from yesterday's [post](https://ogmini.github.io/2025/07/06/Registry-Hive-Data-Types-Part-6.html). Still haven't figured it all out. Making progress on the DataTypes though while I take a break from trying to decipher the other parts of the CompositeValues. I have some more theories to test out.  
 
