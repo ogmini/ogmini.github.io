@@ -8,7 +8,7 @@ tags:
  - Writeups
 ---
 
-![Task](/images/BelkaCTF7/Task6.png)
+![Task](/images/BelkaCTF7/Task5.png)
 
 We've identified the malware and author. It is now time to do some malware analysis! Where/how is this malware communicating? I'd argue we were given a bit of a clue by knowing that it communicates using a Telegram API.
 
