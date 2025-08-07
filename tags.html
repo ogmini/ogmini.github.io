@@ -14,11 +14,15 @@ permalink: /tags.html
 
 <h2> Posts organized by Tags</h2>
 
+<ul style="columns: 3; -webkit-columns: 3; -moz-columns: 3;">
 {% for tag in sortedtags %}
-  <a href="{{site.baseurl}}/tags.html#{{tag | slugize}}">
+  <li>
+    <a href="{{site.baseurl}}/tags.html#{{tag | slugize}}">
       #{{ tag }}
-  </a>
+    </a>
+  </li>
 {% endfor %}
+</ul>
 
 <hr/>
 
