@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<style>
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
 
 <div id="post">
 
@@ -9,7 +16,7 @@ layout: default
 
 <p class="view">by {{ page.author | default: site.author }}</p>
 
-<div>
+<div class="clearfix" style="margin-bottom: 20px">
   <div style="float: left">
     {% if page.previous.url %}
     <a href="{{page.previous.url}}">Previous Post</a>
@@ -34,7 +41,7 @@ layout: default
   </small>
 {% endif %}
 
-<div style="margin-top: 20px">
+<div class="clearfix" style="margin-top: 20px">
   <div style="float: left">
     {% if page.previous.url %}
     <a href="{{page.previous.url}}">Previous Post</a>
