@@ -9,6 +9,19 @@ layout: default
 
 <p class="view">by {{ page.author | default: site.author }}</p>
 
+<div>
+  <div>
+    {% if page.previous.url %}
+    <a href="{{page.previous.url}}">Previous Post</a>
+    {% endif %}
+  </div>
+  <div>
+    {% if page.next.url %}
+    <a href="{{page.next.url}}">Next Post</a>
+    {%endif %}
+  </div>
+</div>
+
 {{content}}
 
 {% if page.tags %}
@@ -20,6 +33,19 @@ layout: default
     {% endfor %}
   </small>
 {% endif %}
+
+<div>
+  <div>
+    {% if page.previous.url %}
+    <a href="{{page.previous.url}}">Previous Post</a>
+    {% endif %}
+  </div>
+  <div>
+    {% if page.next.url %}
+    <a href="{{page.next.url}}">Next Post</a>
+    {%endif %}
+  </div>
+</div>
 
 <script src="https://giscus.app/client.js"
         data-repo="ogmini/ogmini.github.io"
