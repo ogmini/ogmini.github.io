@@ -10,18 +10,18 @@ layout: default
 <p class="view">by {{ page.author | default: site.author }}</p>
 
 <div>
-  <div>
+  <div style="float: left">
     {% if page.previous.url %}
     <a href="{{page.previous.url}}">Previous Post</a>
     {% endif %}
   </div>
-  <div>
+  <div style="float: right">
     {% if page.next.url %}
     <a href="{{page.next.url}}">Next Post</a>
     {%endif %}
   </div>
 </div>
-
+<br/>
 {{content}}
 
 {% if page.tags %}
@@ -33,14 +33,14 @@ layout: default
     {% endfor %}
   </small>
 {% endif %}
-
+<br/>
 <div>
-  <div>
+  <div style="float: left">
     {% if page.previous.url %}
     <a href="{{page.previous.url}}">Previous Post</a>
     {% endif %}
   </div>
-  <div>
+  <div style="float: right">
     {% if page.next.url %}
     <a href="{{page.next.url}}">Next Post</a>
     {%endif %}
