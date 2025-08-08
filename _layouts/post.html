@@ -7,6 +7,11 @@ layout: default
     display: table;
     clear: both;
   }
+
+  .navposts {
+    display: flex;
+    justify-content: space-between;
+  }
 </style>
 
 <div id="post">
@@ -16,13 +21,13 @@ layout: default
 
 <p class="view">by {{ page.author | default: site.author }}</p>
 
-<div class="clearfix" style="margin-bottom: 20px">
-  <div style="float: left">
+<div class="navposts" style="margin-bottom: 20px">
+  <div>
     {% if page.previous.url %}
     <a href="{{page.previous.url}}">Previous Post</a>
     {% endif %}
   </div>
-  <div style="float: right">
+  <div>
     {% if page.next.url %}
     <a href="{{page.next.url}}">Next Post</a>
     {%endif %}
