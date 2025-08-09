@@ -2,12 +2,6 @@
 layout: default
 ---
 <style>
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   .navposts {
     display: flex;
     justify-content: space-between;
@@ -46,13 +40,13 @@ layout: default
   </small>
 {% endif %}
 
-<div class="clearfix" style="margin-top: 20px">
-  <div style="float: left">
+<div class="navposts" style="margin-top: 20px">
+  <div>
     {% if page.previous.url %}
     <a href="{{page.previous.url}}">Previous Post</a>
     {% endif %}
   </div>
-  <div style="float: right">
+  <div>
     {% if page.next.url %}
     <a href="{{page.next.url}}">Next Post</a>
     {%endif %}
