@@ -34,7 +34,9 @@ Using the Process ID of 2272 in my case, I next run handles to see what the proc
 vol -f "memdump.mem" windows.handles --pid 2272
 ~~~
 
-At the moment, I'm looking for anything that looks familiar or interesting and I find our old friends the TabState/WindowState files. Interestingly, I do not find four of them as I would expect from having four tabs open. There are the two WindowState files as expected.
+At the moment, I'm looking for anything that looks familiar or interesting and I find our old friends the TabState/WindowState files. Interestingly, I do not find four of them as I would expect from having four tabs open. There are the two WindowState files as expected. One of the TabState files is missing from the handles!
+
+![Sample](/images/windowsnotepad/missing.png)
 
 | Tab | TabState File Exists |Handle Exists|
 | --- | --- | --- |
@@ -53,8 +55,10 @@ vol -f "memdump.mem" windows.dumpfiles --pid 2272
 
 I could be more specific and dump the specific files by passing the virtaddr. But, might as well grab everything so I can poke at it later. Loading the three dumped TabState files in 010 Editor confirms expectations and that the "Opened text file with no changes" does not have an associated handle.
 
-The next natural question is, where does that exist in memory? Does it? I know that the tab exists since we can see it referenced in the WindowState files.
-
 ## MemProcFS
 
 We can duplicate the above exploration using MemProcFS. After mounting the memory dump, I browse over to the "names" folder and look for the notepad.exe process. After that, I go to the "handles" folder which is located in the "files" folder. Again, we find our TabState/WindowState files that match with what Volatility 3 dumped.
+
+## Next Steps
+
+The next natural question is, where does the missing TabState file exist in memory? Does it? I know that the tab exists since we can see it referenced in the WindowState files.
