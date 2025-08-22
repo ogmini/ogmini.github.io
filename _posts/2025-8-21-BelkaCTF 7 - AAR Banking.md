@@ -26,4 +26,4 @@ Visiting the contact page for this bank at `https://libertybank.ge/ka/chven-shes
 
 ## Thoughts
 
-From reading the official writeup, I learned that this could also have been solved by looking at the Google Pay database. I do not believe that ALEAPP currently parses this. Maybe something to poke around for the future. 
+From reading the official writeup, I learned that this could also have been solved by looking at the Google Pay database. I do not believe that ALEAPP currently parses this. Maybe something to poke around for the future.
