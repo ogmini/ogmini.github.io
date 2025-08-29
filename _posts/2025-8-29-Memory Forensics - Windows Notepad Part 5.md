@@ -76,7 +76,11 @@ I copy/paste the highlighted hex into new files in 010 Editor for easier analysi
 
 The Window State files confirm that only one tab is open with the GUID of `c05ecb11-6d18-478f-9807-6554828d0bf2`. There is the possiblity of one of the Window State files having a list of different tabs so you should always check both. Taking a look at that Tab State file confirms that this is a saved file with no changes. I also get the path and filename of the opened text file as `C:\Users\User\Desktop\MyFile.txt` which gives us our next step.
 
-Before we move on though, I take another look at the MFT entries by copy/pasting the MFT entry hex into new files in 010 Editor for easier analysis. This allows me to apply Eric Zimmerman's MFT template. I'm able to see the various timestamps giving us more insight into when files were opened or changed.
+Before we move on though, I take another look at the MFT entries by copy/pasting the MFT entry hex into new files in 010 Editor for easier analysis. This allows me to apply Eric Zimmerman's MFT template. I'm able to see the various timestamps giving us more insight into when files were opened or changed. Running the MFTScan plugin for Volatility 3 also provides us the same timestamps.
+
+~~~ cmd
+vol.py -f memdump-savedfile.mem windows.mftscan.MFTScan
+~~~
 
 I go back to the dump of PID 6780 and search for the filename of `MyFile.txt` and find an MFT entry. I'm able to recover the contents (`This file that I have saved to disk with no changes`) of the text file as it was small enough to fit in the MFT entry. Again, examining the MFT entry also provides us the various timestamps for the text file which are useful for timelines.
 
