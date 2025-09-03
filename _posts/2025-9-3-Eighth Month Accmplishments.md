@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Zeltser Challenge - Eigth Month Accomplishments
+title: Zeltser Challenge - Eighth Month Accomplishments
 author: 'ogmini'
 tags:
  - Musings
 ---
 
-August started strong and ended with chaos. Being in the ER for family is not fun; but all is well now. Minus some missed posts. We're at the eigth month of the Zeltser Challenge from David Cowen and I'm still enjoying everything and it has really pushed me to go outside of my comfort area. 
+August started strong and ended with chaos. Being in the ER for family is not fun; but all is well now. Minus some missed posts. We're at the eighth month of the Zeltser Challenge from David Cowen and I'm still enjoying everything and it has really pushed me to go outside of my comfort area. 
 
 I'm continuing to do writeups for the BelkaCTF 7 and plan on doing a full mock report that might be presented to an audience.
 
