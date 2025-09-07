@@ -19,4 +19,4 @@ For now, I've been reading up on how to go about rooting the phone on the [XDA F
 6. Use ADB to flash the patched `init_boot.img` back to the phone
 7. Reboot 
 
-I will probably use a tool called Pixel Flasher from badabing2003 at [https://xdaforums.com/t/pixelflasher-a-gui-tool-for-flashing-updating-rooting-managing-pixel-phones.4415453/](https://xdaforums.com/t/pixelflasher-a-gui-tool-for-flashing-updating-rooting-managing-pixel-phones.4415453/). It is just a matter of getting the time and confidence to give this a shot.
+I will probably use a tool called Pixel Flasher from badabing2003 at [https://xdaforums.com/t/pixelflasher-a-gui-tool-for-flashing-updating-rooting-managing-pixel-phones.4415453/](https://xdaforums.com/t/pixelflasher-a-gui-tool-for-flashing-updating-rooting-managing-pixel-phones.4415453/). There is also a Pixel 7 specific thread at [https://xdaforums.com/t/pixelflasher-for-google-pixel-7-support-thread.4505289/](https://xdaforums.com/t/pixelflasher-for-google-pixel-7-support-thread.4505289/). It is just a matter of getting the time and confidence to give this a shot.
