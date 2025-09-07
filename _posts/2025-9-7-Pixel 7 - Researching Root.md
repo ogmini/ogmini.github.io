@@ -20,3 +20,5 @@ For now, I've been reading up on how to go about rooting the phone on the [XDA F
 7. Reboot 
 
 I will probably use a tool called Pixel Flasher from badabing2003 at [https://xdaforums.com/t/pixelflasher-a-gui-tool-for-flashing-updating-rooting-managing-pixel-phones.4415453/](https://xdaforums.com/t/pixelflasher-a-gui-tool-for-flashing-updating-rooting-managing-pixel-phones.4415453/). There is also a Pixel 7 specific thread at [https://xdaforums.com/t/pixelflasher-for-google-pixel-7-support-thread.4505289/](https://xdaforums.com/t/pixelflasher-for-google-pixel-7-support-thread.4505289/). It is just a matter of getting the time and confidence to give this a shot.
+
+On another note, I had opened a PR for ALEAPP to add support for extracting third-party IMAP emails from the default Gmail application back in this [post](https://ogmini.github.io/2025/08/20/ALEAPP-Plugin-Gmail-App-IMAP-Accounts.html). Happy to say that is was merged recently - [https://github.com/abrignoni/ALEAPP/pull/590](https://github.com/abrignoni/ALEAPP/pull/590). This served as a little bit of motivation to jump back on this Pixel 7 project. 
