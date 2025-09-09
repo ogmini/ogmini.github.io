@@ -23,3 +23,10 @@ Useful references:
 7. Open command prompt to the Android Platform Tools and run `fastboot devices`. This is just to verify the phone is connected. You should see a device listed.
 8. Run `fastboot flashing unlock`. The phone's screen should change to the bootloader unlock screen.
 9. Use the volume keys to choose the "Unlock the bootloader" option. This will wipe the phone as stated, restart, and leave you at the setup/activation screens.
+
+## Notes
+
+This was performed on:
+
+- Pixel 7 / Android 16 / Build BP3A.250905.014
+- Android Platform Tools 36.0.0
