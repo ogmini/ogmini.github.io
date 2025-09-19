@@ -1,0 +1,25 @@
+---
+layout: post
+title: CISA IR Training - Anatomy of an Attack Ransomware Workshop (IR224)
+author: 'ogmini'
+tags:
+ - Training
+---
+
+Just finished "Anatomy of an Attack: Ransomware Workshop (IR224)" offered by CISA in coordination with Cybervance and Blue Cape Security. I talked about these in a previous [post](https://ogmini.github.io/2025/01/04/Certification-Training-Plans-2025.html) and would encourage those eligible to register.
+
+In the course we talked about:
+
+- Attacker Tactics
+- Lifecycle of an attack
+- LOLBins
+- C2 Frameworks
+- Incident Response
+
+## Thoughts
+
+This was a great course and my only complaint would be that it was only 2 days long. There was a TON of information thrown at us. I had never spun up a C2 Framework and we were able to play around with [http://www.powershellempire.com/](http://www.powershellempire.com/) in a lab environment to emulate how an attacker would leverage access. 
+
+We also played around with LOLBins and other tools such as mimikatz. This was a nice refresher from some of my previous classwork. This was in the context of recon and lateral movement. 
+
+The second day revolved around being in the shoes of the blue team and investigating a ransomware incident. We leveraged tools such as the venerable KAPE, Splunk, Security Onion, and talked about Velociraptor. This all culminated in a very quick CTF/Challenge in which we were given information about an incident and cut loose on a lab environment to start our incident response. I must say, everytime I do one of these CTF/Challenges I learn something new and make more connections. 
