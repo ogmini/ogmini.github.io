@@ -16,6 +16,21 @@ Android 16 BP3A.250905.014
 
 Gmail Application Version: 2025.09.08.806471915.Release
 
+Using adb, I open a shell to the Pixel 7 and use the `su` command to elevate permissions to root. The `tar` command allows me to tar up a directory in order to save it to my computer for further examination.
+
+~~~ bash
+su 
+tar -cvf /storage/self/primary/Download/gm.tar /data/data/com.google.android.gm/
+~~~
+
+`adb pull` lets me download the tar file to my computer
+
+~~~ cmd
+adb pull /storage/self/primary/Download/gm.tar
+~~~
+
+You may decide to save the tar file to a different location. The above would need to be changed appropriately.
+
 ## Email Attachments
 
 I wanted to see how email attachments are handled and what digital artifacts they leave behind. I created two test accounts on [runbox.com](runbox.com) (This is not an endorsement of the service or company) and connected both accounts to the Gmail Application. I also had a third Google Account associated with the phone. This left me with three email accounts associated with the Gmail Application and I sent a few test emails back and forth between the accounts. Some of these emails included image and pdf attachmets.
@@ -36,11 +51,11 @@ Below is a quick database diagram and the relations between the tables. I have r
 
 A quick SQL query that would give you all attachments and their associated emails and accounts.
 
-``` sql
+~~~ sql
 SELECT * FROM Account AS A 
 INNER JOIN Message AS M ON A._id = M.AccountKey
 INNER JOIN Attachment AS AM ON M._id = AM.messageKey
-```
+~~~
 
 ### Attachment Files
 
