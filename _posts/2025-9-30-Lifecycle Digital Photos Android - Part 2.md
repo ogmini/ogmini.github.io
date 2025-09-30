@@ -48,4 +48,4 @@ I'm a little surprised at the geoData being all 0s for the random image. I had b
 
 ## Next Steps/Questions
 
-Start pulling/putting the information we have from Part 1 and Part 2 together. See if there are any correlations. In general, more testing is needed.
+Start pulling/putting the information we have from Part 1 and Part 2 together. See if there are any correlations. In general, more testing is needed. We also haven't looked at the EXIF data yet.
