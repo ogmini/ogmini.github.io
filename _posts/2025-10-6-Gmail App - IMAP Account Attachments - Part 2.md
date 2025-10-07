@@ -20,6 +20,6 @@ No path for 2.db_att exists.
 
 Attachments that are sent from the phone are not stored the same way. In the `Attachment` table you will see records with a non-NULL value for "cachedFile". For example `content://com.google.android.gm.email.provider/attachment/cachedFile?filePath=%2Fdata%2Fuser%2F0%2Fcom.google.android.gm%2Fcache%2F2025-10-06-15%3A49%3A463611689731535944683.attachment`. Breaking that down, the attachment is stored at `\data\com.google.android.gm\cache\2025-10-06-15_49_463611689731535944683.attachment`. More testing is needed to see how long this file will stay in cache. 
 
-The following is also referenced in the contentUri field `content://media/picker/0/com.android.providers.media.photopicker/media/33`. I need to poke around this some more. One would assume this is making reference to my using the photo picker to choose an image to attach. However, the image was not named 33.
+The following is also referenced in the contentUri field `content://media/picker/0/com.android.providers.media.photopicker/media/33`. I need to poke around this some more. One would assume this is making reference to my using the photo picker to choose an image to attach. However, the image was not named 33.  Interesting post on Google's issue tracker - [https://issuetracker.google.com/issues/268079113](https://issuetracker.google.com/issues/268079113)
 
 I still need to make updates to the ALEAPP Plugin to handle the attachments.
