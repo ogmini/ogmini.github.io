@@ -19,4 +19,4 @@ Various tools like KAPE can already easily collect all the various registry hive
 2. Parse all the hives and output/merge them into one CSV
 3. Write another tool that would take in multiple hives and display them as if they were one
 
-I'm trending to number one since it would only result in a small change to most workflows. The one BIG downside to this approach is I'm not sure how you would indicate to the investigator WHERE that key came from. 
+I'm trending to number one since it would only result in a small change to most workflows. The one BIG downside to this approach is I'm not sure how you would indicate to the investigator WHERE that key came from.
