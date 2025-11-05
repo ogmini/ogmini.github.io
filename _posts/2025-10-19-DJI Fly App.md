@@ -29,7 +29,7 @@ adb pull /storage/self/primary/Download/dji_fly.tar
 
 I really need to script this out... I should be able to do this with:
 
-~~~ cmd 
+~~~ cmd
 adb shell su -c "tar -cvf /storage/self/primary/Download/dji_fly.tar /data/data/dji.go.v5/"
 ~~~
 
