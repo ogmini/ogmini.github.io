@@ -50,6 +50,6 @@ On the main menu you have the following option:
   - Chat Capture
   - Query Content Providers
 
-I tried out all of the options except for "Chat Capture" and encountered no issues/errors. I have no chats on my test Pixel 7 at the moment. I have not had a chance to run this on the Pixel 6A yet. 
+I tried out all of the options except for "Chat Capture" and encountered no issues/errors. I have no chats on my test Pixel 7 at the moment. I have not had a chance to run this on the Pixel 6A yet.
 
 ALEX is Very easy to use and gives similar vibes to [Android Triage](https://github.com/RealityNet/android_triage). I have to find some more time to dig in deeper. Feeding the output in ALEAPP and examining any differences between ALEX's capabilities on a rooted and non-rooted phone.
