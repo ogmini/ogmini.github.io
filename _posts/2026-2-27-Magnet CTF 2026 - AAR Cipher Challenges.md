@@ -7,6 +7,8 @@ tags:
  - Challenges
 ---
 
+![CTF Image](/images/MVS2026/MVS26_CTF.png)
+
 Below are my writeups for the Cipher Pre-Challenges from the recent MVS 2026 CTF.
 
 ## Can you Handle this one?
@@ -138,7 +140,7 @@ Peel back the layers was a reference to the zip file.
 
 Answer: [https://github.com/abrignoni](https://github.com/abrignoni)
 
-## Good Grief!
+## Good Grief
 
 > The Great Pumpkin’s Inverse Logic
 >
