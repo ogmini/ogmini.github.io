@@ -1,0 +1,16 @@
+---
+title: "Search"
+layout: default
+permalink: /search/
+sitemap: false
+---
+
+<article>
+  <header><h1>Search</h1></header>
+  
+  <div class="gcse-search"></div>
+  
+  {% if site.google_cse_id %}
+  <script async src="https://cse.google.com/cse.js?cx={{ site.google_cse_id }}"></script>
+  {% endif %}
+</article>
