@@ -24,7 +24,7 @@ Description: What is the mascot of the frozen dessert shop that the user visits 
 
 In the Cipher Pre-Challenges, one of the answers was DOUBLEBLAK and Ian Whifflin has some great research on Location data. Specifically [https://doubleblak.com/blogPost.php?k=Locations](https://doubleblak.com/blogPost.php?k=Locations) is of relevancy for this challenge. His work was also published on DFIR Reviw [https://doi.org/10.21428/b0ac9c28.9031561b](https://doi.org/10.21428/b0ac9c28.9031561b)
 
-### Actual Solution
+### Solution
 
 Where can we find information about a place that a user visits a lot? Apple Map Trips or Significant Locations! In my case, I checked Apple Map Trips under Magnet Axiom. The solution written by Hexordia used the Significant Locations section. They are both closely related artifacts.
 
