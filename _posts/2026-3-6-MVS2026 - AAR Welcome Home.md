@@ -35,9 +35,13 @@ Answer: 49354
 
 ### Takeaways
 
-Interestingly, the iLEAPP plugin from Kevin Pagano reports the Redirect Source and Redirect Direction from the database while Magnet Axiom doesn't show this or at least not by default. I'd like to get confirmation; but it looks like the individual was opened the Google Drive application on their iPhone which utilized Google OAuth 2.0 authorization. I'm intrigued to know if that is correct...
+Interestingly, the iLEAPP plugin from Kevin Pagano reports the Redirect Source from the database while Magnet Axiom doesn't show this or at least not by default. I'd like to get confirmation; but it looks like the individual opened the Google Drive application on their iPhone which utilized Google OAuth 2.0 authorization. I'm intrigued to know if that is correct...
 
 OAuth 2.0 flow seen in Safari History:
+
+![iphone-solution-12-2.png](/images/MVS2026/iphone-solution-12-2.png)
+
+URLs from the above screenshot if you'd like to throw them all into [unfurl](https://dfir.blog/unfurl/)
 
 1. https://accounts.google.com/o/oauth2/auth?client_id=947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com&redirect_uri=http%3a%2f%2f127.0.0.1%3a49354&state=DlZ5NRaWdsqHUiS21f2V&scope=https%3a%2f%2fwww.googleapis.com%2fauth%2fflexible-api&response_type=code&prompt=consent&access_type=offline&hl=en
 2. https://accounts.google.com/v3/signin/identifier?opparams=%253Fhl%253Den&dsh=S-636249750%3A1765316704781958&access_type=offline&client_id=947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com&hl=en&o2v=1&prompt=consent&redirect_uri=http%3A%2F%2F127.0.0.1%3A49354&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fflexible-api&service=lso&state=DlZ5NRaWdsqHUiS21f2V&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPFdT1NN0wXnYLIoXlSLz6dLMkWdrkCm3uH1A8l-mmugkmKezyBfgzsiE8zXCydLvdBxHwla-yXeNM_16MrjupxLKl38c2z77W_0oVdqPHq9Q02PYByV9knOOeXWe2nuvkFNKI7xo_O8apEopOhMOQWN-5N6H9mw4asXLjhMQ8-_aP822iAH33-yBwmToE39ZHBtqBN603MMaSuWr9EMcSIrCoQ8ecnbc7fgOBjnLAL5T0WEvxyWjA-1pyY7O2YAUkMHhBL7A6gerDfiPGvr9IaLwVb_X9osEr0huovWbuTEyI9FWTQSRlLk3DRemddIgizTXdiVM32FTSbyvU7HpJz1L6UFuWPKrHLkvYXrIhGYFWITmvwbgAeLxuxbN0PEbcvDyaSol7IAuwH4jLnqLrFwNiQOyHeOXVEgGhnu4uhw0VSAO1RiUzW2HoClHF7s4xUBwiV%26flowName%3DGeneralOAuthFlow%26hl%3Den%26as%3DS-636249750%253A1765316704781958%26client_id%3D947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=http%3A%2F%2F127.0.0.1%3A49354&rart=ANgoxccha1Z0OMQinNG2yWgBz3TdLntfNEb93zJaeD_m8LCF8bwb-O3rGx0Kk38qz70aUdfyhXNf-PdeSm-f0UGAhX5zexwpiR247gvWp9SRz2jAmCrDgUY
