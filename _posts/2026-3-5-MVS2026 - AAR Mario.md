@@ -6,6 +6,7 @@ tags:
  - CTF
  - Challenges
  - Writeups
+ - ILEAPP
 ---
 
 This year I'm going to writeup AARs for the challenges that I solved differently from Hexordia or felt needed to be expanded upon due to my approach or thinking. The first one is "That's not a Mario character".
@@ -14,7 +15,7 @@ This year I'm going to writeup AARs for the challenges that I solved differently
 
 ## That's not a Mario character
 
-Title: That's not a Mario character
+Title: That's not a Mario character  
 Description: What is the mascot of the frozen dessert shop that the user visits a lot?
 
 ### Thoughts/Hints/Background
