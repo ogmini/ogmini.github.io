@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Magnet Virtual Summit 2026 CTF - AAR "That's not a Mario character"
+title: Magnet Virtual Summit 2026 CTF - AAR "Welcome Home"
 author: 'ogmini'
 tags:
  - CTF
