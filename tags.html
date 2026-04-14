@@ -18,7 +18,7 @@ permalink: /tags.html
 {% for tag in sortedtags %}
   <li>
     <a href="{{site.baseurl}}/tags.html#{{tag | slugize}}">
-      #{{ tag }}
+      #{{ tag }} ({{ site.tags[tag].size }})
     </a>
   </li>
 {% endfor %}
