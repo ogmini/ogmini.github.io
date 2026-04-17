@@ -7,9 +7,9 @@ tags:
  - BSidesNYC
 ---
 
-What follows is the "written" version of my talk at BSides NYC 0x05. I still find writing a better way to disseminate information. Talks are also fun for the person to person interaction. This writeup removes some of the fluff from the talk. 
+What follows is the "written" version of my talk at BSides NYC 0x05. I still find writing a better way to disseminate information. Talks are also fun for the person to person interaction. This writeup removes some of the fluff from the talk.
 
-[Powerpoint Slides](/files/BSidesNYC 0x05 Presentation.pptx) 
+[Powerpoint Slides](/files/BSidesNYC 0x05 Presentation.pptx)
 
 ## Graduation Leads to Questions
 
@@ -47,11 +47,11 @@ There are under 60 contributors to ALEAPP. KapeFiles and Velociraptor have a lit
 
 ### Transparent
 
-Open source is transparent. You can see how and why the tool works. This is great for learning about artifacts. Where they come from, how they can be parsed or read, and how they should be understood. 
+Open source is transparent. You can see how and why the tool works. This is great for learning about artifacts. Where they come from, how they can be parsed or read, and how they should be understood.
 
 ### Customizable and Agile
 
-These projects can be updated or modified to handle one off or quickly evolving situations. You don't have to wait for a vendor to find the development to make an update. With enough knowledge, you could make the changes required in an open source project to add support or new features. 
+These projects can be updated or modified to handle one off or quickly evolving situations. You don't have to wait for a vendor to find the development to make an update. With enough knowledge, you could make the changes required in an open source project to add support or new features.
 
 ### Collaboration
 
@@ -63,9 +63,9 @@ There are many different ways to contribute to open source projects but I'm goin
 
 ### Documentation / Discussion
 
-Documenting how to use a tool is always needed. The features and options need to be explained. Example use cases are also a great thing to have. 
+Documenting how to use a tool is always needed. The features and options need to be explained. Example use cases are also a great thing to have.
 
-You can also have discussions with other contributors about new features. You can help others with their questions. You can ask questions and get your own answers. I will add the caveat that you should also do as much of your own research as possible before asking a question. 
+You can also have discussions with other contributors about new features. You can help others with their questions. You can ask questions and get your own answers. I will add the caveat that you should also do as much of your own research as possible before asking a question.
 
 ### Testing / Validation
 
@@ -73,7 +73,7 @@ Help test and validate tools by running them and documenting the results on your
 
 ### Pull Request
 
-The final big one. Making a direct contribution to the repository. This could be in the form of fixing an issue or adding new functionality. It should go without saying that this requires doing the other two first. You must document, discuss, and test. 
+The final big one. Making a direct contribution to the repository. This could be in the form of fixing an issue or adding new functionality. It should go without saying that this requires doing the other two first. You must document, discuss, and test.
 
 ## My A-Ha Moments
 
@@ -81,29 +81,29 @@ Going back a little, I started with my own project on Windows Notepad which resu
 
 - KAPE Files - I contributed Targets and Modules for things like ChatGPT and Windows Notepad.
 - Velociraptor - I had open an issue to make a feature suggestion which resulted in adding support for LEB128 and ULEB128 to the binary parser.
-- ALEAPP - An plugin that actually grew out of a BelkaCTF image which had IMAP email artifacts that were not initially supported. 
-- CTF Challenges - Very recently I contributed some CTF Challenges to the BSides NYC CTFd. 
+- ALEAPP - An plugin that actually grew out of a BelkaCTF image which had IMAP email artifacts that were not initially supported.
+- CTF Challenges - Very recently I contributed some CTF Challenges to the BSides NYC CTFd.
 
-During all of this, I have had the pleasure of collaborating with DF/IR professionals around the world. I would never have been able to make these connections otherwise. 
+During all of this, I have had the pleasure of collaborating with DF/IR professionals around the world. I would never have been able to make these connections otherwise.
 
-Also, contributing to these projects required me to engage with the tools at a much deeper level than just using the tool. You have to fully understand the artifacts and their nuances to make those contributions. 
+Also, contributing to these projects required me to engage with the tools at a much deeper level than just using the tool. You have to fully understand the artifacts and their nuances to make those contributions.
 
 ## Tips To Get Started
 
 You don't need to be a developer to get started. It can be handy and will be a useful skill to have in DF/IR. I would encourage you to at least pick up some Python.
 
-Often documentation is an area that is out of date or in need of improvement. This is crucial part of any project and a great place to start for anyone. In order to write good documentation, you need to know how to use the tool! That requires learning it and using it to get experience. I would heavily encourage the submission of documentation to the project itself and not to just write a post on how to use the tool. 
+Often documentation is an area that is out of date or in need of improvement. This is crucial part of any project and a great place to start for anyone. In order to write good documentation, you need to know how to use the tool! That requires learning it and using it to get experience. I would heavily encourage the submission of documentation to the project itself and not to just write a post on how to use the tool.
 
 You can also document the existing plugins that parse out artifacts. This could just be linking to existing research and posts. If they don't exist, that provides an opportunity to do that research, provide the writeup, and add that documentation.
 
 Another thing you can do is participate in discussions and read issues and pull requests. Make sure to read CLOSED issues and pull requests. There is a lot to be learned from things that have already been done, asked, or explained. You might see someone post a question and you know the answer. Conversely, you might learn something new from someone else's question and answer. If you see the same question asked over and over again you could write an FAQ.
 
-One last tip is helping to validate and test tools on various datasets. You can create and document your own datasets to run the tool against. You can try to replicate someone else's results. This is so vital when new versions of software come out. Things change and the original author of the plugin might not be aware. Reach out to them and let them know. You could even help them update the plugin. This is just another way of learning and networking. 
+One last tip is helping to validate and test tools on various datasets. You can create and document your own datasets to run the tool against. You can try to replicate someone else's results. This is so vital when new versions of software come out. Things change and the original author of the plugin might not be aware. Reach out to them and let them know. You could even help them update the plugin. This is just another way of learning and networking.
 
 ## Call To Action
 
-Get in there, pick an open source project that you use a lot, want to learn, or find interesting. Do the work and hit that "New Pull Request" button. That is all it takes to start contributing, learning, and being part of the community. 
+Get in there, pick an open source project that you use a lot, want to learn, or find interesting. Do the work and hit that "New Pull Request" button. That is all it takes to start contributing, learning, and being part of the community.
 
-Two opportunities that I'd like to highlight is the call by Andrew Rathbun to help to add documentation to the various KAPE File plugins. As I alluded to earlier, this could just be adding links to existing writeups and posts. 
+Two opportunities that I'd like to highlight is the call by Andrew Rathbun to help to add documentation to the various KAPE File plugins. As I alluded to earlier, this could just be adding links to existing writeups and posts.
 
-The other one is contributing to the Artifact Exchange for Velociraptor. 
+The other one is contributing to the Artifact Exchange for Velociraptor.
