@@ -5,6 +5,7 @@ author: 'ogmini'
 tags:
  - Talk
  - BSidesNYC
+ - BSides
 ---
 
 What follows is the "written" version of my talk at BSides NYC 0x05. I still find writing a better way to disseminate information. Talks are also fun for the person to person interaction. This writeup removes some of the fluff from the talk.
