@@ -22,7 +22,7 @@ Locations of note:
 
 The Avatars folder is interesting because it contains files with what appear to be HTTP/2 responses that have the avatar image embedded. I was able to extract them with a hex editor.
 
-Tailscale also has support for secure file transfer between devices on a tailnet. You can read more at [https://tailscale.com/docs/features/taildrop](https://tailscale.com/docs/features/taildrop). In current versions, files are dropped into %userprofile%\Downloads AFTER they are temporarily stored at %ProgramData%\Tailscale\files\[Account-uid-####]\ during transfer. This is to support the ability to resume interrupted tranfers. Possible to find interesting artifacts here...
+Tailscale also has support for secure file transfer between devices on a tailnet. You can read more at [https://tailscale.com/docs/features/taildrop](https://tailscale.com/docs/features/taildrop). In current versions, files are dropped into %userprofile%\Downloads AFTER they are temporarily stored at %ProgramData%\Tailscale\files\[Account-uid-####]\ during transfer. This is to support the ability to resume interrupted tranfers. Possible to find interesting artifacts here... I wonder if they are kept forever or is this folder cleaned out periodically.
 
 Additionally, I was able to find records in the local Tailscale logs about these transfers. Below are some examples:
 
