@@ -4,7 +4,7 @@
 
 | Date | Publication | Title | Link |
 | --- | --- | --- | --- |
-| 12/21/2025 | DFIR Review | Is that Windows Notepad window really empty? | [https://dfir.pubpub.org/pub/wmhy8t6v/release/6](https://dfir.pubpub.org/pub/wmhy8t6v/release/6) |
+| 12/21/2025 | DFIR Review | Is that Windows Notepad window really empty? | [https://doi.org/10.21428/b0ac9c28.a8c471f1](https://doi.org/10.21428/b0ac9c28.a8c471f1) |
 
 ### Blog
 
