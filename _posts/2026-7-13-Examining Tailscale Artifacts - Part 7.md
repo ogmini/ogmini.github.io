@@ -15,9 +15,9 @@ Continuing to look at Tailscale artifacts, this time on a Linux machine. Paths c
 
 There appears to be one notable difference in that the `profile-data/*/netmap-cache` folder has files.
 
-![linux netmap-cache](/images/tailscale/netmap-cachhe1.png)
+![linux netmap-cache](/images/tailscale/netmap-cache1.png)
 
-![windows netmap-cache](/images/tailscale/netmap-cachhe2.png)
+![windows netmap-cache](/images/tailscale/netmap-cache2.png)
 
 As the folder name suggests, these files do appear to be cached information about the network and the filenames appear to be hex-encoded ASCII. For example:
 
