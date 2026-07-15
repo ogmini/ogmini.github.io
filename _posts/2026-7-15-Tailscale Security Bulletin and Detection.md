@@ -16,9 +16,9 @@ First, a quick video of exploitation. If you want a "detection rule" via grep or
  Your browser does not support the video tag
 </video>
 
-![Who is -i?](/images/ts-2026-009/login-1.png)
+![Login 1](/images/ts-2026-009/login-1.PNG)
 
-![Who is -i?](/images/ts-2026-009/login-2.png)
+![Login 2](/images/ts-2026-009/login-2.PNG)
 
 In the video, I'm using Putty on Windows to open an SSH session with my tailscale node. I login with the user `-i` which doesn't exist. It immediately drops me a the root login and I verify that by running `whoami`.
 
