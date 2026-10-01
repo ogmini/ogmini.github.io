@@ -4,7 +4,7 @@
 
 ---
 
-Hi, I'm Chris, also known as ogmini. My online alias reflects my passion for owning and driving a 1961 Austin Mini Mk1. With over 15 years of experience in system administration, application development, and management, I'm now redirecting my efforts and interest into the field of Digital Forensics and Incident Response (DFIR). I kickstarted this by earning my Master's in Digital Forensic Science from Champlain College in December 2023. As I continue to explore and learn, this blog will document my journey. I'm excited to apply my background in system administration and application development to this evolving field.
+Hi, I'm Chris, also known as ogmini. My online alias reflects my passion for owning and driving a 1961 Austin Mini Mk1. With over 20 years of experience in system administration, application development, and management, I'm now redirecting my efforts and interest into the field of Digital Forensics and Incident Response (DFIR). I kickstarted this by earning my Master's in Digital Forensic Science from Champlain College in December 2023. As I continue to explore and learn, this blog will document my journey. I'm excited to apply my background to DFIR / 4n6.
 
 ## Can you tell I like cars?
 
