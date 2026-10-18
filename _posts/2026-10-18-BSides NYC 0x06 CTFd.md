@@ -91,6 +91,6 @@ I thoroughly enjoyed BSidesNYC 0x06. The team did another great job and I unders
 
 I learned some more things about linux forensics by making these challenges. I specifically chose to make linux forensic challenges because most of my experience has been Windows or Android based. Performing and documenting actions and subsequently looking for digital artifacts related to those actions is a great way to learn and discover things. You can't make good challenges if you can't solve them yourself!
 
-![AI Vending Machine](/images/bsidesnyc0x06/gimmeflag.PNG)
+![AI Vending Machine](/images/bsidesnyc0x06/gimmeflag.jpg)
 
 This photo was from me solving the AI Vending Machine challenge with the first prompt. I didn't get a picture of the actual vending machine. The challenge was to get it to vend you the flag. You only had a balance of $10 and the flag cost $100. Evidently, you can just walk in like your own the place and get what you want.
